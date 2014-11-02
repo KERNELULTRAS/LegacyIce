@@ -1,0 +1,10 @@
+[styling]
+# Line number color
+margin_linenumber=0x999999;0x1E1E1E;false;false
+# Cursor color
+caret=0x99FF99;0x000000;false;false
+# Cursor width
+caret_width=2;0;false;false
+# Current line background
+current_line=0xffffff;0x000000;true;false
+
