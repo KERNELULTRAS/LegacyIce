@@ -29,7 +29,7 @@ kvm qemu virt-manager
 wine
 
 ### Tools
-curl elinks gdebi git gjs gnome-terminal htop keepassx mc nmap nslookup openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh openvpn scrot synaptic wget whois
+curl elinks gdebi git gjs gnome-terminal gparted htop keepassx mc nmap nslookup openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh openvpn scrot synaptic wget whois
 
 ### Special
 rtai
