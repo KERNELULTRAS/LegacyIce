@@ -5,7 +5,7 @@
 filezilla geany ghex scribes
 
 ### Graphics programs
-blender dia freecad gimp inkscape librecad meshlab pycam tupi
+blender dia freecad gimp inkscape librecad meshlab pycam tupi pstoedit
 
 ### Multimedia programs
 brasero pavucontrol vlc
