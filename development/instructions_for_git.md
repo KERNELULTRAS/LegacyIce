@@ -22,3 +22,9 @@ git push
 
 ### Download latest change
 git pull origin master
+
+-------------
+SET AUTOLOGIN
+-------------
+
+git config remote.origin.url https://username:password@github.com/KERNELULTRAS/LegacyIce.git
