@@ -56,8 +56,6 @@ echo "file://$HOME/Games" >> $HOME/.config/gtk-3.0/bookmarks
 
 ### Set Gnome2 theme
 
-apt-get --yes install gtk2-engines-cleanice
-
 echo '# Any customization should be done in ~/.gtkrc-2.0
 
 gtk-theme-name="HackStation"
@@ -76,7 +74,7 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle="hintslight"
 gtk-xft-rgba="rgb"
 gtk-color-scheme="tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n"
-include "/home/mario/.gtkrc-2.0.mine"' > .config//gtkrc-2.0/gtkrc
+include "/home/mario/.gtkrc-2.0.mine"' > $HOME/.gtkrc
 
 ### Set Gnome3 theme
 
