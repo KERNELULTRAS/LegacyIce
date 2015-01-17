@@ -3,6 +3,8 @@
 
 ### INSTALL PROGRAMS
 
+echo "- Install programs\n"
+
 ### Dev programs
 sudo apt-get --yes install filezilla geany ghex scribes
 
@@ -43,23 +45,30 @@ sudo apt-get --yes install hackstation-theme gtk2-engines-qtcurve
 sudo apt-get --yes install icewm
 
 ### REMOVE UNNECESSARY PACKAGES
+echo "- Remove unnecessary programs\n"
 sudo apt-get --yes remove ubuntu-desktop compiz-gnome ibus ibus-gtk ibus-gtk3 account-plugin-aim account-plugin-jabber account-plugin-salut account-plugin-yahoo empathy empathy-common telepathy-gabble telepathy-salut mcp-account-manager-uoa nautilus-sendto-empathy
 
 ### Make directory for user specific programs
+echo "- Create directory Programs\n"
 mkdir Programs
 
 ### Add bookmarks for Programs to Gnome3 (Nautilus) ...
-echo "file://$HOME/Programs" >> $HOME/.config/gtk-3.0/bookmarks
+echo "- Create bookmarks for Programs\n"
+echo "- file://$HOME/Programs" >> $HOME/.config/gtk-3.0/bookmarks
 
 ### Make directory for games trigger
+echo "- Create directory Games\n"
 mkdir Games
 
 ### Add bookmarks for Games to Gnome3 (Nautilus) ...
-echo "file://$HOME/Games" >> $HOME/.config/gtk-3.0/bookmarks
+echo "- Create bookmarks for Games\n"
+echo "- file://$HOME/Games" >> $HOME/.config/gtk-3.0/bookmarks
 
 ### SET THEME
 
 ### Set Gnome2 theme
+
+echo "- Set Gnome2 theme\n"
 
 echo '# Any customization should be done in ~/.gtkrc-2.0
 
@@ -83,6 +92,8 @@ include "/home/mario/.gtkrc-2.0.mine"' > $HOME/.gtkrc
 
 ### Set Gnome3 theme
 
+echo "- Set Gnome3 theme\n"
+
 echo "[Settings] 
 gtk-theme-name=HackStation
 gtk-icon-theme-name=Neu
@@ -101,9 +112,12 @@ gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
 gtk-color-scheme=tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n" > $HOME/.config/gtk-3.0/settings.ini
 
+echo "- Set Shutdown and Reboot\n"
 sudo echo "%$USER  ALL = NOPASSWD: /sbin/poweroff" >> /etc/sudoers.d
 sudo echo "%$USER  ALL = NOPASSWD: /sbin/reboot" >> /etc/sudoers.d
 
+### Instal YAD
+echo "- Install YAD\n"
 wget https://downloads.sourceforge.net/yad-dialog/files/yad-0.27.0.tar.xz
 tar -xJf yad-0.27.0.tar.xz
 rm yad-0.27.0.tar.xz
@@ -111,5 +125,12 @@ cd yad-0.27.0/
 ./configure
 make
 sudo make install
+cd ..
 
+### Download IceWM config files
+echo "- Download IceWM config files\n"
+wget https://raw.github.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/.icewm.tar.xz
+echo "- Extract IceWM config files\n"
+tar -xJf .icewm.tar.xz
+rm .icewm.tar.xz
 
