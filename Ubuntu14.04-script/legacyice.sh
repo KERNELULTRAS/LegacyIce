@@ -42,7 +42,7 @@ sudo apt-get --yes install mysql-server-core-5.5 mysql-server-5.5 libaio1 mysql-
 sudo apt-get --yes install hackstation-theme gtk2-engines-qtcurve
 
 ### IceWM
-sudo apt-get --yes install icewm
+sudo apt-get --yes install icewm compton
 
 ### REMOVE UNNECESSARY PACKAGES
 echo "- Remove unnecessary programs\n"
@@ -133,4 +133,9 @@ wget https://raw.github.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/.ic
 echo "- Extract IceWM config files\n"
 tar -xJf .icewm.tar.xz
 rm .icewm.tar.xz
+
+### Compositor
+echo "- Set compositor"
+wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
+mv compton.conf $HOME/.config/compton.conf
 
