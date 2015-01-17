@@ -1,7 +1,7 @@
 ## LegacyIce
 Goal of the project is to return the traditional desktop
 
-![IceWM desktop](auxiliary_files/scrot_dark_1.png)
+![IceWM desktop](auxiliary_files/screenshot1.jpg)
 
 ### Based on
 * IceWM
