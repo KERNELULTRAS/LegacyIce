@@ -149,5 +149,5 @@ mv compton.conf $HOME/.config/compton.conf
 
 ### Geany theme
 git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
-mv GeanyTheme-Dark .config/geany
+mv GeanyTheme-Dark $HOME/.config/geany
 
