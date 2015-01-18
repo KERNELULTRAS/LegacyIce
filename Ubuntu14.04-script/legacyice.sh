@@ -1,3 +1,4 @@
+#!/bin/bash
 # (Only GTK and QT application)
 # (In alphabetical order)
 
