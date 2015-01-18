@@ -147,3 +147,7 @@ echo -e "\e[38;5;227m- Set compositor\e[38;5;46m\n"
 wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
 mv compton.conf $HOME/.config/compton.conf
 
+### Geany theme
+git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
+mv GeanyTheme-Dark .config/geany
+
