@@ -1,0 +1,1 @@
+wmctrl -c firefox && sleep 3 && sudo reboot

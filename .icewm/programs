@@ -1,0 +1,171 @@
+
+menu "Applications" folder {
+menu "Accessibility" folder {
+  prog    "Xmag" - /bin/sh -c "xmag"
+}
+menu "Editors" folder {
+  prog    "Gedit" "/usr/share/pixmaps/gedit-icon.xpm" /bin/sh -c "/usr/bin/gedit"
+  prog    "Nano" "/usr/share/nano/nano-menu.xpm" /bin/sh -c "x-terminal-emulator  -T \"Nano\" -e sh -c \"/bin/nano\""
+  prog    "Xedit" - /bin/sh -c "xedit"
+}
+menu "Emulators" folder {
+  prog    "VirtualBox" "/usr/share/pixmaps/virtualbox.xpm" /bin/sh -c "/usr/bin/virtualbox"
+}
+menu "File Management" folder {
+  prog    "Baobab" "/usr/share/pixmaps/baobab.xpm" /bin/sh -c "/usr/bin/baobab"
+  prog    "Brasero" - /bin/sh -c "/usr/bin/brasero"
+  prog    "File-Roller" "/usr/share/pixmaps/file-roller.xpm" /bin/sh -c "/usr/bin/file-roller"
+  prog    "Nautilus" "/usr/share/pixmaps/nautilus.xpm" /bin/sh -c "/usr/bin/nautilus"
+}
+menu "Graphics" folder {
+  prog    "Blender" "/usr/share/pixmaps/blender-32x32.xpm" /bin/sh -c "/usr/bin/blender"
+  prog    "fotoxx" - /bin/sh -c "/usr/bin/fotoxx"
+  prog    "gCAD3D" "/usr/share/gcad3d/icons/gCAD3D.xpm" /bin/sh -c "/usr/bin/gcad3d"
+  prog    "ImageMagick" "/usr/share/pixmaps/display.im6.xpm" /bin/sh -c "/usr/bin/display.im6 logo:"
+  prog    "Inkscape" "/usr/share/pixmaps/inkscape.xpm" /bin/sh -c "/usr/bin/inkscape"
+  prog    "LibreOffice Draw" "/usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm" /bin/sh -c "/usr/bin/libreoffice --draw"
+  prog    "meshlab" - /bin/sh -c "/usr/bin/meshlab"
+  prog    "Misfit Model 3d" - /bin/sh -c "/usr/bin/mm3d"
+  prog    "MyPaint" - /bin/sh -c "/usr/bin/mypaint"
+  prog    "rgbPaint" "/usr/share/pixmaps/rgbpaint.xpm" /bin/sh -c "/usr/bin/rgbpaint"
+  prog    "The GIMP" "/usr/share/pixmaps/gimp.xpm" /bin/sh -c "/usr/bin/gimp"
+  prog    "X Window Snapshot" - /bin/sh -c "xwd | xwud"
+}
+menu "Network" folder {
+menu "Communication" folder {
+  prog    "Mumble" "/usr/share/pixmaps/mumble.xpm" /bin/sh -c "/usr/bin/mumble"
+  prog    "Pidgin" "/usr/share/pixmaps/pidgin-menu.xpm" /bin/sh -c "/usr/bin/pidgin"
+  prog    "Remmina" - /bin/sh -c "/usr/bin/remmina"
+  prog    "Telnet" - /bin/sh -c "x-terminal-emulator  -T \"Telnet\" -e sh -c \"/usr/bin/telnet\""
+  prog    "Xbiff" - /bin/sh -c "xbiff"
+  prog    "X Chat" "/usr/share/icons/xchat.xpm" /bin/sh -c "/usr/bin/xchat"
+}
+menu "File Transfer" folder {
+  prog    "FileZilla" "/usr/share/pixmaps/filezilla.xpm" /bin/sh -c "/usr/bin/filezilla"
+  prog    "Transmission BitTorrent Client (GTK)" "/usr/share/pixmaps/transmission.xpm" /bin/sh -c "/usr/bin/transmission-gtk"
+}
+menu "Monitoring" folder {
+  prog    "ettercap (as root)" - /bin/sh -c "ettercap-pkexec -G"
+}
+}
+menu "Office" folder {
+  prog    "LibreOffice Calc" "/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm" /bin/sh -c "/usr/bin/libreoffice --calc"
+  prog    "LibreOffice Impress" "/usr/share/icons/hicolor/32x32/apps/libreoffice-impress.xpm" /bin/sh -c "/usr/bin/libreoffice --impress"
+  prog    "LibreOffice Writer" "/usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm" /bin/sh -c "/usr/bin/libreoffice --writer"
+}
+menu "Programming" folder {
+  prog    "CMake Qt4 GUI (cmake-gui)" "/usr/share/pixmaps/cmake.xpm" /bin/sh -c "/usr/bin/cmake-gui"
+  prog    "GDB" - /bin/sh -c "x-terminal-emulator  -T \"GDB\" -e sh -c \"/usr/bin/gdb\""
+  prog    "Geany" "/usr/share/pixmaps/geany.xpm" /bin/sh -c "/usr/bin/geany"
+  prog    "Python (v2.7)" "/usr/share/pixmaps/python2.7.xpm" /bin/sh -c "x-terminal-emulator  -T \"Python (v2.7)\" -e sh -c \"/usr/bin/python2.7\""
+  prog    "Python (v3.4)" "/usr/share/pixmaps/python3.4.xpm" /bin/sh -c "x-terminal-emulator  -T \"Python (v3.4)\" -e sh -c \"/usr/bin/python3.4\""
+  prog    "Ruby (irb1.9.1)" - /bin/sh -c "x-terminal-emulator  -T \"Ruby (irb1.9.1)\" -e sh -c \"/usr/bin/irb1.9.1\""
+  prog    "Tclsh8.6" - /bin/sh -c "x-terminal-emulator  -T \"Tclsh8.6\" -e sh -c \"/usr/bin/tclsh8.6\""
+  prog    "TkWish8.6" - /bin/sh -c "x-terminal-emulator -e /usr/bin/wish8.6"
+}
+menu "Science" folder {
+menu "Engineering" folder {
+  prog    "LibreCAD" "/usr/share/pixmaps/librecad.xpm" /bin/sh -c "/usr/bin/librecad"
+}
+menu "Mathematics" folder {
+  prog    "Bc" - /bin/sh -c "x-terminal-emulator  -T \"Bc\" -e sh -c \"/usr/bin/bc\""
+  prog    "Dc" - /bin/sh -c "x-terminal-emulator  -T \"Dc\" -e sh -c \"/usr/bin/dc\""
+  prog    "LibreOffice Math" "/usr/share/icons/hicolor/32x32/apps/libreoffice-math.xpm" /bin/sh -c "/usr/bin/libreoffice --math"
+  prog    "Xcalc" - /bin/sh -c "xcalc"
+}
+}
+menu "Shells" folder {
+  prog    "Bash" - /bin/sh -c "x-terminal-emulator  -T \"Bash\" -e sh -c \"/bin/bash --login\""
+  prog    "Dash" - /bin/sh -c "x-terminal-emulator  -T \"Dash\" -e sh -c \"/bin/dash -i\""
+  prog    "Sh" - /bin/sh -c "x-terminal-emulator  -T \"Sh\" -e sh -c \"/bin/sh --login\""
+}
+menu "Sound" folder {
+  prog    "grecord (GNOME 2.0 Recorder)" "/usr/share/pixmaps/gnome-grecord.xpm" /bin/sh -c "/usr/bin/gnome-sound-recorder"
+  prog    "pavucontrol" - /bin/sh -c "/usr/bin/pavucontrol"
+  prog    "Rhythmbox" "/usr/share/pixmaps/rhythmbox-small.xpm" /bin/sh -c "/usr/bin/rhythmbox"
+}
+menu "System" folder {
+menu "Administration" folder {
+  prog    "Debian Task selector" - /bin/sh -c "x-terminal-emulator  -T \"Debian Task selector\" -e sh -c \"su-to-root -c tasksel\""
+  prog    "DSL/PPPoE configuration tool" "/usr/share/pixmaps/pppoeconf.xpm" /bin/sh -c "x-terminal-emulator  -T \"DSL/PPPoE configuration tool\" -e sh -c \"/usr/sbin/pppoeconf\""
+  prog    "Editres" - /bin/sh -c "editres"
+  prog    "Gnome Control Center" "/usr/share/pixmaps/gnome-control-center.xpm" /bin/sh -c "/usr/bin/gnome-control-center"
+  prog    "GNOME partition editor" "/usr/share/pixmaps/gparted.xpm" /bin/sh -c "su-to-root -X -c /usr/sbin/gparted"
+  prog    "GTK+ 2.0 theme manager" "/usr/share/pixmaps/gtk-chtheme.xpm" /bin/sh -c "/usr/bin/gtk-chtheme"
+  prog    "LXAppearance" - /bin/sh -c "/usr/bin/lxappearance"
+  prog    "pppconfig" - /bin/sh -c "x-terminal-emulator  -T \"pppconfig\" -e sh -c \"su-to-root -p root -c /usr/sbin/pppconfig\""
+  prog    "Reportbug" - /bin/sh -c "x-terminal-emulator  -T \"Reportbug\" -e sh -c \"/usr/bin/reportbug --exit-prompt\""
+  prog    "Reportbug (GTK+)" - /bin/sh -c "/usr/bin/reportbug --exit-prompt --ui gtk2"
+  prog    "Xclipboard" - /bin/sh -c "xclipboard"
+  prog    "Xfontsel" - /bin/sh -c "xfontsel"
+  prog    "Xkill" - /bin/sh -c "xkill"
+  prog    "Xrefresh" - /bin/sh -c "xrefresh"
+}
+menu "Hardware" folder {
+  prog    "Nvclock for Qt" - /bin/sh -c "/usr/bin/nvclock_qt"
+  prog    "Xvidtune" - /bin/sh -c "xvidtune"
+}
+menu "Language Environment" folder {
+  prog    "Input Method Configuration" - /bin/sh -c "x-terminal-emulator  -T \"Input Method Configuration\" -e sh -c \"/usr/bin/im-config\""
+}
+menu "Monitoring" folder {
+  prog    "GNOME system monitor" - /bin/sh -c "/usr/bin/gnome-system-monitor"
+  prog    "osdsh" - /bin/sh -c "/usr/bin/osdsh"
+  prog    "osdshconfig" - /bin/sh -c "/usr/bin/osdshconfig"
+  prog    "Pstree" "/usr/share/pixmaps/pstree16.xpm" /bin/sh -c "x-terminal-emulator  -T \"Pstree\" -e sh -c \"/usr/bin/pstree.x11\""
+  prog    "Top" - /bin/sh -c "x-terminal-emulator  -T \"Top\" -e sh -c \"/usr/bin/top\""
+  prog    "Xconsole" - /bin/sh -c "xconsole -file /dev/xconsole"
+  prog    "Xev" - /bin/sh -c "x-terminal-emulator -e xev"
+  prog    "Xload" - /bin/sh -c "xload"
+}
+menu "Package Management" folder {
+  prog    "Aptitude Package Manager (text)" - /bin/sh -c "x-terminal-emulator  -T \"Aptitude Package Manager (text)\" -e sh -c \"/usr/bin/aptitude-curses\""
+  prog    "Synaptic Package Manager" "/usr/share/synaptic/pixmaps/synaptic_32x32.xpm" /bin/sh -c "x-terminal-emulator -e synaptic-pkexec"
+}
+menu "Security" folder {
+  prog    "Seahorse" "/usr/share/pixmaps/seahorse.xpm" /bin/sh -c "/usr/bin/seahorse"
+}
+}
+menu "Terminal Emulators" folder {
+  prog    "Gnome Terminal" "/usr/share/pixmaps/gnome-terminal.xpm" /bin/sh -c "/usr/bin/gnome-terminal"
+  prog    "XTerm" "/usr/share/pixmaps/xterm-color_32x32.xpm" /bin/sh -c "xterm"
+  prog    "X-Terminal as root (GKsu)" "/usr/share/pixmaps/gksu-debian.xpm" /bin/sh -c "/usr/bin/gksu -u root /usr/bin/x-terminal-emulator"
+  prog    "XTerm (Unicode)" "/usr/share/pixmaps/xterm-color_32x32.xpm" /bin/sh -c "uxterm"
+}
+menu "Text" folder {
+  prog    "Character map" - /bin/sh -c "/usr/bin/gucharmap"
+}
+menu "Video" folder {
+  prog    "Totem" "/usr/share/pixmaps/totem.xpm" /bin/sh -c "/usr/bin/totem"
+  prog    "VLC media player" "/usr/share/icons/hicolor/32x32/apps/vlc.xpm" /bin/sh -c "/usr/bin/qvlc"
+  prog    "WinFF" "/usr/share/pixmaps/winff.xpm" /bin/sh -c "/usr/bin/winff"
+}
+menu "Viewers" folder {
+  prog    "Evince" "/usr/share/pixmaps/evince.xpm" /bin/sh -c "/usr/bin/evince"
+  prog    "Eye of GNOME" "/usr/share/pixmaps/gnome-eog.xpm" /bin/sh -c "/usr/bin/eog"
+  prog    "G3DViewer" "/usr/share/pixmaps/g3dviewer.xpm" /bin/sh -c "/usr/bin/g3dviewer"
+  prog    "Shotwell" - /bin/sh -c "/usr/bin/shotwell"
+  prog    "Xditview" - /bin/sh -c "xditview"
+}
+}
+menu "Games" folder {
+menu "Card" folder {
+  prog    "Gnome Solitaire Games" "/usr/share/pixmaps/aisleriot.xpm" /bin/sh -c "/usr/games/sol"
+}
+menu "Toys" folder {
+  prog    "Oclock" - /bin/sh -c "oclock"
+  prog    "Xclock (analog)" - /bin/sh -c "xclock -analog"
+  prog    "Xclock (digital)" - /bin/sh -c "xclock -digital -update 1"
+  prog    "Xeyes" - /bin/sh -c "xeyes"
+  prog    "Xlogo" - /bin/sh -c "xlogo"
+}
+}
+menu "Help" folder {
+  prog    "Info" - /bin/sh -c "x-terminal-emulator  -T \"Info\" -e sh -c \"info\""
+  prog    "Xman" - /bin/sh -c "xman"
+  prog    "yelp" - /bin/sh -c "/usr/bin/yelp"
+}
+menu "Window Managers" folder {
+  restart "IceWM" "/usr/share/icewm/icons/icewm_32x32.xpm" /bin/sh -c "/usr/bin/icewm"
+  restart "IceWM-Experimental" "/usr/share/icewm/icons/icewm_32x32.xpm" /bin/sh -c "/usr/bin/icewm-experimental"
+}

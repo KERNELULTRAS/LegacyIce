@@ -1,0 +1,28 @@
+# A list of all valid keyboard symbols can be found in
+# /usr/include/X11/keysym.h, keysymdefs.h,XF86keysym.h, ...
+# You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
+# XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
+
+# Programs
+key "Ctrl+Alt+KP_Divide"	aumix -v -5
+key "Ctrl+Alt+KP_Multiply"	aumix -v +5
+key "Ctrl+Alt+b"		firefox
+key "Ctrl+Alt+e"		gedit
+key "Ctrl+Alt+p"		bluefish
+key "Ctrl+Alt+f"		nautilus
+key "Ctrl+Alt+g"                nautilus Games
+key "Ctrl+Alt+s"		gksudo synaptic
+key "Ctrl+Alt+t"		gnome-terminal
+key "Ctrl+Alt+v"                vlc
+
+# Screenshot - desktop
+key "Print"			scrot 'screenshot.jpg'
+# Screenshot - focused window
+key "Alt+Print"			scrot -u -b 'screenshot.jpg'
+
+# Get system info on OSD
+key "Pause"			/home/mario/.icewm/contrib/system_stat.sh
+
+# Run shutdown menu
+key "Alt+Ctrl+Del"		/home/mario/.icewm/contrib/shutdown.sh
+

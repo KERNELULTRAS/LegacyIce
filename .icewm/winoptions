@@ -1,0 +1,42 @@
+# Tools
+# xprop | grep -i wm_class
+# wmctrl -lpGx | grep -i 'Firefox'
+
+AWTapp.icon: java
+# workaround for XV window repositioning problems
+# xv.nonICCCMconfigureRequest: 1
+
+# Window over panel
+icewm.TaskBar.doNotCover: 1
+
+# Pidgin on all warkspaces
+Pidgin.Pidgin.allWorkspaces: 1
+
+# pcmanfm.ignoreWinList: 1	# Dont show in window list
+# pcmanfm.ignoreTaskBar: 1	# Dont show in task bar
+# pcmanfm.ignoreQuickSwitch:1	# Dont show in quick list
+
+Pidgin.Pidgin.geometry: 350x1127+1250+0	# Resize Pidgin
+Pidgin.Pidgin.tray: Exclusive		# Pidgin only in taskbar
+
+# gedit.Gedit.geometry: 1350x1180+0+0	# Resize Gedit
+gnome-terminal.Gnome-terminal.geometry: 798x570	# Resize terminal
+
+icewm.TaskBar.ignoreQuickSwitch: 1	# Dont show in quick list
+
+# screen.Screen.ignoreQuickSwitch: 1	# Dont show in quick list
+
+# First workspace
+
+Navigator.Firefox.workspace: 0	# Run on first workspace
+geany.Geany.workspace: 0	# Run on first workspace
+
+# Second workspace
+
+# gnome-terminal.Gnome-terminal.workspace: 1	# Run on second workspace
+gnome-terminal.Gnome-terminal.dTitleBar: 0	# Hide title bar on terminal
+gnome-terminal.Gnome-terminal.dBorder: 0	# Hide border on terminal
+
+# Third workspace
+
+nautilus.Nautilus.geometry: 800×1172+800+0	# Dimensions
