@@ -34,13 +34,13 @@ sudo apt-get --yes install spacefm
 sudo apt-get --yes install wine
 
 ### Tools
-sudo apt-get --yes install curl elinks gdebi git subversion gnome-terminal gparted htop keepassx mc nmap openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh-client openvpn scrot synaptic wget whois intltool libgtk2.0-dev wmctrl
+sudo apt-get --yes install curl elinks gdebi git subversion gnome-terminal gparted htop keepassx mc nmap openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh-client openvpn scrot synaptic wget whois intltool libgtk2.0-dev wmctrl hsetroot numlockx
 
 ### Local webserver
 sudo apt-get --yes install mysql-server-core-5.5 mysql-server-5.5 libaio1 mysql-client-core-5.5 apache2-mpm-prefork libaprutil1 libapache2-mod-php5 php5-mysql php5-common  libaprutil1-dbd-sqlite3 php5-readline mysql-client-5.5 libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php5-cli libmysqlclient18 apache2-data php5-json libapr1 apache2 mysql-server apache2-bin libdbd-mysql-perl libdbi-perl
 
 ### Theme
-sudo add-apt-repository ppa:noobslab/themes
+sudo add-apt-repository --yes ppa:noobslab/themes
 sudo apt-get update
 sudo apt-get --yes install hackstation-theme
 sudo apt-get --yes install gtk2-engines-qtcurve
