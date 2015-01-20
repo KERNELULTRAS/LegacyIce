@@ -2,6 +2,10 @@
 # (Only GTK and QT application)
 # (In alphabetical order)
 
+### Goto to home directory
+
+cd ~
+
 ### INSTALL PROGRAMS
 
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
@@ -137,11 +141,12 @@ sudo make install
 cd ..
 
 ### Download IceWM config files
-echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
-wget https://raw.github.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/.icewm.tar.xz
-echo -e "\e[38;5;227m- Extract IceWM config files\e[38;5;46m\n"
-tar -xJf .icewm.tar.xz
-rm .icewm.tar.xz
+#echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
+#wget https://raw.github.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/.icewm.tar.xz
+#echo -e "\e[38;5;227m- Extract IceWM config files\e[38;5;46m\n"
+#tar -xJf .icewm.tar.xz
+#rm .icewm.tar.xz
+svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
 ### Compositor
 echo -e "\e[38;5;227m- Set compositor\e[38;5;46m\n"
