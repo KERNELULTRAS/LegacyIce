@@ -59,7 +59,7 @@ sudo apt-get --yes install icewm compton
 
 ### REMOVE UNNECESSARY PACKAGES
 echo -e "\e[38;5;227m- Remove unnecessary programs\e[38;5;46m\n"
-sudo apt-get --yes remove ubuntu-desktop compiz-gnome ibus ibus-gtk ibus-gtk3 account-plugin-aim account-plugin-jabber account-plugin-salut account-plugin-yahoo empathy empathy-common telepathy-gabble telepathy-salut mcp-account-manager-uoa nautilus-sendto-empathy
+sudo apt-get --yes remove ubuntu-desktop compiz-gnome ibus ibus-gtk ibus-gtk3 account-plugin-aim account-plugin-jabber account-plugin-salut account-plugin-yahoo empathy empathy-common telepathy-gabble telepathy-salut mcp-account-manager-uoa nautilus-sendto-empathy oneconf update-manager-core webapp-container webbrowser-app ubuntu-artwork checkbox-gui unity-webapps-service update-notifier xul-ext-websites-integration libunity-webapps0 unity-webapps-common software-center update-manager xul-ext-unity unity-webapps-qml ubuntu-session ubuntu-docs ubuntu-wallpapers adium-theme-ubuntu geoclue-ubuntu-geoip qtdeclarative5-ubuntu-ui-extras-browser-plugin plymouth-theme-ubuntu-text ubuntu-release-upgrader-gtk branding-ubuntu ubuntu-sounds ubuntu-sso-client ubuntu-ui-toolkit-theme ubuntuone-client-data qtdeclarative5-ubuntu-ui-toolkit-plugin python-ubuntu-sso-client qtdeclarative5-ubuntu-ui-extras-browser-plugin-assets ubuntu-sso-client-qt ubuntu-release-upgrader-core ubuntu-wallpapers-trusty plymouth-theme-ubuntu-logo
 
 ### Make directory for user specific programs
 echo -e "\e[38;5;227m- Create directory Programs\e[38;5;46m\n"
