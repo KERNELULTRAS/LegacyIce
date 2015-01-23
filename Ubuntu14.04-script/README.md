@@ -1,6 +1,8 @@
 ### Run
 wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/legacyice.sh
+
 chmod +x legacyice.sh
+
 ./legacyice.sh
 
 ### Description
