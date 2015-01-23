@@ -23,13 +23,35 @@ chmod +x legacyice.sh
 * Taskbar applications (Pidgin, Xchat ...)
 * Compositor - Compton
 * Remove unnecessary programs, spyware, bloatware ...
-* Resolves user permissions for reboot and shutdown comp
+* Resolves user permissions for reboot and shutdown
 * Config files for Geany
 * Install programs for communication, graphic, multimédia, develop and other.
-* Comments
+* Nice comments
 
 ### Notebooks, NetBooks
-coming soon
+#### Network applet for connect to Wifi ...
+Add at end file ~/.icewm/startup
+
+nm-applet # Network applet
+
+#### Battery status
+Find in file ~/.icewm/preferences
+
+TaskBarShowAPMStatus=0
+
+Uncomment it and change to
+
+TaskBarShowAPMStatus=1
 
 ### Notes
-coming soon
+Key shortcut is in ~/.icewm/keys
+
+Selected theme is in file ~/.icewm/theme
+
+Theme is in directory ~/.icewm/themes
+
+Program icons on panel is in ~/.icewm/toolbar
+
+Starup script is in ~/.icewm/startup
+
+Custom scripts in ~/.icewm/contrib
