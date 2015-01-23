@@ -51,17 +51,12 @@ compton &	# Compositor manager
 in ~/.icewm/startup
 
 ### Notes
-Key shortcut is in ~/.icewm/keys
-
-Selected theme is in file ~/.icewm/theme
-
-Theme is in directory ~/.icewm/themes
-
-Program icons on panel is in ~/.icewm/toolbar
-
-Starup script is in ~/.icewm/startup
-
-Custom scripts in ~/.icewm/contrib
+* Key shortcut is in ~/.icewm/keys
+* Selected theme is in file ~/.icewm/theme
+* Theme is in directory ~/.icewm/themes
+* Program icons on panel is in ~/.icewm/toolbar
+* Starup script is in ~/.icewm/startup
+* Custom scripts in ~/.icewm/contrib
 
 #### Disable compositor
 Add # at the beginning of the line
