@@ -177,6 +177,13 @@ cd icewm/
 make V=0
 sudo mv src/icewm /usr/bin/icewm
 cd ~
+### Switch LightDM to IceWM
+echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
+python user_xsession.py --user-id 1000 set icewm-session
+echo -e "\n"
+echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
+echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
 echo -e "\n"
 echo -e "\e[38;5;227m- Done, please restart and change session to IceWM\e[38;5;46m\n"
 echo -e "\e[38;5;227m- Good luck\e[38;5;46m\n"
