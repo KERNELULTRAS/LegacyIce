@@ -157,3 +157,6 @@ mv compton.conf $HOME/.config/compton.conf
 git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
 mv GeanyTheme-Dark $HOME/.config/geany
 
+### REMOVE SPLASH SCREEN
+sudo sed -i 's/quiet splash//' /etc/default/grub
+sudo update-grub
