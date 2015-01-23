@@ -166,3 +166,17 @@ cd ~
 echo -e "\e[38;5;227m- Remove splash screen\e[38;5;46m\n"
 sudo sed -i 's/quiet splash//' /etc/default/grub
 sudo update-grub
+
+### Install patched IceWM
+echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
+cd /tmp
+git clone http://github.com/bbidulock/icewm.git
+cd icewm/
+./autogen.sh
+./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
+make V=0
+sudo mv src/icewm /usr/bin/icewm
+cd ~
+echo -e "\n"
+echo -e "\e[38;5;227m- Done, please restart and change session to IceWM\e[38;5;46m\n"
+echo -e "\e[38;5;227m- Good luck\e[38;5;46m\n"
