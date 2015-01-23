@@ -125,20 +125,22 @@ gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
 gtk-color-scheme=tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n" > $HOME/.config/gtk-3.0/settings.ini
 
-echo -e "\e[38;5;227m- Set Shutdown and Reboot\e[38;5;46m\n"
+### SET PERMISSIONS FOR SHUTDOWN AND REBOOT
+echo -e "\e[38;5;227m- Set permissions for shutdown and reboot\e[38;5;46m\n"
 sudo sh -c "echo \"%$USER  ALL = NOPASSWD: /sbin/poweroff\" > /etc/sudoers.d/shutdown"
 sudo sh -c "echo \"%$USER  ALL = NOPASSWD: /sbin/reboot\" > /etc/sudoers.d/reboot"
 
-### Instal YAD
+### Install YAD
 echo -e "\e[38;5;227m- Install YAD\n\e[38;5;46m"
-wget https://downloads.sourceforge.net/yad-dialog/files/yad-0.27.0.tar.xz
+wget -P /tmp https://downloads.sourceforge.net/yad-dialog/files/yad-0.27.0.tar.xz
+cd /tmp
 tar -xJf yad-0.27.0.tar.xz
 rm yad-0.27.0.tar.xz
 cd yad-0.27.0/
 ./configure
 make
 sudo make install
-cd ..
+cd ~
 
 ### Download IceWM config files
 #echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
@@ -150,13 +152,17 @@ svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
 ### Compositor
 echo -e "\e[38;5;227m- Set compositor\e[38;5;46m\n"
-wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
-mv compton.conf $HOME/.config/compton.conf
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
+mv /tmp/compton.conf $HOME/.config/compton.conf
 
 ### Geany theme
+echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
+cd /tmp
 git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
 mv GeanyTheme-Dark $HOME/.config/geany
+cd ~
 
 ### REMOVE SPLASH SCREEN
+echo -e "\e[38;5;227m- Remove splash screen\e[38;5;46m\n"
 sudo sed -i 's/quiet splash//' /etc/default/grub
 sudo update-grub
