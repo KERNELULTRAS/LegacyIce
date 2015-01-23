@@ -43,6 +43,13 @@ Uncomment it and change to
 
 TaskBarShowAPMStatus=1
 
+#### Slow graphics card
+Add # at the beginning of the line
+
+compton &	# Compositor manager
+
+in ~/.icewm/startup
+
 ### Notes
 Key shortcut is in ~/.icewm/keys
 
@@ -55,3 +62,10 @@ Program icons on panel is in ~/.icewm/toolbar
 Starup script is in ~/.icewm/startup
 
 Custom scripts in ~/.icewm/contrib
+
+#### Disable compositor
+Add # at the beginning of the line
+
+compton &	# Compositor manager
+
+in ~/.icewm/startup
