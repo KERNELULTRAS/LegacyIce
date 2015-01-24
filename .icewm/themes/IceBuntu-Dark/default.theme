@@ -121,7 +121,7 @@ ColorNormalTaskBarApp="#252525"
 ColorNormalTaskBarAppText="#A4A4A4"
 ColorMinimizedTaskBarApp="#252525"
 ColorMinimizedTaskBarAppText="#A4A4A4"
-ColorActiveTaskBarApp="#252525"
+ColorActiveTaskBarApp="#111111"
 ColorActiveTaskBarAppText="#C0C0C0"
 
 # ---------------------------------------------------------------------------
