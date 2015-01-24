@@ -8,7 +8,7 @@ chmod +x legacyice.sh
 ./legacyice.sh
 
 ### Description
-* Fixed run QT applications
+* Fixed run QT5 applications
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
