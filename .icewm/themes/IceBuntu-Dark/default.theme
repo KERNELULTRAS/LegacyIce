@@ -73,7 +73,7 @@ ColorListBoxSelectionText="#F5F5F5"
 # ---------------------------------------------------------------------------
 ColorQuickSwitch="#252525"
 ColorQuickSwitchText="#A4A4A4"
-ColorQuickSwitchActive="#252525"
+ColorQuickSwitchActive="#111111"
 
 # ---------------------------------------------------------------------------
 # Clock
