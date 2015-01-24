@@ -71,3 +71,6 @@ in ~/.icewm/startup
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
 * MailCommand="firefox http://webmail.domain.com"
 * Off email ikon TaskBarShowMailboxStatus=0
+
+#### Panel (dock) at top of the screen
+Uncomment TaskBarAtTop=0 and change it to TaskBarAtTop=1
