@@ -17,11 +17,11 @@ TitleButtonsSupported="dhimrsx"
 ColorNormalButtonBorder="#2b2a29"
 ColorNormalTitleBar="#2b2a29"
 ColorNormalTitleBarText="#A4A4A4"
-ColorNormalTitleButton="#111111"
-ColorNormalBorder="#111111"
+ColorNormalTitleButton="#252525"
+ColorNormalBorder="#252525"
 
-ColorActiveBorder="#111111"
-ColorActiveTitleBar="#111111"
+ColorActiveBorder="#252525"
+ColorActiveTitleBar="#252525"
 ColorActiveTitleBarText="#F5F5F5"
 
 TitleBarHeight=20 # 0-128
@@ -41,7 +41,7 @@ ShapesProtectClientWindow=0 # 0 / 1
 #	Menu
 # ---------------------------------------------------------------------------
 ColorNormalMenu="#303030"
-ColorActiveMenuItem="#111111"
+ColorActiveMenuItem="#252525"
 ColorNormalMenuItemText="#a4a4a4"
 ColorActiveMenuItemText="#F5F5F5"
 ColorDisabledMenuItemText="#E0B000"
@@ -49,7 +49,7 @@ ColorDisabledMenuItemText="#E0B000"
 # ---------------------------------------------------------------------------
 #	Move status
 # ---------------------------------------------------------------------------
-ColorMoveSizeStatus="#111111"
+ColorMoveSizeStatus="#252525"
 ColorMoveSizeStatusText="#00EE00"
 
 # ---------------------------------------------------------------------------
@@ -65,7 +65,7 @@ ColorNormalButtonText="#F5F5F5"
 
 ColorListBox="#303030"
 ColorListBoxText="#A4A4A4"
-ColorListBoxSelection="#111111"
+ColorListBoxSelection="#252525"
 ColorListBoxSelectionText="#F5F5F5"
 
 # ---------------------------------------------------------------------------
@@ -73,12 +73,12 @@ ColorListBoxSelectionText="#F5F5F5"
 # ---------------------------------------------------------------------------
 ColorQuickSwitch="#252525"
 ColorQuickSwitchText="#A4A4A4"
-ColorQuickSwitchActive="#111111"
+ColorQuickSwitchActive="#252525"
 
 # ---------------------------------------------------------------------------
 # Clock
 # ---------------------------------------------------------------------------
-ColorClock="#111111"
+ColorClock="#252525"
 ColorClockText="#A4A4A4"
 
 # ---------------------------------------------------------------------------
@@ -87,14 +87,14 @@ ColorClockText="#A4A4A4"
 ColorCPUStatusUser="#FF8C00"
 ColorCPUStatusSystem="#FF0000"
 ColorCPUStatusNice="#0000FF"
-ColorCPUStatusIdle="#111111"
+ColorCPUStatusIdle="#252525"
 
 # ---------------------------------------------------------------------------
 # Network status
 # ---------------------------------------------------------------------------
 ColorNetSend="#FF0000"
 ColorNetReceive="#00FF00"
-ColorNetIdle="#111111"
+ColorNetIdle="#252525"
 
 # ---------------------------------------------------------------------------
 # Taskbar
@@ -119,7 +119,7 @@ ColorActiveWorkspaceButtonText="#A4A4A4"
 ColorDefaultTaskBar="#252525"
 ColorNormalTaskBarApp="#252525"
 ColorNormalTaskBarAppText="#A4A4A4"
-ColorMinimizedTaskBarApp="#111111"
+ColorMinimizedTaskBarApp="#252525"
 ColorMinimizedTaskBarAppText="#A4A4A4"
 ColorActiveTaskBarApp="#000000"
 ColorActiveTaskBarAppText="#C0C0C0"
@@ -185,6 +185,8 @@ MinimizedWindowFontNameXft="sans:size=10:medium"
 # ---------------------------------------------------------------------------
 # Background
 # ---------------------------------------------------------------------------
-#DesktopBackgroundColor = #000000
-#DesktopBackgroundCenter = 1
-#DesktopBackgroundImage = '/home/mario/Obrázky/1.jpg'
+DesktopBackgroundColor = #000000
+DesktopBackgroundCenter = 1
+DesktopBackgroundScaled = 1 
+DesktopBackgroundImage = 'ku_2.png'
+
