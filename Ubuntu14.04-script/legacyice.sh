@@ -143,11 +143,11 @@ sudo make install
 cd ~
 
 ### Download IceWM config files
-#echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
-#wget https://raw.github.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/.icewm.tar.xz
-#echo -e "\e[38;5;227m- Extract IceWM config files\e[38;5;46m\n"
-#tar -xJf .icewm.tar.xz
-#rm .icewm.tar.xz
+echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
+if [ -d ~/.icewm ]
+  then
+    mv ~/.icewm ~/.icewm.legacyice.backup
+fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
 ### Compositor
