@@ -1,3 +1,5 @@
+![IceWM desktop](../auxiliary_files/netbook.jpg)
+
 ### Run
 wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/legacyice.sh
 
