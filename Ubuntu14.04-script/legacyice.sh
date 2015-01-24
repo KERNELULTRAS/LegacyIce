@@ -2,12 +2,13 @@
 # (Only GTK and QT application)
 # (In alphabetical order)
 
-### Goto to home directory
+### Set background
+echo -e "\e[40m\n\n"
 
+### Goto to home directory
 cd ~
 
 ### INSTALL PROGRAMS
-
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
 ### Dev programs
@@ -187,3 +188,4 @@ echo -e "\e[38;5;227m##################################################\e[38;5;4
 echo -e "\n"
 echo -e "\e[38;5;227m- Done, please restart and change session to IceWM\e[38;5;46m\n"
 echo -e "\e[38;5;227m- Good luck\e[38;5;46m\n"
+echo -e "\e[0mNormal\n"
