@@ -64,3 +64,8 @@ Add # at the beginning of the line
 compton &	# Compositor manager
 
 in ~/.icewm/startup
+
+#### Set email applet
+MailBoxPath="imap://name%40domain.com:password@domain.com"
+MailCommand="firefox http://webmail.domain.com"
+Off email ikon TaskBarShowMailboxStatus=0
