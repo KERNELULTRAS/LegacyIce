@@ -14,7 +14,7 @@ Goal of the project is to return the traditional desktop
 * Make latest package of [IceWM](https://github.com/bbidulock/icewm)
 * Make latest package of [IceWM Control Panel](http://sourceforge.net/projects/icesoundmanager/)
 
-#### Script for convert Ubuntu to IceBuntu
+#### Script for convert Ubuntu to LegacyIce
 * Remove Unity
 * Set IceWM theme dark/lights
 * Set efect (opacity etc.)
