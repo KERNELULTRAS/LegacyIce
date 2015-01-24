@@ -9,15 +9,18 @@ AWTapp.icon: java
 # Window over panel
 icewm.TaskBar.doNotCover: 1
 
-# Pidgin on all warkspaces
-Pidgin.Pidgin.allWorkspaces: 1
-
 # pcmanfm.ignoreWinList: 1	# Dont show in window list
 # pcmanfm.ignoreTaskBar: 1	# Dont show in task bar
 # pcmanfm.ignoreQuickSwitch:1	# Dont show in quick list
 
 Pidgin.Pidgin.geometry: 350x1127+1250+0	# Resize Pidgin
 Pidgin.Pidgin.tray: Exclusive		# Pidgin only in taskbar
+Pidgin.Pidgin.allWorkspaces: 1		# Pidgin on all warkspaces
+# xchat.Xchat.tray: Exclusive		# XChat only in taskbar
+xchat.Xchat.ignoreTaskBar: 1		# XChat ignore tasbar
+xchat.Xchat.allWorkspaces: 1		# XChat on all warkspaces
+key-mon.Key-mon.allWorkspaces: 1	# Key-mon on all warkspaces
+key-mon.Key-mon.ignoreQuickSwitch:1	# Key-mon dont show in quick list
 
 # gedit.Gedit.geometry: 1350x1180+0+0	# Resize Gedit
 gnome-terminal.Gnome-terminal.geometry: 798x570	# Resize terminal
@@ -40,3 +43,4 @@ gnome-terminal.Gnome-terminal.dBorder: 0	# Hide border on terminal
 # Third workspace
 
 nautilus.Nautilus.geometry: 800×1172+800+0	# Dimensions
+
