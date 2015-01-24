@@ -20,8 +20,8 @@ ColorNormalTitleBarText="#A4A4A4"
 ColorNormalTitleButton="#252525"
 ColorNormalBorder="#252525"
 
-ColorActiveBorder="#252525"
-ColorActiveTitleBar="#252525"
+ColorActiveBorder="#111111"
+ColorActiveTitleBar="#111111"
 ColorActiveTitleBarText="#F5F5F5"
 
 TitleBarHeight=20 # 0-128
@@ -63,9 +63,9 @@ ColorNormalButtonText="#F5F5F5"
 # Windows list
 # ---------------------------------------------------------------------------
 
-ColorListBox="#303030"
+ColorListBox="#252525"
 ColorListBoxText="#A4A4A4"
-ColorListBoxSelection="#252525"
+ColorListBoxSelection="#111111"
 ColorListBoxSelectionText="#F5F5F5"
 
 # ---------------------------------------------------------------------------
@@ -112,7 +112,7 @@ ColorInputSelectionText="#ffffff"
 # Workspaces
 ColorNormalWorkspaceButton="#252525"
 ColorNormalWorkspaceButtonText="#A4A4A4"
-ColorActiveWorkspaceButton="#000000"
+ColorActiveWorkspaceButton="#111111"
 ColorActiveWorkspaceButtonText="#A4A4A4"
 
 # Taskbar
@@ -121,7 +121,7 @@ ColorNormalTaskBarApp="#252525"
 ColorNormalTaskBarAppText="#A4A4A4"
 ColorMinimizedTaskBarApp="#252525"
 ColorMinimizedTaskBarAppText="#A4A4A4"
-ColorActiveTaskBarApp="#000000"
+ColorActiveTaskBarApp="#252525"
 ColorActiveTaskBarAppText="#C0C0C0"
 
 # ---------------------------------------------------------------------------
