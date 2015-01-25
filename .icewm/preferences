@@ -558,7 +558,7 @@ RebootCommand="sudo /sbin/reboot"
 # AddressBarCommand=""
 
 #  Network device to show status for
-# NetworkStatusDevice="ppp0 eth0"
+# NetworkStatusDevice="ppp0 eth0 wlan0"
 
 #  Clock Time format (strftime format string)
 TimeFormat="%H:%M"
