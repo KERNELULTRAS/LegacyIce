@@ -185,6 +185,7 @@ wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubu
 python user_xsession.py --user-id 1000 set icewm-session
 
 ### MenuMaker installation
+echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
 wget -P /tmp https://downloads.sourceforge.net/menumaker/files/menumaker-0.99.7.tar.gz
 cd /tmp
 cd menumaker-0.99.7/
@@ -194,6 +195,7 @@ sudo make install
 cd ~
 
 ### Launch MenuMaker after instalation or odinstalation programs
+echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
 sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-legacy --no-debian -t Gterm IceWM\";};' > /etc/apt/apt.conf.d/00mmaker"
 
 ### END OF SCRIPT
@@ -203,4 +205,4 @@ echo -e "\e[38;5;227m##################################################\e[38;5;4
 echo -e "\n"
 echo -e "\e[38;5;227m- Done, please restart and change session to IceWM\e[38;5;46m\n"
 echo -e "\e[38;5;227m- Good luck\e[38;5;46m\n"
-echo -e "\e[0mNormal\n"
+echo -e "\e[0m\n"
