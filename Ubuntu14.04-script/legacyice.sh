@@ -39,7 +39,7 @@ sudo apt-get --yes install spacefm
 sudo apt-get --yes install wine
 
 ### Tools
-sudo apt-get --yes install curl elinks gdebi git subversion gnome-terminal gparted htop keepassx mc nmap openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh-client openvpn scrot synaptic wget whois intltool libgtk2.0-dev wmctrl hsetroot numlockx aosd-cat network-manager-gnome autopoint autoconf dh-autoreconf
+sudo apt-get --yes install curl elinks gdebi git subversion gnome-terminal gparted htop keepassx mc nmap openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh-client openvpn scrot synaptic wget whois intltool libgtk2.0-dev wmctrl hsetroot numlockx aosd-cat network-manager-gnome autopoint autoconf dh-autoreconf pasystray
 
 ### Local webserver
 sudo apt-get --yes install mysql-server-core-5.5 mysql-server-5.5 libaio1 mysql-client-core-5.5 apache2-mpm-prefork libaprutil1 libapache2-mod-php5 php5-mysql php5-common  libaprutil1-dbd-sqlite3 php5-readline mysql-client-5.5 libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php5-cli libmysqlclient18 apache2-data php5-json libapr1 apache2 mysql-server apache2-bin libdbd-mysql-perl libdbi-perl
@@ -178,14 +178,31 @@ cd icewm/
 make V=0
 sudo mv src/icewm /usr/bin/icewm
 cd ~
+
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
 python user_xsession.py --user-id 1000 set icewm-session
+
+### MenuMaker installation
+echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
+wget -P /tmp https://downloads.sourceforge.net/menumaker/files/menumaker-0.99.7.tar.gz
+cd /tmp
+cd menumaker-0.99.7/
+tar -zxvf menumaker-0.99.7.tar.gz
+./configure
+sudo make install
+cd ~
+
+### Launch MenuMaker after instalation or odinstalation programs
+echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
+sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-legacy --no-debian -t Gterm IceWM\";};' > /etc/apt/apt.conf.d/00mmaker"
+
+### END OF SCRIPT
 echo -e "\n"
 echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
 echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
 echo -e "\n"
 echo -e "\e[38;5;227m- Done, please restart and change session to IceWM\e[38;5;46m\n"
 echo -e "\e[38;5;227m- Good luck\e[38;5;46m\n"
-echo -e "\e[0mNormal\n"
+echo -e "\e[0m\n"
