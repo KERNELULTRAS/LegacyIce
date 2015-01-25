@@ -8,12 +8,16 @@ chmod +x legacyice.sh
 ./legacyice.sh
 
 ### Description
+* Remove Unity and Ubuntu specific packages
 * Dynamic menu create after install or uninstall package
-* Fixed run QT5 applications
+* Fixed run QT5 applications and other patches
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
+* Set panels (IceWM panel)
+* Set applets
 * Custom sthutdown dialog window - YAD
+* Set efect (opacity etc.) Compositor - Compton
 * Resolves user permissions for reboot and shutdown
 * Custom start script
 * Custom shutdown, reboot script
@@ -24,7 +28,6 @@ chmod +x legacyice.sh
 * The behavior of windows
 * Workplaces settings
 * Taskbar applications (Pidgin, Xchat ...)
-* Compositor - Compton
 * Remove unnecessary programs, spyware, bloatware ...
 * Config files for Geany
 * Install programs for communication, graphic, multimédia, develop and other
