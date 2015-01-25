@@ -8,26 +8,26 @@ chmod +x legacyice.sh
 ./legacyice.sh
 
 ### Description
+* Dynamic menu create after install or uninstall package
 * Fixed run QT5 applications
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
 * Custom sthutdown dialog window - YAD
+* Resolves user permissions for reboot and shutdown
 * Custom start script
 * Custom shutdown, reboot script
 * Menu as the Gnome2
 * Keyboard shortcut for programs
 * Keyboard shorcut to sound volume, screenshot ...
-* Print shortcuts
 * System status over OSD
 * The behavior of windows
-* Workplaces
+* Workplaces settings
 * Taskbar applications (Pidgin, Xchat ...)
 * Compositor - Compton
 * Remove unnecessary programs, spyware, bloatware ...
-* Resolves user permissions for reboot and shutdown
 * Config files for Geany
-* Install programs for communication, graphic, multimédia, develop and other.
+* Install programs for communication, graphic, multimédia, develop and other
 * Nice comments
 
 ### Notebooks, NetBooks
