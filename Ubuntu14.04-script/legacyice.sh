@@ -181,7 +181,7 @@ cd ~
 
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
 python user_xsession.py --user-id 1000 set icewm-session
 
 ### MenuMaker installation
@@ -194,7 +194,7 @@ tar -zxvf menumaker-0.99.7.tar.gz
 sudo make install
 cd ~
 
-### Launch MenuMaker after instalation or odinstalation programs
+### Launch MenuMaker after install or uninstall programs
 echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
 sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-legacy --no-debian -t Gterm IceWM\";};' > /etc/apt/apt.conf.d/00mmaker"
 
