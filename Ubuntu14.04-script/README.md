@@ -14,7 +14,7 @@ chmod +x legacyice.sh
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
-* Set panels (IceWM panel)
+* Set panel (IceWM panel)
 * Set applets
 * Custom sthutdown dialog window - YAD
 * Set efect (opacity etc.) Compositor - Compton
@@ -30,7 +30,7 @@ chmod +x legacyice.sh
 * Taskbar applications (Pidgin, Xchat ...)
 * Remove unnecessary programs, spyware, bloatware ...
 * Config files for Geany
-* Install programs for communication, graphic, multimédia, develop and other
+* Install programs for communication, graphic, multimedia, develop and other
 * Nice comments
 
 ### Notebooks, NetBooks
@@ -55,13 +55,14 @@ compton &	# Compositor manager
 
 in ~/.icewm/startup
 
+(Comment it)
 ### Notes
-* Key shortcut is in ~/.icewm/keys
+* Key shortcut is in file ~/.icewm/keys
 * Selected theme is in file ~/.icewm/theme
-* Theme is in directory ~/.icewm/themes
-* Program icons on panel is in ~/.icewm/toolbar
-* Starup script is in ~/.icewm/startup
-* Custom scripts in ~/.icewm/contrib
+* Themes is in directory ~/.icewm/themes
+* Programs (icons) on panel is in file ~/.icewm/toolbar
+* Starup script is in file ~/.icewm/startup
+* Custom scripts in directory ~/.icewm/contrib
 
 #### Disable compositor
 Add # at the beginning of the line
@@ -70,6 +71,7 @@ compton &	# Compositor manager
 
 in ~/.icewm/startup
 
+(Comment it)
 #### Set email applet
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
 * MailCommand="firefox http://webmail.domain.com"
