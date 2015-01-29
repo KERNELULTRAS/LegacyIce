@@ -21,7 +21,7 @@ Goal of the project is to return the traditional desktop
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
-* Set panels (IceWM panel)
+* Set panel (IceWM panel)
 * Set applets
 * Custom sthutdown dialog window - YAD
 * Set efect (opacity etc.) Compositor - Compton
@@ -30,14 +30,14 @@ Goal of the project is to return the traditional desktop
 * Custom shutdown, reboot script
 * Menu as the Gnome2
 * Keyboard shortcut for programs
-* Keyboard shorcut to sound volume, screenshot ...
+* Keyboard shorcut for sound volume, screenshot ...
 * System status over OSD
 * The behavior of windows
 * Workplaces settings
 * Taskbar applications (Pidgin, Xchat ...)
 * Remove unnecessary programs, spyware, bloatware ...
 * Config files for Geany
-* Install programs for communication, graphic, multimédia, develop and other
+* Install programs for communication, graphic, multimedia, develop and other
 * Nice comments
 
 ### Todo:
