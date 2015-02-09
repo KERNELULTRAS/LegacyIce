@@ -182,14 +182,14 @@ cd ~
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
-python user_xsession.py --user-id 1000 set icewm-session
+python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
 ### MenuMaker installation
 echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
 wget -P /tmp https://downloads.sourceforge.net/menumaker/files/menumaker-0.99.7.tar.gz
 cd /tmp
-cd menumaker-0.99.7/
 tar -zxvf menumaker-0.99.7.tar.gz
+cd menumaker-0.99.7/
 ./configure
 sudo make install
 cd ~
