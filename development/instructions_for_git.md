@@ -5,7 +5,7 @@ git clone https://github.com/KERNELULTRAS/LegacyIce.git
 
 ### Upload edited file
 
-git commit
+git commit file # File replace with your file name
 
 *Write changes in brief*
 
