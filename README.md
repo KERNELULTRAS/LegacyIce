@@ -5,37 +5,37 @@ Goal of the project is to return the traditional desktop
 
 ### Based on
 * IceWM
-* Ubuntu (as yet)
+* Ubuntu (current)
 * Now based on Gnome3 (no Gnome Shell)
 
 ### Aim
 
 #### Repository for last IceWM
 * Make latest package of [IceWM](https://github.com/bbidulock/icewm)
-* Make latest package of [IceWM Control Panel](http://sourceforge.net/projects/icesoundmanager/) (later)
+* Make latest package of [IceWM Control Panel](http://sourceforge.net/projects/icesoundmanager/) (in the future)
 
-#### Script for convert Ubuntu to LegacyIce
+#### Script to convert Ubuntu to LegacyIce
 * Remove Unity and Ubuntu specific packages
-* Dynamic menu create after install or uninstall package
+* Dynamic menu created after install or uninstall package
 * Fixed run QT5 applications and other patches
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
 * Set panel (IceWM panel)
 * Set applets
-* Custom sthutdown dialog window - YAD
-* Set efect (opacity etc.) Compositor - Compton
+* Custom shutdown dialog window - YAD
+* Set effect (transparency etc.) Compositor - Compton
 * Resolves user permissions for reboot and shutdown
 * Custom start script
 * Custom shutdown, reboot script
-* Menu as the Gnome2
-* Keyboard shortcut for programs
-* Keyboard shorcut for sound volume, screenshot ...
+* Menu same as the Gnome2
+* Keyboard shortcuts for programs
+* Keyboard shorcuts for sound volume, screenshot, etc.
 * System status over OSD
-* The behavior of windows
-* Workplaces settings
-* Taskbar applications (Pidgin, Xchat ...)
-* Remove unnecessary programs, spyware, bloatware ...
+* Same behavior of windows
+* Workplace settings
+* Taskbar applications (Pidgin, Xchat, etc.)
+* Removes unnecessary programs, spyware, bloatware, etc.
 * Config files for Geany
 * Install programs for communication, graphic, multimedia, develop and other
 * Nice comments
