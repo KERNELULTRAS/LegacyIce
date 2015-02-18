@@ -35,7 +35,7 @@ sudo apt-get --yes install spacefm
 ### Virtualization programs
 # apt-get --yes install kvm qemu virt-manager
 
-### Emulators (wine not is emulator :)
+### Emulators (wine is not an emulator :)
 sudo apt-get --yes install wine
 
 ### Tools
