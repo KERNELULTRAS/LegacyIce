@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# -------------------------------------
+# Script to convert Ubuntu to LegacyIce
+# -------------------------------------
 # (Only GTK and QT application)
 # (In alphabetical order)
 
