@@ -207,6 +207,7 @@ DesktopBackgroundColor="rgb:00/00/00"
 # Desktop background image
 DesktopBackgroundImage="backgr.jpg"
 DesktopBackgroundCenter=1
+DesktopBackgroundScaled=1
 
 # Color to announce for semi-transparent windows
 DesktopTransparencyColor="rgb:00/00/00"
