@@ -16,9 +16,11 @@ key "Ctrl+Alt+t"		gnome-terminal
 key "Ctrl+Alt+v"                vlc
 
 # Screenshot - desktop
-key "Print"			scrot 'screenshot.jpg'
+key "Print"			scrot 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 # Screenshot - focused window
-key "Alt+Print"			scrot -u -b 'screenshot.jpg'
+key "Alt+Print"			scrot -u -b 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
+# Screenshot - timeout 5s
+key "Alt+Ctrl+Print"		scrot -d 5 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 
 # Get system info on OSD
 key "Pause"			/home/mario/.icewm/contrib/system_stat.sh
@@ -26,3 +28,6 @@ key "Pause"			/home/mario/.icewm/contrib/system_stat.sh
 # Run shutdown menu
 key "Alt+Ctrl+Del"		/home/mario/.icewm/contrib/shutdown.sh
 
+# Change volume
+key "Alt+Ctrl+Up"	pactl set-sink-volume 0 -- "+10%"
+key "Alt+Ctrl+Down"	pactl set-sink-volume 0 -- "-10%"
