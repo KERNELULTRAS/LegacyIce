@@ -9,28 +9,28 @@ chmod +x legacyice.sh
 
 ### Description
 * Remove Unity and Ubuntu specific packages
-* Dynamic menu create after install or uninstall package
+* Dynamic menu created after install or uninstall package
 * Fixed run QT5 applications and other patches
 * Nice dark theme for WM
 * Hacker GTK2/3 theme - HackStation
 * Unification QT theme with GTK
-* Set panels (IceWM panel)
+* Set panel (IceWM panel)
 * Set applets
-* Custom sthutdown dialog window - YAD
-* Set efect (opacity etc.) Compositor - Compton
+* Custom shutdown dialog window - YAD
+* Set effect (transparency etc.) Compositor - Compton
 * Resolves user permissions for reboot and shutdown
 * Custom start script
 * Custom shutdown, reboot script
-* Menu as the Gnome2
-* Keyboard shortcut for programs
-* Keyboard shorcut to sound volume, screenshot ...
+* Menu same as the Gnome2
+* Keyboard shortcuts for programs
+* Keyboard shorcuts to sound volume, screenshot, etc.
 * System status over OSD
-* The behavior of windows
+* Same behavior of windows
 * Workplaces settings
-* Taskbar applications (Pidgin, Xchat ...)
-* Remove unnecessary programs, spyware, bloatware ...
+* Taskbar applications (Pidgin, Xchat, etc.)
+* Remove unnecessary programs, spyware, bloatware, etc.
 * Config files for Geany
-* Install programs for communication, graphic, multimédia, develop and other
+* Install programs for communication, graphic, multimedia, develop and other
 * Nice comments
 
 ### Notebooks, NetBooks
@@ -55,13 +55,14 @@ compton &	# Compositor manager
 
 in ~/.icewm/startup
 
+(Comment it)
 ### Notes
-* Key shortcut is in ~/.icewm/keys
-* Selected theme is in file ~/.icewm/theme
-* Theme is in directory ~/.icewm/themes
-* Program icons on panel is in ~/.icewm/toolbar
-* Starup script is in ~/.icewm/startup
-* Custom scripts in ~/.icewm/contrib
+* Key shortcut located in file ~/.icewm/keys
+* Selected theme located in file ~/.icewm/theme
+* Themes located in directory ~/.icewm/themes
+* Programs (icons) on panel located in file ~/.icewm/toolbar
+* Starup script located in file ~/.icewm/startup
+* Custom scripts located in directory ~/.icewm/contrib
 
 #### Disable compositor
 Add # at the beginning of the line
@@ -70,10 +71,11 @@ compton &	# Compositor manager
 
 in ~/.icewm/startup
 
+(Comment it)
 #### Set email applet
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
 * MailCommand="firefox http://webmail.domain.com"
 * Off email ikon TaskBarShowMailboxStatus=0
 
-#### Panel (dock) at top of the screen
+#### Panel (dock) at the top of the screen
 Uncomment TaskBarAtTop=0 and change it to TaskBarAtTop=1

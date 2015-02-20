@@ -2,6 +2,7 @@
 
 # -------------------------------------
 # Script to convert Ubuntu to LegacyIce
+# and KU specific programs
 # -------------------------------------
 # (Only GTK and QT application)
 # (In alphabetical order)
@@ -16,22 +17,37 @@ cd ~
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
 ### Dev programs
-sudo apt-get --yes install geany
+sudo apt-get --yes install filezilla geany ghex scribes
+
+### Graphics programs
+sudo apt-get --yes install blender dia freecad gimp inkscape librecad meshlab tupi pstoedit
 
 ### Multimedia programs
-sudo apt-get --yes install pavucontrol vlc
+sudo apt-get --yes install brasero pavucontrol vlc
+
+### Office
+sudo apt-get --yes install libreoffice
 
 ### Communication programs
-sudo apt-get --yes install pidgin xchat
+sudo apt-get --yes install ekiga mumble pidgin xchat
 
 ### Internet programs
-sudo apt-get --yes install firefox
+sudo apt-get --yes install firefox putty remmina
 
 ### File managers
 sudo apt-get --yes install spacefm
 
-### Core tools
-sudo apt-get --yes install aosd-cat autopoint autoconf curl dh-autoreconf gdebi git gnome-terminal hsetroot intltool libgtk2.0-dev network-manager-gnome numlockx pasystray scrot subversion synaptic wget whois wmctrl
+### Virtualization programs
+# apt-get --yes install kvm qemu virt-manager
+
+### Emulators (wine is not an emulator :)
+sudo apt-get --yes install wine
+
+### Tools
+sudo apt-get --yes install curl elinks gdebi git subversion gnome-terminal gparted htop keepassx mc nmap openjdk-6-jdk openjdk-7-jdk openjdk-6-jre openjdk-7-jre openssh-client openvpn scrot synaptic wget whois intltool libgtk2.0-dev wmctrl hsetroot numlockx aosd-cat network-manager-gnome autopoint autoconf dh-autoreconf pasystray
+
+### Local webserver
+sudo apt-get --yes install mysql-server-core-5.5 mysql-server-5.5 libaio1 mysql-client-core-5.5 apache2-mpm-prefork libaprutil1 libapache2-mod-php5 php5-mysql php5-common  libaprutil1-dbd-sqlite3 php5-readline mysql-client-5.5 libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php5-cli libmysqlclient18 apache2-data php5-json libapr1 apache2 mysql-server apache2-bin libdbd-mysql-perl libdbi-perl
 
 ### Theme
 sudo add-apt-repository --yes ppa:noobslab/themes
@@ -59,28 +75,13 @@ mkdir Programs
 echo -e "\e[38;5;227m- Create bookmarks for Programs\e[38;5;46m\n"
 echo "file://$HOME/Programs" >> $HOME/.config/gtk-3.0/bookmarks
 
-### Install patched IceWM
-echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
-cd /tmp
-git clone http://github.com/bbidulock/icewm.git
-cd icewm/
-./autogen.sh
-./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
-make V=0
-sudo mv src/icewm /usr/bin/icewm
-cd ~
+### Make directory for games trigger
+echo -e "\e[38;5;227m- Create directory Games\e[38;5;46m\n"
+mkdir Games
 
-### Install YAD
-echo -e "\e[38;5;227m- Install YAD\n\e[38;5;46m"
-wget -P /tmp https://downloads.sourceforge.net/yad-dialog/files/yad-0.27.0.tar.xz
-cd /tmp
-tar -xJf yad-0.27.0.tar.xz
-rm yad-0.27.0.tar.xz
-cd yad-0.27.0/
-./configure
-make
-sudo make install
-cd ~
+### Add bookmarks for Games to Gnome3 (Nautilus) ...
+echo -e "\e[38;5;227m- Create bookmarks for Games\e[38;5;46m\n"
+echo "file://$HOME/Games" >> $HOME/.config/gtk-3.0/bookmarks
 
 ### SET THEME
 
@@ -130,17 +131,22 @@ gtk-xft-hintstyle=hintslight
 gtk-xft-rgba=rgb
 gtk-color-scheme=tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n" > $HOME/.config/gtk-3.0/settings.ini
 
-### Geany theme
-echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
-cd /tmp
-git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
-mv GeanyTheme-Dark $HOME/.config/geany
-cd ~
-
 ### SET PERMISSIONS FOR SHUTDOWN AND REBOOT
 echo -e "\e[38;5;227m- Set permissions for shutdown and reboot\e[38;5;46m\n"
 sudo sh -c "echo \"%$USER  ALL = NOPASSWD: /sbin/poweroff\" > /etc/sudoers.d/shutdown"
 sudo sh -c "echo \"%$USER  ALL = NOPASSWD: /sbin/reboot\" > /etc/sudoers.d/reboot"
+
+### Install YAD
+echo -e "\e[38;5;227m- Install YAD\n\e[38;5;46m"
+wget -P /tmp https://downloads.sourceforge.net/yad-dialog/files/yad-0.27.0.tar.xz
+cd /tmp
+tar -xJf yad-0.27.0.tar.xz
+rm yad-0.27.0.tar.xz
+cd yad-0.27.0/
+./configure
+make
+sudo make install
+cd ~
 
 ### Download IceWM config files
 echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
@@ -150,26 +156,38 @@ if [ -d ~/.icewm ]
 fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
-### COMPOSITOR
-
-### Download compositor config files
+### Compositor
 echo -e "\e[38;5;227m- Set compositor\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
 mv /tmp/compton.conf $HOME/.config/compton.conf
+
+### Geany theme
+echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
+cd /tmp
+git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
+mv GeanyTheme-Dark $HOME/.config/geany
+cd ~
 
 ### REMOVE SPLASH SCREEN
 echo -e "\e[38;5;227m- Remove splash screen\e[38;5;46m\n"
 sudo sed -i 's/quiet splash//' /etc/default/grub
 sudo update-grub
 
-### USER SESSION
+### Install patched IceWM
+echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
+cd /tmp
+git clone http://github.com/bbidulock/icewm.git
+cd icewm/
+./autogen.sh
+./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
+make V=0
+sudo mv src/icewm /usr/bin/icewm
+cd ~
 
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
 python /tmp/user_xsession.py --user-id 1000 set icewm-session
-
-### MENU
 
 ### MenuMaker installation
 echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
