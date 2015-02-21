@@ -500,11 +500,11 @@ ConfirmLogout=0 # 0/1
  IconPath="/usr/share/icons:/usr/share/pixmaps"
 
 #  Mailbox path (use $MAIL instead)
-MailBoxPath="imap://name%40domain.com:password@domain.com"
+MailBoxPath="imap://kdesi%40kdesi.sk:alfavil72@kdesi.sk"
 
 #  Command to run on mailbox
 # MailCommand="x-terminal-emulator -name mutt -title Mutt -e mutt"
-MailCommand="firefox http://webmail.domain.com"
+MailCommand="firefox http://webmail.kdesi.sk"
 
 #  WM_CLASS to allow runonce for MailCommand
 # MailClassHint="mutt.XTerm"
@@ -558,7 +558,7 @@ RebootCommand="sudo /sbin/reboot"
 # AddressBarCommand=""
 
 #  Network device to show status for
-# NetworkStatusDevice="ppp0 eth0 wlan0"
+# NetworkStatusDevice="ppp0 eth0"
 
 #  Clock Time format (strftime format string)
 TimeFormat="%H:%M"
@@ -699,7 +699,7 @@ KeySysDialog=""
 # KeySysWorkspaceNext="Alt+Ctrl+Right"
 
 #
-# KeySysWorkspaceLast="Alt+Ctrl+Down"
+KeySysWorkspaceLast=""
 
 #
 # KeySysWorkspacePrevTakeWin="Alt+Ctrl+Shift+Left"
