@@ -5,14 +5,14 @@ setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)" &
 compton &										# Compositor manager
 pidgin &										# Start Pidgin
 xchat &											# Start XChat
-nautilus $HOME/Games &									# Start Nautilus in directory Games
+# nautilus $HOME/Games &								# Start Nautilus in directory Games
 gnome-terminal &									# Start terminal
 geany &											# Start Geany
 firefox &										# Start FireFox
-until pids=$(wmctrl -lx | grep -i nautilus)						# Wait for Nautilus start
-do   
-  echo 1 >> /dev/null
-done
+# until pids=$(wmctrl -lx | grep -i nautilus)						# Wait for Nautilus start
+# do   
+#  echo 1 >> /dev/null
+# done
 wmctrl -x -r "nautilus.Nautilus" -t 2							# Move nautilus to wokspace 3(2)
 until pids=$(wmctrl -lx | grep -i terminal)						# Wait for terminal start
 do   
