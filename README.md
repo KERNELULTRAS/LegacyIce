@@ -50,9 +50,9 @@ chmod +x legacyice.sh
 
 ./legacyice.sh
 
-### Shortcut
+### Shortcuts
 
-[Shortcut](https://github.com/KERNELULTRAS/LegacyIce/blob/master/shortcuts_EN.md)
+[Shortcuts](https://github.com/KERNELULTRAS/LegacyIce/blob/master/shortcuts_EN.md)
 
 ### Settings
 
