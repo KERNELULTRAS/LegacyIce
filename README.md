@@ -56,7 +56,7 @@ chmod +x legacyice.sh
 
 ### Settings
 
-[Ssettings](https://github.com/KERNELULTRAS/LegacyIce/blob/master/settings_EN.md)
+[Settings](https://github.com/KERNELULTRAS/LegacyIce/blob/master/settings_EN.md)
 
 ### Todo:
 * [uselessd](http://uselessd.darknedgy.net/)
