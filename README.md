@@ -40,6 +40,24 @@ Goal of the project is to return the traditional desktop
 * Install programs for communication, graphic, multimedia, develop and other
 * Nice comments
 
+### Install
+
+(Needed Ubuntu 14.04 installed)
+
+wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/legacyice.sh
+
+chmod +x legacyice.sh
+
+./legacyice.sh
+
+### Shortcut
+
+[Shortcut](https://github.com/KERNELULTRAS/LegacyIce/blob/master/shortcuts_EN.md)
+
+### Settings
+
+[Ssettings](https://github.com/KERNELULTRAS/LegacyIce/blob/master/settings_EN.md)
+
 ### Todo:
 * [uselessd](http://uselessd.darknedgy.net/)
 
