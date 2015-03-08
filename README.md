@@ -44,5 +44,5 @@ Goal of the project is to return the traditional desktop
 * [uselessd](http://uselessd.darknedgy.net/)
 
 ### Licence:
-[GNU GPLv3](http://www.gnu.org/licenses/gpl-3.0.html)
+[GNU GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 
