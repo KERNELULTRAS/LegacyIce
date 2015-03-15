@@ -286,6 +286,9 @@ CPUStatusShowRamUsage=1 # 0/1
 #  Show CPU frequency in CPU status tool tip
 # CPUStatusShowCpuFreq=1 # 0/1
 
+#  Show memory usage status on task bar (Linux only)
+# TaskBarShowMEMStatus=1 # 0/1
+
 #  Show network status on task bar (Linux only)
 # TaskBarShowNetStatus=1 # 0/1
 
@@ -468,6 +471,12 @@ ConfirmLogout=0 # 0/1
 
 #  Delay between CPU Monitor samples in ms
 # TaskBarCPUDelay=500 # [10-3600000]
+
+#  Width of Memory Monitor
+# TaskBarMEMSamples=20 # [2-1000]
+
+#  Delay between Memory Monitor samples in ms
+# TaskBarMEMDelay=500 # [10-3600000]
 
 #  Width of Net Monitor
 # TaskBarNetSamples=20 # [2-1000]
@@ -1258,7 +1267,19 @@ KeySysWorkspaceLast=""
 # ColorCPUStatusNice="rgb:00/00/FF"
 
 #  Idle (non) load on the CPU monitor, leave empty to force transparency
-# ColorCPUStatusIdle="rgb:00/00/00"
+# ColorCPUStatusIdle=""
+
+#  User program usage in the memory monitor
+# ColorMEMStatusUser="#404080"
+
+#  OS buffers usage in the memory monitor
+# ColorMEMStatusBuffers=""
+
+#  OS cached usage in the memory monitor
+# ColorMEMStatusCached=""
+
+#  Free memory in the memory monitor
+# ColorMEMStatusFree=""
 
 #  Outgoing load on the network monitor
 # ColorNetSend="rgb:FF/FF/00"
