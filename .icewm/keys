@@ -4,8 +4,6 @@
 # XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
 
 # Programs
-key "Ctrl+Alt+KP_Divide"	aumix -v -5
-key "Ctrl+Alt+KP_Multiply"	aumix -v +5
 key "Ctrl+Alt+b"		firefox
 key "Ctrl+Alt+e"		gedit
 key "Ctrl+Alt+p"		bluefish
@@ -23,11 +21,15 @@ key "Alt+Print"			scrot -u -b 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 key "Alt+Ctrl+Print"		scrot -d 5 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 
 # Get system info on OSD
-key "Pause"			/home/mario/.icewm/contrib/system_stat.sh
+key "Pause"			/home/ice_user_name/.icewm/contrib/system_stat.sh
 
 # Run shutdown menu
-key "Alt+Ctrl+Del"		/home/mario/.icewm/contrib/shutdown.sh
+key "Alt+Ctrl+Del"		/home/ice_user_name/.icewm/contrib/shutdown.sh
 
 # Change volume
-key "Alt+Ctrl+Up"	pactl set-sink-volume 0 -- "+10%"
-key "Alt+Ctrl+Down"	pactl set-sink-volume 0 -- "-10%"
+# key "Alt+Ctrl+Up"	pactl set-sink-volume 0 -- "+10%"
+key "Alt+Ctrl+Up"	/home/ice_user_name/.icewm/contrib/volume_up.sh
+# key "Alt+Ctrl+Down"	pactl set-sink-volume 0 -- "-10%"
+key "Alt+Ctrl+Down"	/home/ice_user_name/.icewm/volume_down.sh
+# key "Ctrl+Alt+KP_Divide"	aumix -v -5
+# key "Ctrl+Alt+KP_Multiply"	aumix -v +5

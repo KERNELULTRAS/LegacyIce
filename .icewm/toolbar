@@ -9,5 +9,5 @@ prog Mumble mumble mumble
 prog XChat xchat xchat
 prog Inkscape inkscape inkscape
 prog Gimp gimp gimp
-prog Blender blender-16x16 blender
+prog Blender blender blender
 prog Nvida-Settings nvidia-settings nvidia-settings

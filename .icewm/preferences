@@ -122,7 +122,7 @@
 # CenterTransientsOnOwner=1 # 0/1
 
 #  Menus track mouse even with no mouse buttons held
-# MenuMouseTracking=0 # 0/1
+MenuMouseTracking=1 # 0/1
 
 #  Auto raise windows after delay
 # AutoRaise=0 # 0/1
@@ -173,7 +173,7 @@
 # QuickSwitchMaxWidth=0 # 0/1
 
 #  Place the icons and titles vertical instead of horizontal
-# QuickSwitchVertical=1 # 0/1
+QuickSwitchVertical=1 # 0/1
 
 #  Show the huge (48x48) of the window icon for the active window
 # QuickSwitchHugeIcon=0 # 0/1
@@ -206,7 +206,7 @@
 # ShowTaskBar=1 # 0/1
 
 #  Task bar at top of the screen
-# TaskBarAtTop=0 # 0/1
+TaskBarAtTop=1 # 0/1
 
 #  Keep the task bar below regular windows
 # TaskBarKeepBelow=0 # 0/1
@@ -230,10 +230,10 @@ TaskBarShowClock=1 # 0/1
 # TaskBarShowAPMGraph=1 # 0/1
 
 #  Show mailbox status on task bar
-# TaskBarShowMailboxStatus=1 # 0/1
+TaskBarShowMailboxStatus=0 # 0/1
 
 #  Beep when new mail arrives
-TaskBarMailboxStatusBeepOnNewMail=1 # 0/1
+TaskBarMailboxStatusBeepOnNewMail=0 # 0/1
 
 #  Count messages in mailbox
 TaskBarMailboxStatusCountMessages=0 # 0/1
@@ -266,7 +266,7 @@ TaskBarMailboxStatusCountMessages=0 # 0/1
 # TaskBarShowWindowIcons=1 # 0/1
 
 #  Show 'Start' menu on task bar
-TaskBarShowStartMenu=0 # 0/1
+TaskBarShowStartMenu=1 # 0/1
 
 #  Show 'window list' menu on task bar
 TaskBarShowWindowListMenu=0 # 0/1
@@ -335,7 +335,7 @@ CPUStatusShowRamUsage=1 # 0/1
 # ShowLogoutMenu=1 # 0/1
 
 #  Show the help menu item
-# ShowHelp=1 # 0/1
+ShowHelp=0 # 0/1
 
 #  Show logout submenu
 # ShowLogoutSubMenu=1 # 0/1
@@ -497,14 +497,14 @@ ConfirmLogout=0 # 0/1
 # BatteryPollingPeriod=10 # [2-3600]
 
 #  Icon search path (colon separated)
- IconPath="/usr/share/icons:/usr/share/pixmaps"
+IconPath="/usr/share/pixmaps:/usr/share/app-install/icons"
 
 #  Mailbox path (use $MAIL instead)
-MailBoxPath="imap://kdesi%40kdesi.sk:alfavil72@kdesi.sk"
+# MailBoxPath=""
 
 #  Command to run on mailbox
 # MailCommand="x-terminal-emulator -name mutt -title Mutt -e mutt"
-MailCommand="firefox http://webmail.kdesi.sk"
+# MailCommand=""
 
 #  WM_CLASS to allow runonce for MailCommand
 # MailClassHint="mutt.XTerm"
@@ -675,7 +675,7 @@ DateFormat="%c  Week %V"
 # KeySysWinPrev="Alt+Shift+Esc"
 
 #
-# KeySysWinMenu="Shift+Esc"
+# KeySysWin="Shift+Esc"
 
 #
 KeySysDialog=""

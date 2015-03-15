@@ -1,1 +1,1 @@
-wmctrl -c firefox && sleep 2 && pkill -u $USER icewm
+pkill -u $USER icewm

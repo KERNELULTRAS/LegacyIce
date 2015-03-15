@@ -1,1 +1,1 @@
-wmctrl -c firefox && sleep 3 && sudo poweroff
+sudo poweroff
