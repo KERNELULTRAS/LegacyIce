@@ -59,8 +59,11 @@ chmod +x legacyice.sh
 [Settings](https://github.com/KERNELULTRAS/LegacyIce/blob/master/settings_EN.md)
 
 ### How to contribute
+Send issue to https://github.com/KERNELULTRAS/LegacyIce/issues
 
-[Contribute](https://github.com/KERNELULTRAS/LegacyIce/blob/master/development/instructions_for_git.md)
+Send request to https://github.com/KERNELULTRAS/LegacyIce/pulls
+
+GitHub [Contribute](https://github.com/KERNELULTRAS/LegacyIce/blob/master/development/instructions_for_git.md)
 
 ### Todo:
 * [uselessd](http://uselessd.darknedgy.net/)
