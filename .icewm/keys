@@ -30,6 +30,6 @@ key "Alt+Ctrl+Del"		/home/ice_user_name/.icewm/contrib/shutdown.sh
 # key "Alt+Ctrl+Up"	pactl set-sink-volume 0 -- "+10%"
 key "Alt+Ctrl+Up"	/home/ice_user_name/.icewm/contrib/volume_up.sh
 # key "Alt+Ctrl+Down"	pactl set-sink-volume 0 -- "-10%"
-key "Alt+Ctrl+Down"	/home/ice_user_name/.icewm/volume_down.sh
+key "Alt+Ctrl+Down"	/home/ice_user_name/.icewm/contrib/volume_down.sh
 # key "Ctrl+Alt+KP_Divide"	aumix -v -5
 # key "Ctrl+Alt+KP_Multiply"	aumix -v +5
