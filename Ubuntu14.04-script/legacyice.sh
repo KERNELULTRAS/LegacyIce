@@ -151,6 +151,9 @@ if [ -d ~/.icewm ]
 fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
+### Rename ice_user_name to active user
+find . -type f -print0 | xargs -0 sed -i 's/ice_user_name/$USER/g'
+
 ### COMPOSITOR
 
 ### Download compositor config files
@@ -181,6 +184,9 @@ cd menumaker-0.99.7/
 ./configure
 sudo make install
 cd ~
+
+# Run MenuMaker
+mmaker -f --no-legacy --no-debian -t Gterm IceWM
 
 ### Launch MenuMaker after install or uninstall programs
 echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
