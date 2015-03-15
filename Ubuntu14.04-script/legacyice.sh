@@ -152,7 +152,7 @@ fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
 ### Rename ice_user_name to active user
-find . -type f -print0 | xargs -0 sed -i 's/ice_user_name/$USER/g'
+find . -type f -print0 | xargs -0 sed -i "s/ice_user_name/$USER/g"
 
 ### COMPOSITOR
 
