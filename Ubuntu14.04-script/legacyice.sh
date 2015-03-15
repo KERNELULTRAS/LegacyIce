@@ -107,7 +107,7 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle="hintslight"
 gtk-xft-rgba="rgb"
 gtk-color-scheme="tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n"
-include "/home/ice_user_name/.gtkrc-2.0.mine"' > $HOME/.gtkrc-2.0
+include "/home/'$USER'/.gtkrc-2.0.mine"' > $HOME/.gtkrc-2.0
 
 ### Set Gnome3 theme
 
