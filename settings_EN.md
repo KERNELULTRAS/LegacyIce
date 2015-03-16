@@ -2,7 +2,7 @@
 
 ### Panel (dock)
 
-Change **TaskBarAtTop=1** in file ~/.icewm/preferences **TaskBarAtTop=0**
+For panel position to bottom change **TaskBarAtTop=1** in file ~/.icewm/preferences to **TaskBarAtTop=0**
 
 ### Applets
 
