@@ -73,8 +73,14 @@
 #  Consider border frames when maximizing vertically
 # ConsiderVBorder=0 # 0/1
 
+#  Consider XSizeHints if frame is maximized
+# ConsiderSizeHintsMaximized=1 # 0/1
+
 #  Center maximized windows which can't fit the screen (like terminals)
 # CenterMaximizedWindows=0 # 0/1
+
+#  Hide window borders if window is maximized
+# HideBordersMaximized=0 # 0/1
 
 #  Maximized windows can be resized
 # SizeMaximized=0 # 0/1
@@ -154,6 +160,9 @@ MenuMouseTracking=1 # 0/1
 #  Alt+Tab to hidden windows
 # QuickSwitchToHidden=1 # 0/1
 
+#  Priorize Alt+Tab to urgent windows
+# QuickSwitchToUrgent=1 # 0/1
+
 #  Alt+Tab to windows on other workspaces
 # QuickSwitchToAllWorkspaces=0 # 0/1
 
@@ -201,6 +210,9 @@ QuickSwitchVertical=1 # 0/1
 
 #  Reload menu files automatically
 # AutoReloadMenus=1 # 0/1
+
+#  Automatically arrange windows when screen size changes
+# ArrangeWindowsOnScreenSizeChange=1 # 0/1
 
 #  Show task bar
 # ShowTaskBar=1 # 0/1
@@ -355,6 +367,9 @@ ShowHelp=0 # 0/1
 #  Allow to switch a window to fullscreen
 # AllowFullscreen=1 # 0/1
 
+#  Span over all available screens if window goes into fullscreen
+# FullscreenUseAllMonitors=0 # 0/1
+
 #  Enable address bar functionality in taskbar
 # EnableAddressBar=1 # 0/1
 
@@ -378,6 +393,9 @@ ConfirmLogout=0 # 0/1
 
 #  Delay fuzziness, to allow merging of multiple timer timeouts into one (notebook power saving)
 # DelayFuzziness=10 # [0-100]
+
+#  Activate workaround for Java7 Swing/AWT focus issue
+# ActivateJava7FocusHack=1 # 0/1
 
 #  Pointer motion distance before click gets interpreted as drag
 # ClickMotionDistance=4 # [0-32]
@@ -466,11 +484,11 @@ ConfirmLogout=0 # 0/1
 #  Delay between new-mail checks. (seconds)
 # MailCheckDelay=180 # [0-86400]
 
-#  Width of CPU Monitor
-# TaskBarCPUSamples=20 # [2-1000]
-
 #  Delay between CPU Monitor samples in ms
 # TaskBarCPUDelay=500 # [10-3600000]
+
+#  Width of CPU Monitor
+# TaskBarCPUSamples=20 # [2-1000]
 
 #  Width of Memory Monitor
 # TaskBarMEMSamples=20 # [2-1000]
@@ -505,6 +523,9 @@ ConfirmLogout=0 # 0/1
 #  Delay between power status updates (seconds)
 # BatteryPollingPeriod=10 # [2-3600]
 
+#  NET_WORKAREA behaviour: 0 (single/multimonitor with STRUT information, like metacity), 1 (always full desktop), 2 (singlemonitor with STRUT, multimonitor without STRUT)
+# NetWorkAreaBehaviour=0 # [0-2]
+
 #  Icon search path (colon separated)
 IconPath="/usr/share/pixmaps:/usr/share/app-install/icons"
 
@@ -512,7 +533,6 @@ IconPath="/usr/share/pixmaps:/usr/share/app-install/icons"
 # MailBoxPath=""
 
 #  Command to run on mailbox
-# MailCommand="x-terminal-emulator -name mutt -title Mutt -e mutt"
 # MailCommand=""
 
 #  WM_CLASS to allow runonce for MailCommand
@@ -1270,16 +1290,16 @@ KeySysWorkspaceLast=""
 # ColorCPUStatusIdle=""
 
 #  User program usage in the memory monitor
-# ColorMEMStatusUser="#404080"
+ColorMEMStatusUser="#9900FF"
 
 #  OS buffers usage in the memory monitor
-# ColorMEMStatusBuffers=""
+ColorMEMStatusBuffers="#151515"
 
 #  OS cached usage in the memory monitor
-# ColorMEMStatusCached=""
+ColorMEMStatusCached="#151515"
 
 #  Free memory in the memory monitor
-# ColorMEMStatusFree=""
+ColorMEMStatusFree="#151515"
 
 #  Outgoing load on the network monitor
 # ColorNetSend="rgb:FF/FF/00"
