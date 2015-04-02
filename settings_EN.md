@@ -4,6 +4,16 @@
 
 For panel position to bottom change **TaskBarAtTop=1** in file ~/.icewm/preferences to **TaskBarAtTop=0**
 
+### Panel icons on run programs
+
+Located in file ~/.icewm/toolbar
+
+Format: prog program_name icon_name path_to_prgram
+
+e.g.: prog FireFox firefox firefox
+
+or: prog FireFox /usr/share/pixmaps/firefox.xpm /usr/bin/firefox
+
 ### Applets
 
 #### Network applet
