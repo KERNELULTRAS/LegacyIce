@@ -1293,13 +1293,13 @@ KeySysWorkspaceLast=""
 ColorMEMStatusUser="#9900FF"
 
 #  OS buffers usage in the memory monitor
-ColorMEMStatusBuffers="#151515"
+ColorMEMStatusBuffers="#222222"
 
 #  OS cached usage in the memory monitor
-ColorMEMStatusCached="#151515"
+ColorMEMStatusCached="#222222"
 
 #  Free memory in the memory monitor
-ColorMEMStatusFree="#151515"
+ColorMEMStatusFree="#222222"
 
 #  Outgoing load on the network monitor
 # ColorNetSend="rgb:FF/FF/00"
@@ -1313,9 +1313,9 @@ ColorMEMStatusFree="#151515"
 #  List of gradient pixmaps in the current theme
 # Gradients=""
 
-#
+#  
 
-WorkspaceNames=" DEV ", " TER ", " :-) ", " ANY "
+WorkspaceNames=" DEV ", " TER ", " CON ", " :-) "
 
 #
 # icewmbg preferences
