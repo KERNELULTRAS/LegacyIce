@@ -31,7 +31,7 @@ sudo apt-get --yes install firefox
 sudo apt-get --yes install pcmanfm
 
 ### Core tools
-sudo apt-get --yes install aosd-cat autopoint autoconf curl dh-autoreconf gdebi git gnome-terminal hsetroot intltool libgtk2.0-dev network-manager-gnome numlockx pasystray scrot subversion synaptic wget whois wmctrl linuxdoc-tools mousepad
+sudo apt-get --yes install autopoint autoconf curl dh-autoreconf gdebi git gnome-terminal hsetroot intltool libgtk2.0-dev network-manager-gnome numlockx pasystray scrot subversion synaptic wget whois wmctrl linuxdoc-tools mousepad
 
 ### Theme
 sudo add-apt-repository --yes ppa:noobslab/themes
