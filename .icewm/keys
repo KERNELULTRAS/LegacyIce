@@ -7,11 +7,11 @@
 key "Ctrl+Alt+b"		firefox
 key "Ctrl+Alt+e"		mousepad
 key "Ctrl+Alt+p"		bluefish
-key "Ctrl+Alt+f"		pcmanfm
-key "Ctrl+Alt+g"                pcmanfm Games
+key "Ctrl+Alt+f"		spacefm
+key "Ctrl+Alt+g"    spacefm Games
 key "Ctrl+Alt+s"		gksudo synaptic
 key "Ctrl+Alt+t"		gnome-terminal
-key "Ctrl+Alt+v"                vlc
+key "Ctrl+Alt+v"    vlc
 
 # Screenshot - desktop
 key "Print"			scrot 'screenshot.jpg' -e "pacat -p .icewm/winoptions"

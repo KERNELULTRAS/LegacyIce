@@ -4,10 +4,10 @@
 
 AWTapp.icon: java
 # workaround for XV window repositioning problems
-# xv.nonICCCMconfigureRequest: 1
+xv.nonICCCMconfigureRequest: 1
 
 # Window over panel
-icewm.TaskBar.doNotCover: 1
+TaskBar.doNotCover: 1
 
 # pcmanfm.ignoreWinList: 1	# Dont show in window list
 # pcmanfm.ignoreTaskBar: 1	# Dont show in task bar
@@ -16,11 +16,20 @@ icewm.TaskBar.doNotCover: 1
 Pidgin.Pidgin.geometry: 350x1127+1250+0	# Resize Pidgin
 Pidgin.Pidgin.tray: Exclusive		# Pidgin only in taskbar
 Pidgin.Pidgin.allWorkspaces: 1		# Pidgin on all warkspaces
+
 # xchat.Xchat.tray: Exclusive		# XChat only in taskbar
 xchat.Xchat.ignoreTaskBar: 1		# XChat ignore tasbar
 xchat.Xchat.allWorkspaces: 1		# XChat on all warkspaces
+
 key-mon.Key-mon.allWorkspaces: 1	# Key-mon on all warkspaces
 key-mon.Key-mon.ignoreQuickSwitch:1	# Key-mon dont show in quick list
+
+pycam-main.geometry: 796x1152+0+0	# Dimensions
+pycam-view.geometry: 796x1152+800+0	# Dimensions
+
+Mousepad.geometry: 800×1172+0+0	# Dimensions
+
+Gedit.geometry: 800×1172+0+0	# Dimensions
 
 # gedit.Gedit.geometry: 1350x1180+0+0	# Resize Gedit
 gnome-terminal.Gnome-terminal.geometry: 798x570	# Resize terminal
@@ -42,5 +51,6 @@ gnome-terminal.Gnome-terminal.dBorder: 0	# Hide border on terminal
 
 # Third workspace
 
-nautilus.Nautilus.geometry: 800×1172+800+0	# Dimensions
-
+Nautilus.geometry: 350x1127+1250+0	# Dimensions
+Thunar.geometry: 800×1172	# Dimensions
+Spacefm.geometry: 800x1127	# Dimensions

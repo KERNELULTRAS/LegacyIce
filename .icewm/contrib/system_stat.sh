@@ -10,6 +10,6 @@ font_width=`expr $xaxis / 40`
 head_mem='                                  used       free'
 mem=`free -h | grep -i - | sed 's/-\/+ buffers\/cache:/Mem:                 /g'`
 swap=`free -h | grep -i swap`
-cpu=`grep 'cpu ' /proc/stat | awk '{usage=int(($2+$4)*100/($2+$4+$5))} END {print "CPU: " usage "%"}'`
+cpu=`top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print "CPU: " 100 - $1"%"}'`
 
 echo -e "$head_mem\r$mem\r$swap\r$cpu" |  aosd_cat -n "Serif $font_width" -u 3000 -p 4
