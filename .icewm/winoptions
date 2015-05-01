@@ -17,13 +17,12 @@ Pidgin.Pidgin.geometry: 350x1127+1250+0	# Resize Pidgin
 Pidgin.Pidgin.tray: Exclusive		# Pidgin only in taskbar
 Pidgin.Pidgin.allWorkspaces: 1		# Pidgin on all warkspaces
 
-# xchat.Xchat.tray: Exclusive		# XChat only in taskbar
+xchat.Xchat.tray: Exclusive		# XChat only in taskbar
 xchat.Xchat.ignoreTaskBar: 1		# XChat ignore tasbar
-xchat.Xchat.allWorkspaces: 1		# XChat on all warkspaces
+# xchat.Xchat.allWorkspaces: 1		# XChat on all warkspaces
 
 key-mon.Key-mon.allWorkspaces: 1	# Key-mon on all warkspaces
 key-mon.Key-mon.ignoreQuickSwitch:1	# Key-mon dont show in quick list
-
 pycam-main.geometry: 796x1152+0+0	# Dimensions
 pycam-view.geometry: 796x1152+800+0	# Dimensions
 
@@ -34,7 +33,8 @@ Gedit.geometry: 800×1172+0+0	# Dimensions
 # gedit.Gedit.geometry: 1350x1180+0+0	# Resize Gedit
 gnome-terminal.Gnome-terminal.geometry: 798x570	# Resize terminal
 
-icewm.TaskBar.ignoreQuickSwitch: 1	# Dont show in quick list
+TaskBar.ignoreQuickSwitch: 1	# Dont show in quick list
+TaskBar.noFocusOnAppRaise: 1	# If set to 1, window will not automatically get focus as application raises it.
 
 # screen.Screen.ignoreQuickSwitch: 1	# Dont show in quick list
 
@@ -53,4 +53,5 @@ gnome-terminal.Gnome-terminal.dBorder: 0	# Hide border on terminal
 
 Nautilus.geometry: 350x1127+1250+0	# Dimensions
 Thunar.geometry: 800×1172	# Dimensions
-Spacefm.geometry: 800x1127	# Dimensions
+Spacefm.geometry: 790x1172	# Dimensions
+
