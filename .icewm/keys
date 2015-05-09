@@ -5,31 +5,32 @@
 
 # Programs
 key "Ctrl+Alt+b"		firefox
-key "Ctrl+Alt+e"		mousepad
+key "Ctrl+Alt+e"		scribes
 key "Ctrl+Alt+p"		bluefish
-key "Ctrl+Alt+f"		spacefm
-key "Ctrl+Alt+g"    spacefm Games
+key "Ctrl+Alt+f"		thunar
+key "Ctrl+Alt+g"		thunar Games
 key "Ctrl+Alt+s"		gksudo synaptic
 key "Ctrl+Alt+t"		gnome-terminal
-key "Ctrl+Alt+v"    vlc
+key "Ctrl+Alt+m"		key-mon
+key "Ctrl+Alt+v"		vlc
 
 # Screenshot - desktop
-key "Print"			scrot 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
+key "Print"				scrot 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 # Screenshot - focused window
 key "Alt+Print"			scrot -u -b 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 # Screenshot - timeout 5s
-key "Alt+Ctrl+Print"		scrot -d 5 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
+key "Alt+Ctrl+Print"	scrot -d 5 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
 
 # Get system info on OSD
-key "Pause"			/home/mario/.icewm/contrib/system_stat.sh
+key "Pause"				/home/mario/.icewm/contrib/system_stat.sh
 
 # Run shutdown menu
 key "Alt+Ctrl+Del"		/home/mario/.icewm/contrib/shutdown.sh
 
 # Change volume
-# key "Alt+Ctrl+Up"	pactl set-sink-volume 0 -- "+10%"
-key "Alt+Ctrl+Up"	/home/mario/.icewm/contrib/volume_up.sh
-# key "Alt+Ctrl+Down"	pactl set-sink-volume 0 -- "-10%"
-key "Alt+Ctrl+Down"	/home/mario/.icewm/contrib/volume_down.sh
-# key "Ctrl+Alt+KP_Divide"	aumix -v -5
+key "Alt+Ctrl+Up"				/home/mario/.icewm/contrib/volume_up.sh
+key "Alt+Ctrl+Down"				/home/mario/.icewm/contrib/volume_down.sh
+# key "Alt+Ctrl+Up"				pactl set-sink-volume 0 -- "+10%"
+# key "Alt+Ctrl+Down"			pactl set-sink-volume 0 -- "-10%"
+# key "Ctrl+Alt+KP_Divide"		aumix -v -5
 # key "Ctrl+Alt+KP_Multiply"	aumix -v +5
