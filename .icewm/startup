@@ -2,18 +2,19 @@
 numlockx on &										# Numlock on
 setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)" &	# keyboard switcher
 # /usr/lib/notification-daemon/notification-daemon &					# Start notify daemon
+# spacefm --desktop &									# Ikony na ploche
 compton &										# Compositor manager
-pidgin &										# Start Pidgin
-xchat &											# Start XChat
+# pidgin &										# Start Pidgin
+# xchat &											# Start XChat
 # nautilus $HOME/Games &								# Start Nautilus in directory Games
 gnome-terminal &									# Start terminal
-geany &											# Start Geany
+# geany &											# Start Geany
 firefox &										# Start FireFox
 # until pids=$(wmctrl -lx | grep -i nautilus)						# Wait for Nautilus start
 # do   
 #  echo 1 >> /dev/null
 # done
-wmctrl -x -r "nautilus.Nautilus" -t 2							# Move nautilus to wokspace 3(2)
+# wmctrl -x -r "nautilus.Nautilus" -t 2							# Move nautilus to wokspace 3(2)
 until pids=$(wmctrl -lx | grep -i terminal)						# Wait for terminal start
 do   
   echo 1 >> /dev/null
