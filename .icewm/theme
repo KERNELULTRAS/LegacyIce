@@ -1,11 +1,2 @@
-Theme="IceBuntu-Dark/default.theme"
-#Theme="1in1-xp/default.theme"
-##Theme="yellowmotif/default.theme"
-###Theme="win95/default.theme"
-####Theme="warp4/default.theme"
-#####Theme="warp3/default.theme"
-######Theme="nice2/default.theme"
-#######Theme="nice/default.theme"
-########Theme="motif/default.theme"
-#########Theme="metal2/default.theme"
-##########Theme="icedesert/default.theme"
+Theme="LegacyIce-Dark/default.theme"
+
