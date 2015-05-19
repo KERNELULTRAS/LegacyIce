@@ -530,7 +530,7 @@ ConfirmLogout=0 # 0/1
 IconPath="/usr/share/pixmaps:/usr/share/app-install/icons"
 
 #  Mailbox path (use $MAIL instead)
-# MailBoxPath=""
+# MailBoxPath="MailBoxPath="imap://user%40server.com:password@server.com"
 
 #  Command to run on mailbox
 # MailCommand=""
