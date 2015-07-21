@@ -6,7 +6,7 @@ Goal of the project is to return the traditional desktop
 ### Based on
 * IceWM
 * Ubuntu (current)
-* Now based on Gnome3 (no Gnome Shell)
+* Now based on GTK+ 3 (no Gnome Shell)
 
 ### Aim
 
