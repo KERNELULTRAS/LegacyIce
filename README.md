@@ -42,7 +42,7 @@ Goal of the project is to return the traditional desktop
 
 ### Install
 
-(Needed Ubuntu 14.04 installed)
+(Needed antiX-15 installed)
 
 wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/legacyice.sh
 
