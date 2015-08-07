@@ -44,7 +44,7 @@ Goal of the project is to return the traditional desktop
 
 (Needed Ubuntu 14.04 installed)
 
-wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15-beta1-V/legacyice.sh
+wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/legacyice.sh
 
 chmod +x legacyice.sh
 
