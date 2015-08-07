@@ -19,7 +19,7 @@ echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 sudo apt-get --yes install geany
 
 ### Multimedia programs
-sudo apt-get --yes install vlc
+# sudo apt-get --yes install vlc
 
 ### Communication programs
 sudo apt-get --yes install pidgin xchat
@@ -28,27 +28,16 @@ sudo apt-get --yes install pidgin xchat
 # sudo apt-get --yes install firefox
 
 ### File managers
-sudo apt-get --yes install spacefm
+# sudo apt-get --yes install spacefm
 
 ### Core tools
-sudo apt-get --yes install autopoint autoconf curl dh-autoreconf gdebi git gnome-terminal
+sudo apt-get --yes install autopoint autoconf curl dh-autoreconf gdebi git
 sudo apt-get --yes install hsetroot intltool key-mon libgtk2.0-dev linuxdoc-tools mousepad
 sudo apt-get --yes install numlockx scrot subversion synaptic wget whois wmctrl
 sudo apt-get --yes install software-properties-common
 
-### Theme
-sudo add-apt-repository --yes ppa:noobslab/themes
-sudo apt-get update
-sudo apt-get --yes install hackstation-theme
-sudo apt-get --yes install gtk2-engines-qtcurve
-
-# Icons
-#sudo add-apt-repository ppa:noobslab/icons
-#sudo apt-get update
-#sudo apt-get install ghost-flat-icons
-
 ### IceWM
-sudo apt-get --yes install icewm compton
+sudo apt-get --yes install compton
 
 ### REMOVE UNNECESSARY PACKAGES
 echo -e "\e[38;5;227m- Remove unnecessary programs\e[38;5;46m\n"
@@ -56,72 +45,18 @@ echo -e "\e[38;5;227m- Remove unnecessary programs\e[38;5;46m\n"
 # sudo apt-get --yes autoremove
 
 ### Make directory for user specific programs
-echo -e "\e[38;5;227m- Create directory Programs\e[38;5;46m\n"
-mkdir Programs
+# echo -e "\e[38;5;227m- Create directory Programs\e[38;5;46m\n"
+# mkdir Programs
 
 ### Add bookmarks for Programs to Gnome3 (Nautilus) ...
-echo -e "\e[38;5;227m- Create bookmarks for Programs\e[38;5;46m\n"
-echo "file://$HOME/Programs" >> $HOME/.config/gtk-3.0/bookmarks
-
-### Install YAD
-echo -e "\e[38;5;227m- Install YAD\n\e[38;5;46m"
-wget -P /tmp https://downloads.sourceforge.net/yad-dialog/files/yad-0.27.0.tar.xz
-cd /tmp
-tar -xJf yad-0.27.0.tar.xz
-rm yad-0.27.0.tar.xz
-cd yad-0.27.0/
-./configure
-make
-sudo make install
-cd ~
+# echo -e "\e[38;5;227m- Create bookmarks for Programs\e[38;5;46m\n"
+# echo "file://$HOME/Programs" >> $HOME/.config/gtk-3.0/bookmarks
 
 ### SET THEME
 
 ### Set Gnome2 theme
 
-echo -e "\e[38;5;227m- Set Gnome2 theme\e[38;5;46m\n"
-
-echo '# Any customization should be done in ~/.gtkrc-2.0
-
-gtk-theme-name="HackStation"
-gtk-icon-theme-name="Neu"
-gtk-font-name="Sans 10"
-gtk-cursor-theme-name="DMZ-White"
-gtk-cursor-theme-size=0
-gtk-toolbar-style=GTK_TOOLBAR_BOTH
-gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
-gtk-button-images=1
-gtk-menu-images=1
-gtk-enable-event-sounds=1
-gtk-enable-input-feedback-sounds=1
-gtk-xft-antialias=1
-gtk-xft-hinting=1
-gtk-xft-hintstyle="hintslight"
-gtk-xft-rgba="rgb"
-gtk-color-scheme="tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n"
-include "/home/'$USER'/.gtkrc-2.0.mine"' > $HOME/.gtkrc-2.0
-
 ### Set Gnome3 theme
-
-echo -e "\e[38;5;227m- Set Gnome3 theme\e[38;5;46m\n"
-
-echo "[Settings] 
-gtk-theme-name=HackStation
-gtk-icon-theme-name=Neu
-gtk-font-name=Sans 10
-gtk-cursor-theme-name=DMZ-White
-gtk-cursor-theme-size=0
-gtk-toolbar-style=GTK_TOOLBAR_BOTH
-gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
-gtk-button-images=1
-gtk-menu-images=1
-gtk-enable-event-sounds=1
-gtk-enable-input-feedback-sounds=1
-gtk-xft-antialias=1
-gtk-xft-hinting=1
-gtk-xft-hintstyle=hintslight
-gtk-xft-rgba=rgb
-gtk-color-scheme=tooltip_fg_color:#000000\nbase_color:#2E3436\nselected_fg_color:#7AA3CC\ntext_color:#D3D7CF\nbg_color:#555753\ntooltip_bg_color:#EDDE5C\nselected_bg_color:#3F403D\nfg_color:#E6E6E6\n" > $HOME/.config/gtk-3.0/settings.ini
 
 ### Geany theme
 echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
@@ -163,11 +98,12 @@ sudo make install
 cd ~
 
 # Run MenuMaker
-mmaker -f --no-legacy --no-debian -t Gterm IceWM
+mmaker -f --no-debian IceWM
 
 ### Launch MenuMaker after install or uninstall programs
 echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
-sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-legacy --no-debian -t Gterm IceWM\";};' > /etc/apt/apt.conf.d/00mmaker"
+# sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/00mmaker"
+sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/99-update-menus"
 
 ### END OF SCRIPT
 echo -e "\n"
