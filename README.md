@@ -59,9 +59,9 @@ chmod +x legacyice.sh
 [Settings](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/settings_EN.md)
 
 ### How to contribute
-Send issue to https://github.com/KERNELULTRAS/LegacyIce/issues
+Send issue to https://github.com/KERNELULTRAS/LegacyIce-antiX/issues
 
-Send request to https://github.com/KERNELULTRAS/LegacyIce/pulls
+Send request to https://github.com/KERNELULTRAS/LegacyIce-antiX/pulls
 
 GitHub [Contribute](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/development/instructions_for_git.md)
 
