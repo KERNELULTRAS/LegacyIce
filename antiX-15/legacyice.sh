@@ -31,10 +31,9 @@ sudo apt-get --yes install pidgin xchat
 # sudo apt-get --yes install spacefm
 
 ### Core tools
-sudo apt-get --yes install autopoint autoconf curl dh-autoreconf git
-sudo apt-get --yes install hsetroot intltool key-mon libgtk2.0-dev linuxdoc-tools mousepad
-sudo apt-get --yes install subversion synaptic wget whois wmctrl
-sudo apt-get --yes install software-properties-common
+sudo apt-get --yes install autopoint autoconf curl dh-autoreconf git \
+hsetroot intltool key-mon libgtk2.0-dev lightdm linuxdoc-tools mousepad \
+subversion synaptic wget whois wmctrl software-properties-common
 
 ### IceWM
 sudo apt-get --yes install compton
@@ -55,7 +54,8 @@ menu-fluxbox-antix \
 screenshot-antix \
 fluxbox \
 jwm \
-herbstluftwm
+herbstluftwm \
+slim
 sudo apt-get --yes autoremove
 
 ### Make directory for user specific programs
@@ -129,6 +129,11 @@ mv /tmp/compton.conf $HOME/.config/compton.conf
 # echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
 # sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/00mmaker"
 # sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/99-update-menus"
+
+### Switch LightDM to IceWM
+echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
+python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
 ### END OF SCRIPT
 echo -e "\n"
