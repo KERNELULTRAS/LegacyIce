@@ -16,7 +16,7 @@ cd ~
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
 ### Dev programs
-sudo apt-get --yes install geany
+# sudo apt-get --yes install geany
 
 ### Multimedia programs
 # sudo apt-get --yes install vlc
@@ -31,9 +31,9 @@ sudo apt-get --yes install pidgin xchat
 # sudo apt-get --yes install spacefm
 
 ### Core tools
-sudo apt-get --yes install autopoint autoconf curl dh-autoreconf gdebi git
+sudo apt-get --yes install autopoint autoconf curl dh-autoreconf git
 sudo apt-get --yes install hsetroot intltool key-mon libgtk2.0-dev linuxdoc-tools mousepad
-sudo apt-get --yes install numlockx scrot subversion synaptic wget whois wmctrl
+sudo apt-get --yes install subversion synaptic wget whois wmctrl
 sudo apt-get --yes install software-properties-common
 
 ### IceWM
@@ -41,8 +41,22 @@ sudo apt-get --yes install compton
 
 ### REMOVE UNNECESSARY PACKAGES
 echo -e "\e[38;5;227m- Remove unnecessary programs\e[38;5;46m\n"
-# sudo apt-get --yes remove ibus
-# sudo apt-get --yes autoremove
+sudo apt-get --yes remove hexchat leafpad \
+desktop-defaults-fluxbox-antix \
+desktop-defaults-hlwm-antix \
+desktop-defaults-jwm-antix \
+desktop-defaults-rox-antix \
+desktop-defaults-spacefm-antix \
+fluxbox-themes-antix \
+icewm-themes-antix \
+menu-fluxbox-antix \
+menu-jwm-antix \
+menu-fluxbox-antix \
+screenshot-antix \
+fluxbox \
+jwm \
+herbstluftwm
+sudo apt-get --yes autoremove
 
 ### Make directory for user specific programs
 # echo -e "\e[38;5;227m- Create directory Programs\e[38;5;46m\n"
@@ -76,6 +90,17 @@ svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 ### Rename ice_user_name to active user
 find ~/.icewm -type f -print0 | xargs -0 sed -i "s/ice_user_name/$USER/g"
 
+### Install patched IceWM
+echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
+cd /tmp
+git clone http://github.com/bbidulock/icewm.git
+cd icewm/
+./autogen.sh
+./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
+make V=0
+sudo mv src/icewm /usr/bin/icewm
+cd ~
+
 ### COMPOSITOR
 
 ### Download compositor config files
@@ -88,22 +113,22 @@ mv /tmp/compton.conf $HOME/.config/compton.conf
 ### MENU
 
 ### MenuMaker installation
-echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
-wget -P /tmp https://downloads.sourceforge.net/menumaker/files/menumaker-0.99.7.tar.gz
-cd /tmp
-tar -zxvf menumaker-0.99.7.tar.gz
-cd menumaker-0.99.7/
-./configure
-sudo make install
-cd ~
+# echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
+# wget -P /tmp https://downloads.sourceforge.net/menumaker/files/menumaker-0.99.7.tar.gz
+# cd /tmp
+# tar -zxvf menumaker-0.99.7.tar.gz
+# cd menumaker-0.99.7/
+# ./configure
+# sudo make install
+# cd ~
 
 # Run MenuMaker
-mmaker -f --no-debian IceWM
+# mmaker -f --no-debian IceWM
 
 ### Launch MenuMaker after install or uninstall programs
-echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
+# echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
 # sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/00mmaker"
-sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/99-update-menus"
+# sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/99-update-menus"
 
 ### END OF SCRIPT
 echo -e "\n"
