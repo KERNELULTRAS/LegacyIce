@@ -66,6 +66,10 @@ Ctrl+Alt same as WinKey
 
 **View system informations**: Pause
 
+### Language
+
+**Switch languages**: left alt+shift
+
 ### Applications
 
 "Win+B"		Web browser
