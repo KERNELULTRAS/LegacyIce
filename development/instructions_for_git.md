@@ -27,5 +27,7 @@ git pull origin master
 SET AUTOLOGIN
 -------------
 git config --global user.name "username"
+
 git config --global user.email "your@email.com"
+
 git config remote.origin.url https://username:password@github.com/KERNELULTRAS/LegacyIce.git
