@@ -34,7 +34,7 @@ Ctrl+Alt same as WinKey
 
 ### Hide panel and vice versa
 
-**Hide panel**: Win+G
+**Hide panel**: Win+H
 
 ### Menu
 
