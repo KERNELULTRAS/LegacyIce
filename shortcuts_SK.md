@@ -34,7 +34,7 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 ### Skry panel a späť
 
-**Skry panel**: Win+G
+**Skry panel**: Win+H
 
 ### Menu
 
