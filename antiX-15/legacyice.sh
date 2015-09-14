@@ -15,20 +15,14 @@ cd ~
 ### INSTALL PROGRAMS
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
-### Dev programs
-# sudo apt-get --yes install geany
+### Graphics programs
+sudo apt-get --yes install blender gimp inkscape
 
 ### Multimedia programs
 # sudo apt-get --yes install vlc
 
 ### Communication programs
-sudo apt-get --yes install pidgin xchat
-
-### Internet programs
-# sudo apt-get --yes install firefox
-
-### File managers
-# sudo apt-get --yes install spacefm
+sudo apt-get --yes install mumble pidgin xchat
 
 ### Core tools
 sudo apt-get --yes install autopoint autoconf curl dh-autoreconf git \
@@ -79,6 +73,8 @@ git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
 mv GeanyTheme-Dark $HOME/.config/geany
 cd ~
 
+### INSTALL ICEWM
+
 ### Download IceWM config files
 echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
 if [ -d ~/.icewm ]
@@ -109,26 +105,6 @@ wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubu
 mv /tmp/compton.conf $HOME/.config/compton.conf
 
 ### USER SESSION
-
-### MENU
-
-### MenuMaker installation
-# echo -e "\e[38;5;227m- Install MenuMaker\e[38;5;46m\n"
-# wget -P /tmp https://downloads.sourceforge.net/menumaker/files/menumaker-0.99.7.tar.gz
-# cd /tmp
-# tar -zxvf menumaker-0.99.7.tar.gz
-# cd menumaker-0.99.7/
-# ./configure
-# sudo make install
-# cd ~
-
-# Run MenuMaker
-# mmaker -f --no-debian IceWM
-
-### Launch MenuMaker after install or uninstall programs
-# echo -e "\e[38;5;227m- Set autorun MenuMaker\e[38;5;46m\n"
-# sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/00mmaker"
-# sudo sh -c "echo 'DPkg::Post-Invoke {\"mmaker -f --no-debian -t Gterm IceWM\";};' >/etc/apt/apt.conf.d/99-update-menus"
 
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
