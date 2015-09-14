@@ -72,6 +72,7 @@ sudo apt-get --yes autoremove
 ### Set Gnome3 theme
 
 ### Geany theme
+rm -rf /tmp/GeanyTheme-Dark
 echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
 mv --backup=numbered $HOME/.config/geany $HOME/.config/
 cd /tmp
