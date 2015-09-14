@@ -66,6 +66,10 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 **Zobrazí systémové informácie**: Pause
 
+### Jazyk
+
+**Prepínanie jazyka klávesnice**: ľavý alt+shift
+
 ### Aplikácie
 
 "Win+B"		Webový prehliadač
