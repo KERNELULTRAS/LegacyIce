@@ -12,6 +12,11 @@ echo -e "\e[40m\n\n"
 ### Goto to home directory
 cd ~
 
+### UPGRADE SYSTEM
+echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
+sudo apt-get update
+sudo apt-get dist-upgrade
+
 ### INSTALL PROGRAMS
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
