@@ -67,9 +67,47 @@ sudo apt-get --yes autoremove
 
 ### SET THEME
 
-### Set Gnome2 theme
+### Set GTK2 theme
 
-### Set Gnome3 theme
+echo -e "\e[38;5;227m- Set GTK2 theme\e[38;5;46m\n"
+
+echo '# Any customization should be done in ~/.gtkrc-2.0.mine
+include "/home/mario/.gtkrc-2.0.mine"
+gtk-theme-name="MediterraneanDarkest"
+gtk-icon-theme-name="Faenza-Cupertino-mini"
+gtk-font-name="Sans 10"
+gtk-cursor-theme-name="DMZ-White"
+gtk-cursor-theme-size=0
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-button-images=0
+gtk-menu-images=1
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
+' >$HOME/.gtkrc-2.0
+
+### Set GTK3 theme
+
+echo -e "\e[38;5;227m- Set GTK3 theme\e[38;5;46m\n"
+
+echo "[Settings]
+gtk-theme-name=MediterraneanDarkest
+gtk-icon-theme-name=Faenza-Cupertino-mini
+gtk-font-name=Sans 10
+gtk-cursor-theme-name=DMZ-White
+gtk-cursor-theme-size=0
+gtk-toolbar-style=GTK_TOOLBAR_ICONS
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-button-images=0
+gtk-menu-images=1
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle=hintfull" >$HOME/.config/gtk-3.0/settings.ini
 
 ### Geany theme
 source=$HOME/.config/geany
