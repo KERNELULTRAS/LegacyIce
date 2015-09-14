@@ -73,6 +73,7 @@ sudo apt-get --yes autoremove
 
 ### Geany theme
 echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
+mv --backup=numbered $HOME/.config/geany $HOME/.config/
 cd /tmp
 git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
 mv GeanyTheme-Dark $HOME/.config/geany
