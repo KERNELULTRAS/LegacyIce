@@ -15,7 +15,7 @@ cd ~
 ### UPGRADE SYSTEM
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
 sudo apt-get --yes update
-sudo apt-get --yes dist-upgrade
+sudo apt-get --yes upgrade
 sudo apt-get --yes autoremove
 
 ### INSTALL PROGRAMS
