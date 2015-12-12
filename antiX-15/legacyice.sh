@@ -16,6 +16,7 @@ cd ~
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
 sudo apt-get --yes update
 sudo apt-get --yes dist-upgrade
+sudo apt-get --yes autoremove
 
 ### INSTALL PROGRAMS
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
