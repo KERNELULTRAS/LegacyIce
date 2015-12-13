@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# -------------------------------------
-# Script to convert Debian to LegacyIce
-# -------------------------------------
+# --------------------------------------
+# Script to convert antiX15 to LegacyIce
+# --------------------------------------
 # (Only GTK and QT application)
 # (In alphabetical order)
 
