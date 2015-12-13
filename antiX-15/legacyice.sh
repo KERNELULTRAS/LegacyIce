@@ -43,7 +43,7 @@ sudo apt-get --yes install compton
 
 ### REMOVE UNNECESSARY PACKAGES
 echo -e "\e[38;5;227m- Remove unnecessary programs\e[38;5;46m\n"
-sudo apt-get --yes remove leafpad \
+sudo apt-get --yes purge leafpad \
 desktop-defaults-fluxbox-antix \
 desktop-defaults-hlwm-antix \
 desktop-defaults-jwm-antix \
@@ -61,6 +61,26 @@ herbstluftwm \
 gftp-gtk \
 mousepad \
 rox-filer \
+antix-goodies \
+add-key-antix \
+add-start-antix \
+desktop-defaults-base-antix \
+desktop-defaults-core-antix \
+desktop-defaults-full-antix \
+desktop-defaults-icewm-antix \
+desktop-session-antix \
+droopy-antix \
+connectshares-antix \
+group-management-antix \
+icewmcc-antix \
+menu-icewm-antix \
+menu-manager-antix \
+mountbox-antix \
+mouse-cc-antix \
+set-screen-blank-antix \
+system-antix \
+user-management-antix \
+wallpaper-antix \
 slim
 sudo apt-get --yes autoremove
 
