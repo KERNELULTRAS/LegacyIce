@@ -169,26 +169,26 @@ cd ~
 ### INSTALL ICEWM
 
 ### Download IceWM config files
-#echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
-#if [ -d ~/.icewm ]
-#  then
-#    mv ~/.icewm ~/.icewm.legacyice.backup
-#fi
-#svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
+echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
+if [ -d ~/.icewm ]
+  then
+    mv ~/.icewm ~/.icewm.legacyice.backup
+fi
+svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
 ### Rename ice_user_name to active user
-#find ~/.icewm -type f -print0 | xargs -0 sed -i "s/ice_user_name/$USER/g"
+find ~/.icewm -type f -print0 | xargs -0 sed -i "s/ice_user_name/$USER/g"
 
 ### Install patched IceWM
-#echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
-#cd /tmp
-#git clone http://github.com/bbidulock/icewm.git
-#cd icewm/
-#./autogen.sh
-#./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
-#make V=0
-#sudo mv src/icewm /usr/bin/icewm
-#cd ~
+echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
+cd /tmp
+git clone http://github.com/bbidulock/icewm.git
+cd icewm/
+./autogen.sh
+./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
+make V=0
+sudo make install
+cd ~
 
 ### COMPOSITOR
 
