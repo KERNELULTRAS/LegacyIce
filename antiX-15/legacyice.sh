@@ -223,6 +223,9 @@ echo -e "\e[0m"
 ### Unify QT5 with Gnome theme
 export XDG_CURRENT_DESKTOP=gnome
 
+### Clutter off (Off hide mouse)
+sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
+
 ### END OF SCRIPT
 echo -e "\n"
 echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
