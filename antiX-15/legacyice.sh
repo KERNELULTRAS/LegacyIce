@@ -205,6 +205,24 @@ echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
 python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
+[ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
+
+### Echo LegacyIce textinfo
+echo -e "\e[38;5;9m@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@"
+echo "@   @   @   @ @ @   @ @  @ @   @"
+echo "@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\"
+echo "@   @   @ @ @ @ @    @   @ @   @     /\\  /  \\  /\\"
+echo "@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\/    \\/  \\"
+echo -e "\e[38;5;33m---------------------------------------------------"
+date
+echo "---------------------------------------------------"
+echo -e "\e[37;5;239mFilesystem......Size..Used..Avail.Us%.Mounted on\e[38;5;184m"
+df -h | grep -i /dev/
+echo -e "\e[0m"
+
+### Unify QT5 with Gnome theme
+export XDG_CURRENT_DESKTOP=gnome
+
 ### END OF SCRIPT
 echo -e "\n"
 echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
