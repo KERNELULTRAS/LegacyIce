@@ -208,20 +208,22 @@ python /tmp/user_xsession.py --user-id 1000 set icewm-session
 [ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
 
 ### Echo LegacyIce textinfo
-echo -e "\e[38;5;9m@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@"
-echo "@   @   @   @ @ @   @ @  @ @   @"
-echo "@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\"
-echo "@   @   @ @ @ @ @    @   @ @   @     /\\  /  \\  /\\"
-echo "@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\/    \\/  \\"
-echo -e "\e[38;5;33m---------------------------------------------------"
-date
-echo "---------------------------------------------------"
-echo -e "\e[37;5;239mFilesystem......Size..Used..Avail.Us%.Mounted on\e[38;5;184m"
-df -h | grep -i /dev/
-echo -e "\e[0m"
+echo "
+echo -e \"\e[38;5;9m\"
+echo \"@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@\"
+echo \"@   @   @   @ @ @   @ @  @ @   @\"
+echo \"@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\\\\"
+echo \"@   @   @ @ @ @ @    @   @ @   @     /\\\\  /  \\\\  /\\\\\"
+echo \"@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\\\/    \\\\/  \\\\\"
+echo -e \"\e[38;5;33m---------------------------------------------------\"">>$HOME/.bashrc
+echo "date">>$HOME/.bashrc
+echo "
+echo \"---------------------------------------------------\"
+echo -e \"\e[37;5;239mFilesystem......Size..Used..Avail.Us%.Mounted on\e[38;5;184m\"">>$HOME/.bashrc
+echo "df -h | grep -i /dev/">>$HOME/.bashrc
 
 ### Unify QT5 with Gnome theme
-export XDG_CURRENT_DESKTOP=gnome
+echo "export XDG_CURRENT_DESKTOP=gnome">>$HOME/.bashrc
 
 ### Clutter off (Off hide mouse)
 sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
