@@ -95,8 +95,7 @@ sudo apt-get --yes autoremove
 ### SET THEME
 
 ### Set GTK2 theme
-
-echo -e "\e[38;5;227m- Set GTK2 theme\e[38;5;46m\n"
+echo -e "\e[38;5;227m- Setup GTK2 theme\e[38;5;46m\n"
 
 echo '# Any customization should be done in ~/.gtkrc-2.0.mine
 include "/home/mario/.gtkrc-2.0.mine"
@@ -117,8 +116,7 @@ gtk-xft-hintstyle="hintfull"
 ' >$HOME/.gtkrc-2.0
 
 ### Set GTK3 theme
-
-echo -e "\e[38;5;227m- Set GTK3 theme\e[38;5;46m\n"
+echo -e "\e[38;5;227m- Setup GTK3 theme\e[38;5;46m\n"
 
 echo "[Settings]
 gtk-theme-name=MediterraneanDarkest
@@ -137,8 +135,7 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle=hintfull" >$HOME/.config/gtk-3.0/settings.ini
 
 ### Geany theme
-
-echo -e "\e[38;5;227m- Set Geany theme\e[38;5;46m\n"
+echo -e "\e[38;5;227m- Setup Geany theme\e[38;5;46m\n"
 
 source=$HOME/.config/geany
 dest_dir=$HOME/.config
@@ -193,7 +190,7 @@ cd ~
 ### COMPOSITOR
 
 ### Download compositor config files
-echo -e "\e[38;5;227m- Set compositor\e[38;5;46m\n"
+echo -e "\e[38;5;227m- Setup compositor\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
 mv $HOME/.config/compton.conf $HOME/.config/compton.conf.back
 mv /tmp/compton.conf $HOME/.config/compton.conf
@@ -208,6 +205,7 @@ python /tmp/user_xsession.py --user-id 1000 set icewm-session
 [ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
 
 ### Echo LegacyIce textinfo
+echo -e "\e[38;5;227m- Setup .bashrc\e[38;5;46m\n"
 echo "
 echo -e \"\e[38;5;9m\"
 echo \"@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@\"
@@ -223,7 +221,12 @@ echo -e \"\e[37;5;239mFilesystem......Size..Used..Avail.Us%.Mounted on\e[38;5;18
 echo "df -h | grep -i /dev/">>$HOME/.bashrc
 
 ### Clutter off (Off hide mouse)
+echo -e "\e[38;5;227m- Clutter off\e[38;5;46m\n"
 sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
+
+### Roxterm configuration
+echo -e "\e[38;5;227m- Setup Roxterm\e[38;5;46m\n"
+sudo sed -i 's/hide_menubar=0/hide_menubar=1/g' $HOME/.config/roxterm.sourceforge.net/Profiles/Default
 
 ### END OF SCRIPT
 echo -e "\n"
