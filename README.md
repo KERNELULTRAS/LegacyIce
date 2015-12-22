@@ -8,7 +8,7 @@ Goal of the project is to return the traditional desktop
 ### Based on
 * IceWM
 * antiX-15
-* Now based on GTK+ 3 (2)
+* Now based on GTK+ 2 (3)
 
 ### Aim
 
@@ -17,8 +17,8 @@ Goal of the project is to return the traditional desktop
 
 #### Script to convert Ubuntu to LegacyIce
 * Remove JWM, FluxBox, Herbstluftwm and settings
-* Menu same as the Gnome2
-* Dynamic menu created after install or uninstall package (changed)
+* Aplication menu generated with icewm-menu-fdo
+* Dynamic menu created after install or uninstall packages
 * Fixed run QT5 applications and other patches
 * Nice dark theme for WM
 * Nice dark GTK2/3 theme - MediterraneanDarkest
