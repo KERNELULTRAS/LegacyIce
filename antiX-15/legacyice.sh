@@ -222,9 +222,6 @@ echo \"---------------------------------------------------\"
 echo -e \"\e[37;5;239mFilesystem......Size..Used..Avail.Us%.Mounted on\e[38;5;184m\"">>$HOME/.bashrc
 echo "df -h | grep -i /dev/">>$HOME/.bashrc
 
-### Unify QT5 with Gnome theme
-echo "export XDG_CURRENT_DESKTOP=gnome">>$HOME/.bashrc
-
 ### Clutter off (Off hide mouse)
 sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
 
