@@ -43,6 +43,8 @@ Goal of the project is to return the traditional desktop
 ### Install
 
 (Needed antiX-15 installed)
+antix download from here http://sourceforge.net/projects/antix-linux/files/Final/MX-krete/
+Select **antiX-15-V_x64-full.iso** or **antiX-15-V_386-full.iso**
 
 wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/legacyice.sh
 
@@ -66,7 +68,7 @@ Send request to https://github.com/KERNELULTRAS/LegacyIce-antiX/pulls
 GitHub [Contribute](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/development/instructions_for_git.md)
 
 ### Todo:
-* [uselessd](http://uselessd.darknedgy.net/)
+Auto winoption script (current in alpha stage)
 
 ### Licence:
 [GNU GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
