@@ -37,7 +37,7 @@ Change in file ~/.icewm/preferences
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
 * MailCommand="Iceweasel http://webmail.domain.com"
 
-Email ikon on panel
+Email icon on panel
 * TaskBarShowMailboxStatus=1
 
 #### Hide sound applet
