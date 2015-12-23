@@ -10,17 +10,17 @@ Nastavenia sú v ~/.icewm/toolbar
 
 Formát je: prog nazov_programu nazov_ikonky cesta_k_prgramu
 
-napr.: prog FireFox firefox firefox
+napr.: prog Iceweasel iceweasel iceweasel
 
-alebo: prog FireFox /usr/share/pixmaps/firefox.xpm /usr/bin/firefox
+alebo: prog Iceweasel /usr/share/icons/hicolor/48x48/apps/iceweasel.png /usr/bin/iceweasel
 
 ### Applety
 
-#### Indikátor siete
+#### Skrytie indikátor siete
 
-Odkomentuj v súbore ~/.icewm/startup
+Zakomentuj v súbore ~/.icewm/startup
 
-nm-applet # Network applet
+wicd-gtk -t # Network applet
 
 #### Ukazateľ stavu batérie
 Nájdi v súbore ~/.icewm/preferences
@@ -34,21 +34,21 @@ TaskBarShowAPMStatus=1
 #### Ukazateľ nových emailov (napr. name@domain.com)
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
 * MailCommand="firefox http://webmail.domain.com"
-* Email ikon on panel TaskBarShowMailboxStatus=1
 
-#### Zvukový applet (Pulse Audio)
+Ikona emailu v panely
+* TaskBarShowMailboxStatus=1
 
-Odkomentuj **pasystray # Sound applet** (Pulse Audio) v súbore **~/.icewm/startup**
+#### Skryite zvukového appletu (Pulse Audio)
 
-### Vypnutie kompozitora
+Zakomentuj **pasystray # Sound applet** (Pulse Audio) v súbore **~/.icewm/startup**
 
-Pridaj # na začiatok riadka:
+### Zapnutie kompozitora
+
+Odkomentuj riadok:
 
 compton &	# Compositor manager
 
 v súbore ~/.icewm/startup
-
-(zakomentuj ho)
 
 ### Poznámky
 * Klávesové skratky sú v súbore ~/.icewm/keys
