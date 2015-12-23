@@ -4,23 +4,23 @@
 
 For panel position to bottom change **TaskBarAtTop=1** in file ~/.icewm/preferences to **TaskBarAtTop=0**
 
-### Panel icons on run programs
+### Shortcuts icons on toolbar
 
 Located in file ~/.icewm/toolbar
 
 Format: prog program_name icon_name path_to_prgram
 
-e.g.: prog FireFox firefox firefox
+e.g.: prog Iceweasel iceweasel iceweasel
 
-or: prog FireFox /usr/share/pixmaps/firefox.xpm /usr/bin/firefox
+or: prog Iceweasel /usr/share/icons/hicolor/48x48/apps/iceweasel.png /usr/bin/iceweasel
 
 ### Applets
 
-#### Network applet
+#### Hide network applet
 
-Uncomment in file ~/.icewm/startup
+Comment in file ~/.icewm/startup
 
-nm-applet # Network applet
+wicd-gtk -t & # Network applet
 
 #### Battery status
 Find in file ~/.icewm/preferences
@@ -32,23 +32,22 @@ Uncomment it and change to
 TaskBarShowAPMStatus=1
 
 #### Email applet (e.g. name@domain.com)
+Change in file ~/.icewm/preferences
+
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
-* MailCommand="firefox http://webmail.domain.com"
-* Email ikon on panel TaskBarShowMailboxStatus=1
+* MailCommand="Iceweasel http://webmail.domain.com"
+Email ikon on panel
+* TaskBarShowMailboxStatus=1
 
-#### Sound applet
+#### Hide sound applet
 
-Uncomment **pasystray # Sound applet** (Pulse Audio) in file **~/.icewm/startup**
+Comment **pasystray # Sound applet** (Pulse Audio) in file **~/.icewm/startup**
 
-### Off compositor
+### Compositor enable
 
-Add # at the beginning of the line
+Uncomment in file ~/.icewm/startup
 
 compton &	# Compositor manager
-
-in ~/.icewm/startup
-
-(Comment it)
 
 ### Notes
 * Key shortcut located in file ~/.icewm/keys
