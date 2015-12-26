@@ -36,7 +36,7 @@ sudo apt-get --yes install filezilla
 ### Core tools
 sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
 hsetroot intltool key-mon libgtk2.0-dev lightdm linuxdoc-tools mousepad \
-subversion synaptic wget whois wmctrl software-properties-common xosd-bin
+subversion synaptic telnet wget whois wmctrl software-properties-common xosd-bin
 
 ### IceWM
 sudo apt-get --yes install compton
