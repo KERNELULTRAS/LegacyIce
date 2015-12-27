@@ -5,12 +5,12 @@ hsetroot -extend /home/mario/.icewm/themes/LegacyIce-Dark/default.jpg						# Set
 # /usr/lib/notification-daemon/notification-daemon &														# Start notify daemon
 # spacefm --desktop &																														# Ikons on desktop
 # compton &																																			# Compositor manager
-pidgin &																																				# Start Pidgin
-hexchat &																																				# Start XChat
+# pidgin &																																				# Start Pidgin
+# hexchat &																																				# Start XChat
 fbxkb &																																					# Keyboard flag
 # nautilus $HOME/Games &																												# Start Nautilus in directory Games
 roxterm &																																				# Start terminal
-geany &																																					# Start Geany
+# geany &																																					# Start Geany
 iceweasel &																																			# Start Iceweasel
 # until pids=$(wmctrl -lx | grep -i nautilus)																		# Wait for Nautilus start
 # do   
