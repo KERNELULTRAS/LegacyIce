@@ -232,6 +232,12 @@ sudo sed -i 's/hide_menubar=0/hide_menubar=1/g' $HOME/.config/roxterm.sourceforg
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
 ./icewm/winoptions.sh
 
+### Create menu
+icewm-menu-fdo>$HOME/.icewm/menu
+
+### Update menu after install or uninstall programs
+sudo sh -c "echo 'DPkg::Post-Invoke {\"icewm-menu-fdo>\$HOME/.icewm/menu\";};' >/etc/apt/apt.conf.d/99-update-menus"
+
 ### END OF SCRIPT
 echo -e "\n"
 echo -e "\e[38;5;227m##################################################\e[38;5;46m\n"
