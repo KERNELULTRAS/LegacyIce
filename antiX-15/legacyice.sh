@@ -230,12 +230,15 @@ echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
 ./icewm/winoptions.sh
 
 ### Create menu
+echo -e "\e[38;5;227m- Create menu\e[38;5;46m\n"
 icewm-menu-fdo>$HOME/.icewm/menu
 
 ### Update menu after install or uninstall programs
+echo -e "\e[38;5;227m- Setup autoupdate menu\e[38;5;46m\n"
 sudo sh -c "echo 'DPkg::Post-Invoke {\"icewm-menu-fdo>\$HOME/.icewm/menu\";};' >/etc/apt/apt.conf.d/99-update-menus"
 
 ### Rename ice_user_name to active user
+echo -e "\e[38;5;227m- Setup user name\e[38;5;46m\n"
 find ~/.icewm -type f -print0 | xargs -0 sed -i "s/mario/$USER/g"
 
 ### END OF SCRIPT
