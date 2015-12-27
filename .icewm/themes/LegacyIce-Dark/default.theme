@@ -185,8 +185,8 @@ MinimizedWindowFontNameXft="sans:size=10:medium"
 # ---------------------------------------------------------------------------
 # Background
 # ---------------------------------------------------------------------------
-DesktopBackgroundColor = #000000
-DesktopBackgroundCenter = 1
-DesktopBackgroundScaled = 1 
-DesktopBackgroundImage = 'ku_2.png'
+# DesktopBackgroundColor = #000000
+# DesktopBackgroundCenter = 1
+# DesktopBackgroundScaled = 1 
+# DesktopBackgroundImage = 'ku_2.png'
 
