@@ -173,9 +173,6 @@ if [ -d ~/.icewm ]
 fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
 
-### Rename ice_user_name to active user
-find ~/.icewm -type f -print0 | xargs -0 sed -i "s/ice_user_name/$USER/g"
-
 ### Install patched IceWM
 echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
 cd /tmp
@@ -237,6 +234,9 @@ icewm-menu-fdo>$HOME/.icewm/menu
 
 ### Update menu after install or uninstall programs
 sudo sh -c "echo 'DPkg::Post-Invoke {\"icewm-menu-fdo>\$HOME/.icewm/menu\";};' >/etc/apt/apt.conf.d/99-update-menus"
+
+### Rename ice_user_name to active user
+find ~/.icewm -type f -print0 | xargs -0 sed -i "s/mario/$USER/g"
 
 ### END OF SCRIPT
 echo -e "\n"
