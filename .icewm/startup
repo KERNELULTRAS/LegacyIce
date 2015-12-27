@@ -1,27 +1,30 @@
-# hsetroot -extend Pictures/KU_wallpaper_KU.png						# Set Wallpaper
-numlockx on &										# Numlock on
-setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)" &	# keyboard switcher
-# /usr/lib/notification-daemon/notification-daemon &					# Start notify daemon
-# spacefm --desktop &									# Ikony na ploche
-compton &										# Compositor manager
-# pidgin &										# Start Pidgin
-# xchat &											# Start XChat
-# nautilus $HOME/Games &								# Start Nautilus in directory Games
-gnome-terminal &									# Start terminal
-# geany &											# Start Geany
-firefox &										# Start FireFox
-# until pids=$(wmctrl -lx | grep -i nautilus)						# Wait for Nautilus start
+setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)"	# keyboard switcher
+export XDG_CURRENT_DESKTOP=gnome																								# Unify QT5 with Gnome theme
+# hsetroot -extend Pictures/KU_wallpaper_KU.png																	# Set Wallpaper
+# numlockx on &																																	# Numlock on
+# /usr/lib/notification-daemon/notification-daemon &														# Start notify daemon
+# spacefm --desktop &																														# Ikons on desktop
+# compton &																																			# Compositor manager
+pidgin &																																				# Start Pidgin
+hexchat &																																				# Start XChat
+fbxkb &																																					# Keyboard flag
+# nautilus $HOME/Games &																												# Start Nautilus in directory Games
+roxterm &																																				# Start terminal
+geany &																																					# Start Geany
+iceweasel &																																			# Start Iceweasel
+# until pids=$(wmctrl -lx | grep -i nautilus)																		# Wait for Nautilus start
 # do   
 #  echo 1 >> /dev/null
 # done
-# wmctrl -x -r "nautilus.Nautilus" -t 2							# Move nautilus to wokspace 3(2)
-until pids=$(wmctrl -lx | grep -i terminal)						# Wait for terminal start
+# wmctrl -x -r "nautilus.Nautilus" -t 2																					# Move nautilus to wokspace 3(2)
+until pids=$(wmctrl -lx | grep -i roxterm)																			# Wait for terminal start
 do   
-  echo 1 >> /dev/null
+	echo 1 >> /dev/null
 done
-wmctrl -x -r "gnome-terminal.Gnome-terminal" -t 1					# Move terminal to wokspace 2 (First = 0)
-# wmctrl -r Terminal -g "800,1142"							# Resize Terminal
-# wmctrl -r Terminal -e "0,801,25,800,1142"						# Resize Terminal
-# wmctrl -x -r "nautilus.Nautilus" -e "0,800,0,800,1145"				# Resize File manager
-# pasystray 										# Sound applet
-# nm-applet                                                       			# Network applet
+wmctrl -x -r "roxterm.Roxterm" -t 1																							# Move terminal to wokspace 2 (First = 0)
+# wmctrl -r Terminal -g "800,1142"																							# Resize Terminal
+# wmctrl -r Terminal -e "0,801,25,800,1142"																			# Resize Terminal
+# wmctrl -x -r "nautilus.Nautilus" -e "0,800,0,800,1145"												# Resize File manager
+pasystray &																																			# Sound applet
+wicd-gtk -t &																																		# Network applet
+# nm-applet																																			# Network applet - Networ Manager (currently does not work)

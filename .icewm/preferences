@@ -8,13 +8,13 @@
 # ClickToFocus=1 # 0/1
 
 #  Focus windows when application requests to raise
-# FocusOnAppRaise=0 # 0/1
+FocusOnAppRaise=1 # 0/1
 
 #  Request focus (flashing in taskbar) when application requests raise
 # RequestFocusOnAppRaise=1 # 0/1
 
 #  Raise windows when focused
-# RaiseOnFocus=1 # 0/1
+RaiseOnFocus=1 # 0/1
 
 #  Focus window when client area clicked
 # FocusOnClickClient=1 # 0/1
@@ -317,7 +317,7 @@ CPUStatusShowRamUsage=1 # 0/1
 # PagerShowPreview=0 # 0/1
 
 #  Draw window icons inside large enough preview windows on pager (if PagerShowPreview=1)
-# PagerShowWindowIcons=1 # 0/1
+# PagerShowWindowIcons=0 # 0/1
 
 #  Draw even minimized windows as unfilled rectangles (if PagerShowPreview=1)
 # PagerShowMinimized=1 # 0/1
@@ -346,8 +346,8 @@ CPUStatusShowRamUsage=1 # 0/1
 #  Show themes submenu
 # ShowThemesMenu=1 # 0/1
 
-#  Show logout submenu
-# ShowLogoutMenu=1 # 0/1
+#  Show logout menu
+ShowLogoutMenu=1 # 0/1
 
 #  Show the help menu item
 ShowHelp=0 # 0/1
@@ -395,7 +395,7 @@ ConfirmLogout=0 # 0/1
 # DelayFuzziness=10 # [0-100]
 
 #  Activate workaround for Java7 Swing/AWT focus issue
-# ActivateJava7FocusHack=1 # 0/1
+ActivateJava7FocusHack=1 # 0/1
 
 #  Pointer motion distance before click gets interpreted as drag
 # ClickMotionDistance=4 # [0-32]
@@ -527,7 +527,8 @@ ConfirmLogout=0 # 0/1
 # NetWorkAreaBehaviour=0 # [0-2]
 
 #  Icon search path (colon separated)
-IconPath="/usr/share/pixmaps:/usr/share/app-install/icons"
+#IconPath="/usr/share/pixmaps:/usr/share/app-install/icons:/usr/share/icons/hicolor/256x256/apps:/home/mario/.wine/drive_c/Program\ Files"
+IconPath="/usr/share/pixmaps:/usr/share/icons:/usr/share/icons/hicolor/64x64/apps:/usr/share/icons/hicolor/48x48/apps:/usr/share/icons/gnome/48x48/apps:/usr/share/icons/gnome/48x48/devices:/usr/share/icons/gnome/48x48/mimetypes:/usr/share/icons/gnome/48x48/categories"
 
 #  Mailbox path (use $MAIL instead)
 # MailBoxPath="MailBoxPath="imap://user%40server.com:password@server.com"
@@ -560,7 +561,7 @@ IconPath="/usr/share/pixmaps:/usr/share/app-install/icons"
 # TerminalCommand="x-terminal-emulator"
 
 #  Command to start logout
-LogoutCommand="~/.icewm/./logout"
+LogoutCommand="killall -QUIT icewm"
 
 #  Command to cancel logout
 # LogoutCancelCommand=""
@@ -617,7 +618,7 @@ DateFormat="%c  Week %V"
 # KeyWinRaise="Alt+F1"
 
 #
-# KeyWinOccupyAll="Alt+F2"
+# KeyWinOccupyAll=""
 
 #
 # KeyWinLower="Alt+F3"
@@ -719,7 +720,7 @@ KeySysDialog=""
 # KeySysWinListMenu=""
 
 #
-# KeySysAddressBar="Alt+Ctrl+Space"
+KeySysAddressBar="Alt+F2"
 
 #
 # KeySysWorkspacePrev="Alt+Ctrl+Left"
@@ -1328,7 +1329,7 @@ WorkspaceNames=" DEV ", " TER ", " CON ", " :-) "
 # DesktopBackgroundCenter=0 # 0/1
 
 #  Support for semitransparent terminals like Eterm or gnome-terminal
-# SupportSemitransparency=1 # 0/1
+SupportSemitransparency=1 # 0/1
 
 #  Desktop background scaled to full screen
 # DesktopBackgroundScaled=0 # 0/1

@@ -1,13 +1,14 @@
 # Title icon program
 
-prog FireFox firefox firefox
-prog XTerm xterm xterm
+prog Iceweasel iceweasel iceweasel
 prog Filezila filezilla filezilla
 prog Geany geany geany
 prog Pidgin pidgin-menu pidgin
 prog Mumble mumble mumble
-prog XChat xchat xchat
+prog HexChat hexchat hexchat
+prog Roxterm roxterm roxterm
 prog Inkscape inkscape inkscape
 prog Gimp gimp gimp
 prog Blender blender blender
 prog Nvida-Settings nvidia-settings nvidia-settings
+prog Calculator xcalc xcalc
