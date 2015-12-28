@@ -26,6 +26,9 @@ sudo apt-get --yes install blender gimp inkscape
 
 ### Multimedia programs
 sudo apt-get --yes install pulseaudio pavucontrol pasystray
+curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_amd64.deb >deadbeef-static_0.6.2-2_amd64.deb
+sudo dpkg -i deadbeef-static_0.6.2-2_amd64.deb
+rm deadbeef-static_0.6.2-2_amd64.deb
 
 ### Communication programs
 sudo apt-get --yes install mumble pidgin
