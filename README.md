@@ -1,7 +1,7 @@
 ## LegacyIce-antiX
 Goal of the project is to return the traditional desktop
 
-![IceWM desktop](auxiliary_files/screenshot2.jpg)
+![IceWM desktop](https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/screenshots/LegacyIce.jpg)
 
 ##BETA STAGE
 
