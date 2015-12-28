@@ -68,6 +68,9 @@ Send request to https://github.com/KERNELULTRAS/LegacyIce-antiX/pulls
 
 GitHub [Contribute](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/development/instructions_for_git.md)
 
-### Licence:
+### TODO
+Network Manager without systemd dependency
+
+### Licence
 [GNU GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
 
