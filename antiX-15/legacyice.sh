@@ -188,7 +188,7 @@ cd ~
 
 ### Download compositor config files
 echo -e "\e[38;5;227m- Setup compositor\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/compton.conf
 mv $HOME/.config/compton.conf $HOME/.config/compton.conf.back
 mv /tmp/compton.conf $HOME/.config/compton.conf
 
@@ -196,7 +196,7 @@ mv /tmp/compton.conf $HOME/.config/compton.conf
 
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/user_xsession.py
 python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
 [ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
