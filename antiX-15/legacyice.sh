@@ -224,8 +224,8 @@ echo -e \"\e[38;5;33m---------------------------------------------------\"">>$HO
 echo "date">>$HOME/.bashrc
 echo "
 echo \"---------------------------------------------------\"
-echo -e \"\e[37;5;239mFilesystem......Size..Used..Avail.Us%.Mounted on\e[38;5;184m\"">>$HOME/.bashrc
-echo "df -h | grep -i /dev/">>$HOME/.bashrc
+echo -e \"\e[37;5;239m\"">>$HOME/.bashrc
+echo "df -h | grep -e /dev/ -e Filesystem">>$HOME/.bashrc
 
 ### Clutter off (Off hide mouse)
 echo -e "\e[38;5;227m- Clutter off\e[38;5;46m\n"
