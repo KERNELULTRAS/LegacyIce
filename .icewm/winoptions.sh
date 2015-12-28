@@ -16,7 +16,7 @@ y_res=$(xrandr --current | grep '*' | uniq | awk '{print $1}' |  cut -d 'x' -f2)
 y_res=$(bc -l <<< $y_res-28)
 
 echo "Your X resolution: "$x_res
-echo "Your Y resolution: "$y_res
+echo "Your Y resolution (minus 28px panel): "$y_res
 
 # Calculate your X reulution to 1600
 x_factor=$(bc -l <<< 1600/$x_res)
