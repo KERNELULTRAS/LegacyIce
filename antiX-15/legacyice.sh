@@ -144,17 +144,18 @@ file=$(basename $source)
 basename=${file%.*}
 
 # Backup old Geany config
-if [ -d "$source" ] then
-	if [[ ! -e "$dest_dir/$basename" ]]; then
-		# file does not exist in the destination directory
-		mv "$source" "$dest_dir"
-	else
-		num=1
-		while [[ -e "$dest_dir/$basename$num" ]]; do
-        	(( num++ ))
-		done
-		mv "$source" "$dest_dir/$basename$num" 
-	fi 
+if [ -d "$source" ]
+  then
+    if [[ ! -e "$dest_dir/$basename" ]]; then
+      # file does not exist in the destination directory
+      mv "$source" "$dest_dir"
+    else
+      num=1
+      while [[ -e "$dest_dir/$basename$num" ]]; do
+      (( num++ ))
+      done
+      mv "$source" "$dest_dir/$basename$num"
+    fi
 fi
 
 rm -rf /tmp/GeanyTheme-Dark
