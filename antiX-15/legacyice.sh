@@ -141,21 +141,21 @@ source=$HOME/.config/geany
 dest_dir=$HOME/.config
 
 file=$(basename $source)
-echo $file"\n"
 basename=${file%.*}
-echo $basename"\n"
 
 # Backup old Geany config
-if [[ ! -e "$dest_dir/$basename" ]]; then
-	# file does not exist in the destination directory
-	mv "$source" "$dest_dir"
-else
-	num=1
-	while [[ -e "$dest_dir/$basename$num" ]]; do
-        (( num++ ))
-	done
-	mv "$source" "$dest_dir/$basename$num" 
-fi 
+if [ -d "$source" ]
+	if [[ ! -e "$dest_dir/$basename" ]]; then
+		# file does not exist in the destination directory
+		mv "$source" "$dest_dir"
+	else
+		num=1
+		while [[ -e "$dest_dir/$basename$num" ]]; do
+        	(( num++ ))
+		done
+		mv "$source" "$dest_dir/$basename$num" 
+	fi 
+fi
 
 rm -rf /tmp/GeanyTheme-Dark
 cd /tmp
@@ -171,7 +171,7 @@ if [ -d ~/.icewm ]
   then
     mv ~/.icewm ~/.icewm.legacyice.backup
 fi
-svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
+svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
 
 ### Install patched IceWM
 echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
@@ -188,7 +188,7 @@ cd ~
 
 ### Download compositor config files
 echo -e "\e[38;5;227m- Setup compositor\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/compton.conf
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/compton.conf
 mv $HOME/.config/compton.conf $HOME/.config/compton.conf.back
 mv /tmp/compton.conf $HOME/.config/compton.conf
 
@@ -196,7 +196,7 @@ mv /tmp/compton.conf $HOME/.config/compton.conf
 
 ### Switch LightDM to IceWM
 echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/Ubuntu14.04-script/user_xsession.py
+wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/user_xsession.py
 python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
 [ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
