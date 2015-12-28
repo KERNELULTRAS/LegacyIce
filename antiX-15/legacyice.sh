@@ -37,7 +37,7 @@ sudo apt-get --yes install mumble pidgin
 sudo apt-get --yes install filezilla
 
 ### Utils
-sudo apt-get --yes install galculator medit
+sudo apt-get --yes install galculator medit qpdfview
 
 ### Core tools
 sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
