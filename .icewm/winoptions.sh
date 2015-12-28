@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp winoptions winoptions.back
+cp .icewm/winoptions .icewm/winoptions.back
 
 # Get your X resolution
 x_res=$(xrandr --current | grep '*' | uniq | awk '{print $1}' |  cut -d 'x' -f1)
