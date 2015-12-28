@@ -144,7 +144,7 @@ file=$(basename $source)
 basename=${file%.*}
 
 # Backup old Geany config
-if [ -d "$source" ]
+if [ -d "$source" ] then
 	if [[ ! -e "$dest_dir/$basename" ]]; then
 		# file does not exist in the destination directory
 		mv "$source" "$dest_dir"
