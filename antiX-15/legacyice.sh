@@ -39,6 +39,9 @@ sudo apt-get --yes install filezilla
 ### Utils
 sudo apt-get --yes install galculator medit qpdfview
 
+### Languages
+sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
+
 ### Core tools
 sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
 hsetroot intltool key-mon libgtk2.0-dev lightdm linuxdoc-tools mousepad \
