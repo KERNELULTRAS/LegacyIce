@@ -33,6 +33,9 @@ sudo apt-get --yes install mumble pidgin
 ### Network programs
 sudo apt-get --yes install filezilla
 
+### Utils
+sudo apt-get --yes install galculator medit
+
 ### Core tools
 sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
 hsetroot intltool key-mon libgtk2.0-dev lightdm linuxdoc-tools mousepad \
