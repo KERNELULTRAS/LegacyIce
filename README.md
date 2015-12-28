@@ -38,6 +38,7 @@ Goal of the project is to return the traditional desktop
 * Taskbar applications (Pidgin, Xchat, etc.)
 * Config files for Geany
 * Install programs for communication, graphic, multimedia, develop and other
+* Auto set winoptions
 * Nice comments
 
 ### Install
@@ -66,9 +67,6 @@ Send issue to https://github.com/KERNELULTRAS/LegacyIce-antiX/issues
 Send request to https://github.com/KERNELULTRAS/LegacyIce-antiX/pulls
 
 GitHub [Contribute](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/development/instructions_for_git.md)
-
-### Todo:
-Auto winoption script (current in alpha stage)
 
 ### Licence:
 [GNU GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
