@@ -141,21 +141,21 @@ source=$HOME/.config/geany
 dest_dir=$HOME/.config
 
 file=$(basename $source)
-echo $file"\n"
 basename=${file%.*}
-echo $basename"\n"
 
 # Backup old Geany config
-if [[ ! -e "$dest_dir/$basename" ]]; then
-	# file does not exist in the destination directory
-	mv "$source" "$dest_dir"
-else
-	num=1
-	while [[ -e "$dest_dir/$basename$num" ]]; do
-        (( num++ ))
-	done
-	mv "$source" "$dest_dir/$basename$num" 
-fi 
+if [ -d "$source" ]
+	if [[ ! -e "$dest_dir/$basename" ]]; then
+		# file does not exist in the destination directory
+		mv "$source" "$dest_dir"
+	else
+		num=1
+		while [[ -e "$dest_dir/$basename$num" ]]; do
+        	(( num++ ))
+		done
+		mv "$source" "$dest_dir/$basename$num" 
+	fi 
+fi
 
 rm -rf /tmp/GeanyTheme-Dark
 cd /tmp
