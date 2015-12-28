@@ -228,7 +228,7 @@ sudo sed -i 's/hide_menubar=0/hide_menubar=1/g' $HOME/.config/roxterm.sourceforg
 
 ### Resize winoptions by xrandr
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
-./icewm/winoptions.sh
+./.icewm/winoptions.sh
 
 ### Create menu
 echo -e "\e[38;5;227m- Create menu\e[38;5;46m\n"
