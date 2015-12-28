@@ -5,7 +5,7 @@ prog Filezila filezilla filezilla
 prog Pidgin pidgin-menu pidgin
 prog Mumble mumble mumble
 prog HexChat hexchat hexchat
-prog DeadBeef deadbeef deadbeef
+prog DeadBeef deadbeef /opt/deadbeef/bin/deadbeef
 prog Geany geany geany
 prog Medit medit medit
 prog Roxterm roxterm roxterm
