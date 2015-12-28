@@ -171,7 +171,7 @@ if [ -d ~/.icewm ]
   then
     mv ~/.icewm ~/.icewm.legacyice.backup
 fi
-svn checkout https://github.com/KERNELULTRAS/LegacyIce.git/trunk/.icewm
+svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
 
 ### Install patched IceWM
 echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
