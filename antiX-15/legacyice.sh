@@ -12,6 +12,20 @@ echo -e "\e[40m\n\n"
 ### Goto to home directory
 cd ~
 
+### Test architecture
+echo -e "\e[38;5;227m- Test architecture\e[38;5;46m\n"
+
+if [ `arch` == "x86_64" ];then
+	echo "Architecture x86 64bit"
+	architecture="amd64"
+elif [ `arch` == "i*" ];then
+	echo "Architecture x86 32bit"
+	architecture="i386"
+else
+	echo "Unsupported architecture"
+	exit 1
+fi
+
 ### UPGRADE SYSTEM
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
 sudo apt-get --yes update
@@ -26,9 +40,9 @@ sudo apt-get --yes install blender gimp inkscape
 
 ### Multimedia programs
 sudo apt-get --yes install pulseaudio pavucontrol pasystray
-curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_amd64.deb >deadbeef-static_0.6.2-2_amd64.deb
-sudo dpkg -i deadbeef-static_0.6.2-2_amd64.deb
-rm deadbeef-static_0.6.2-2_amd64.deb
+curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_$architecture.deb >deadbeef-static_0.6.2-2_$architecture.deb
+sudo dpkg -i deadbeef-static_0.6.2-2_$architecture.deb
+rm deadbeef-static_0.6.2-2_$architecture.deb
 
 ### Communication programs
 sudo apt-get --yes install mumble pidgin
