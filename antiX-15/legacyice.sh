@@ -193,6 +193,9 @@ cd ~
 echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
 if [ -d ~/.icewm ]
   then
+    if [ -d "~/.icewm.legacyice.backup" ];then
+      rm -rf ~/.icewm.legacyice.backup
+    fi
     mv ~/.icewm ~/.icewm.legacyice.backup
 fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
@@ -206,6 +209,7 @@ cd icewm/
 ./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
 make V=0
 sudo make install
+rm -rf /tmp/icewm
 cd ~
 
 ### COMPOSITOR
@@ -224,6 +228,12 @@ wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/mast
 python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
 [ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
+
+### Set LightDM wallpaper and GTK theme
+echo -e "\e[38;5;227m- Set LightDM wallpaper and GTK theme\e[38;5;46m\n"
+sudo cp .icewm/themes/LegacyIce-Dark/default.jpg /usr/share/wallpaper
+sudo sed -i 's/background.*$/background=\/usr\/share\/wallpaper\/default.jpg/g' /etc/lightdm/lightdm-gtk-greeter.conf
+sudo sed -i 's/^theme-name=.*$/theme-name=MediterraneanDarkest/g' /etc/lightdm/lightdm-gtk-greeter.conf
 
 ### Echo LegacyIce textinfo
 echo -e "\e[38;5;227m- Setup .bashrc\e[38;5;46m\n"
