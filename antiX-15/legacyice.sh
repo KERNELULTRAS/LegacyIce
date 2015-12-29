@@ -18,7 +18,7 @@ echo -e "\e[38;5;227m- Test architecture\e[38;5;46m\n"
 if [ `arch` == "x86_64" ];then
 	echo "Architecture x86 64bit"
 	architecture="amd64"
-elif [ `arch` == "i*" ];then
+elif [[ `arch` == i* ]];then
 	echo "Architecture x86 32bit"
 	architecture="i386"
 else
