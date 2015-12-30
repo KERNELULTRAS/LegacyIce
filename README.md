@@ -64,8 +64,6 @@ chmod +x legacyice.sh
 ### How to contribute
 Send issue to https://github.com/KERNELULTRAS/LegacyIce-antiX/issues
 
-Send request to https://github.com/KERNELULTRAS/LegacyIce-antiX/pulls
-
 GitHub [Contribute](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/development/instructions_for_git.md)
 
 ### TODO
