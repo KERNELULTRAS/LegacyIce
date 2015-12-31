@@ -58,7 +58,7 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 ### Spusti príkaz
 
-**Otvorenie dialógu na spustenie príkazu**: Win+Space
+**Otvorenie dialógu na spustenie príkazu**: Alt+F2
 
 ### Systémové informácie
 
@@ -78,10 +78,10 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 "Win+F"		Správca súborov
 
-"Win+G"    Otvorenie priečinku Games
+"Win+G"   Otvorenie priečinku Games
 
 "Win+S"		Synaptic
 
 "Win+T"		Terminál
 
-"Win+V"    Video prehrávač
+"Win+V"   Video prehrávač
