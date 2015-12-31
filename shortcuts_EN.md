@@ -58,7 +58,7 @@ Ctrl+Alt same as WinKey
 
 ### Run Command
 
-**Open dialog for run command**: Win+Space
+**Open dialog for run command**: Alt+F2
 
 ### System info
 
@@ -78,10 +78,10 @@ Ctrl+Alt same as WinKey
 
 "Win+F"		File manager
 
-"Win+G"    Games directory open
+"Win+G"   Games directory open
 
 "Win+S"		Synaptic
 
 "Win+T"		Terminal
 
-"Win+V"    Video player
+"Win+V"   Video player
