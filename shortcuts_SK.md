@@ -18,6 +18,8 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 **Prsun okien**: Win+KP_1 - Win+KP_9 (KP = NumPad) 
 
+**Okno do fullscreenu**: F11
+
 ### Pracovné plochy
 
 **Presuntie sa na plochu vpravo**: Win+ArrowRight
@@ -27,10 +29,6 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 ### Zobraz plochu a späť
 
 **Zobraz desktop**: Win+D
-
-### Na celú obrazovku
-
-**Na celú obraovku**: F11
 
 ### Skry panel a späť
 
