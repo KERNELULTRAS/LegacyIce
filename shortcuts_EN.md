@@ -16,7 +16,9 @@ Ctrl+Alt same as WinKey
 
 **Arange windows horizontaly**: Alt+Shift+F3
 
-**Move window**: Win+KP_1 - Win+KP_9 (KP = NumPad) 
+**Move window**: Win+KP_1 - Win+KP_9 (KP = NumPad)
+
+**Window into fullscreen**: F11
 
 ### Workspaces
 
@@ -27,10 +29,6 @@ Ctrl+Alt same as WinKey
 ### Show desktop and vice versa
 
 **Show desktop**: Win+D
-
-### Full screen
-
-**Full screen**: F11
 
 ### Hide panel and vice versa
 
