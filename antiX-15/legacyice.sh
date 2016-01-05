@@ -58,8 +58,8 @@ sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-
 
 ### Core tools
 sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
-hsetroot intltool key-mon libgtk2.0-dev lightdm linuxdoc-tools mousepad \
-subversion synaptic telnet wget whois wmctrl software-properties-common xosd-bin
+hsetroot intltool key-mon libgtk2.0-dev libnotify-bin lightdm linuxdoc-tools mousepad \
+subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### IceWM
 sudo apt-get --yes install compton
