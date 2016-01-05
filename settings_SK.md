@@ -6,7 +6,7 @@ Je potrebné odkomentovať v ~/.icewm/startup
 
 riadok
 
-# spacefm --desktop
+spacefm --desktop
 
 ### Panel (dock)
 
