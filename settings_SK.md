@@ -1,5 +1,13 @@
 ## Nastavenia
 
+### Ikony na ploche
+
+Je potrebné odkomentovať v ~/.icewm/startup
+
+riadok
+
+spacefm --desktop
+
 ### Panel (dock)
 
 Zmeniť pozíciu panela naspodok zmeň **TaskBarAtTop=1** v súbore ~/.icewm/preferences na **TaskBarAtTop=0**

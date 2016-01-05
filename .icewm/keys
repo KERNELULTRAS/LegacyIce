@@ -5,7 +5,7 @@
 
 # Programs
 key "Ctrl+Alt+b"		iceweasel
-key "Ctrl+Alt+e"		medit
+key "Ctrl+Alt+e"		textadept
 key "Ctrl+Alt+p"		geany
 key "Ctrl+Alt+f"		spacefm
 key "Ctrl+Alt+g"		spacefm Games
