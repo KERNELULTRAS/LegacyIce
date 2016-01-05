@@ -18,9 +18,11 @@ echo -e "\e[38;5;227m- Test architecture\e[38;5;46m\n"
 if [ `arch` == "x86_64" ];then
 	echo "Architecture x86 64bit"
 	architecture="amd64"
+	architecture_x="x86_64"
 elif [[ `arch` == i* ]];then
 	echo "Architecture x86 32bit"
 	architecture="i386"
+	architecture_x="i386"
 else
 	echo "Unsupported architecture"
 	exit 1
@@ -40,6 +42,7 @@ sudo apt-get --yes install blender gimp inkscape
 
 ### Multimedia programs
 sudo apt-get --yes install pulseaudio pavucontrol pasystray
+# Install DeadBeef
 curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_$architecture.deb >deadbeef-static_0.6.2-2_$architecture.deb
 sudo dpkg -i deadbeef-static_0.6.2-2_$architecture.deb
 rm deadbeef-static_0.6.2-2_$architecture.deb
@@ -52,6 +55,12 @@ sudo apt-get --yes install filezilla
 
 ### Utils
 sudo apt-get --yes install galculator medit qpdfview
+# Install Textadept
+wget -P /tmp http://foicica.com/textadept/download/textadept_LATEST.$architecture_x.tgz
+tar zxvf /tmp/textadept_LATEST.$architecture_x.tgz -C /tmp
+rm /tmp/textadept_LATEST.$architecture_x.tgz
+sudo cp -rf /tmp/textadept_8.5.$architecture_x/ /opt/textadept/
+sudo ln -s /opt/textadept/textadept /usr/bin/textadept
 
 ### Languages
 sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
