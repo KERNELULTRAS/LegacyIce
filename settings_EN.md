@@ -6,7 +6,7 @@ You need uncomment in file ~/.icewm/startup
 
 line
 
-# spacefm --desktop
+spacefm --desktop
 
 ### Panel (dock)
 
