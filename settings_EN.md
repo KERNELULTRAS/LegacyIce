@@ -1,5 +1,13 @@
 ## Settings
 
+### Icons on desktop
+
+You need uncomment in file ~/.icewm/startup
+
+line
+
+# spacefm --desktop
+
 ### Panel (dock)
 
 For panel position to bottom change **TaskBarAtTop=1** in file ~/.icewm/preferences to **TaskBarAtTop=0**
