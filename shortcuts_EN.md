@@ -12,9 +12,9 @@ Ctrl+Alt same as WinKey
 
 **Close window**: Alt+F4
 
-**Arange windows verticaly**: Alt+Shift+F2
+**Arange windows verticaly**: Win+F2
 
-**Arange windows horizontaly**: Alt+Shift+F3
+**Arange windows horizontaly**: Win+F3
 
 **Move window**: Win+KP_1 - Win+KP_9 (KP = NumPad)
 
