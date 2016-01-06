@@ -12,9 +12,9 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 **Zavretie okna**: Alt+F4
 
-**Usporiadanie okien vertikálne**: Alt+Shift+F2
+**Usporiadanie okien vertikálne**: Win+F2
 
-**Usporiadanie okiens horizontálne**: Alt+Shift+F3
+**Usporiadanie okiens horizontálne**: Win+F3
 
 **Prsun okien**: Win+KP_1 - Win+KP_9 (KP = NumPad) 
 
