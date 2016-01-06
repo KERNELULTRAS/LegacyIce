@@ -61,6 +61,8 @@ tar zxvf /tmp/textadept_LATEST.$architecture_x.tgz -C /tmp
 rm /tmp/textadept_LATEST.$architecture_x.tgz
 sudo cp -rf /tmp/textadept_8.5.$architecture_x/ /opt/textadept/
 sudo ln -s /opt/textadept/textadept /usr/bin/textadept
+sudo cp /opt/textadept/src/textadept.desktop /usr/share/applications
+sudo cp /opt/textadept/core/images/textadept.png /usr/share/icons
 
 ### Languages
 sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
