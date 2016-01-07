@@ -48,11 +48,9 @@ Goal of the project is to return the traditional desktop
 antix download from here http://sourceforge.net/projects/antix-linux/files/Final/MX-krete/
 Select **antiX-15-V_x64-full.iso** or **antiX-15-V_386-full.iso**
 
-wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/legacyice.sh
-
-chmod +x legacyice.sh
-
-./legacyice.sh
+    wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/legacyice.sh
+    chmod +x legacyice.sh
+    ./legacyice.sh
 
 ### Shortcuts
 
