@@ -15,7 +15,7 @@ Goal of the project is to return the traditional desktop
 #### Repository for last IceWM
 * Make latest package of [IceWM](https://github.com/bbidulock/icewm)
 
-#### Script to convert Ubuntu to LegacyIce
+#### Script to convert antiX to LegacyIce
 * Without systemd
 * Remove JWM, FluxBox, Herbstluftwm and settings
 * Aplication menu generated with icewm-menu-fdo
