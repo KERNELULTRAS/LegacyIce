@@ -170,29 +170,16 @@ gtk-xft-hintstyle=hintfull" >$HOME/.config/gtk-3.0/settings.ini
 
 ### Geany theme
 echo -e "\e[38;5;227m- Setup Geany theme\e[38;5;46m\n"
-
-source=$HOME/.config/geany
-dest_dir=$HOME/.config
-
-file=$(basename $source)
-basename=${file%.*}
-
-# Backup old Geany config
-if [ -d "$source" ]
-  then
-    if [[ ! -e "$dest_dir/$basename" ]]; then
-      # file does not exist in the destination directory
-      mv "$source" "$dest_dir"
-    else
-      num=1
-      while [[ -e "$dest_dir/$basename$num" ]]; do
-      (( num++ ))
-      done
-      mv "$source" "$dest_dir/$basename$num"
-    fi
+if [[ -e "/home/$USER/.config/geany" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.config/geany-back-$num" ]]; do
+	(( num++ ))
+	done
+	mv "/home/$USER/.config/geany" "/home/$USER/.config/geany-back-$num"
 fi
-
-rm -rf /tmp/GeanyTheme-Dark
+if [[ -e "/tmp/GeanyTheme-Dark" ]]; then
+	rm -rf /tmp/GeanyTheme-Dark
+fi
 cd /tmp
 git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
 mv GeanyTheme-Dark $HOME/.config/geany
@@ -202,12 +189,12 @@ cd ~
 
 ### Download IceWM config files
 echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
-if [ -d ~/.icewm ]
-  then
-    if [ -d "~/.icewm.legacyice.backup" ];then
-      rm -rf ~/.icewm.legacyice.backup
-    fi
-    mv ~/.icewm ~/.icewm.legacyice.backup
+if [[ -e "/home/$USER/.icewm" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.icewm-back-$num" ]]; do
+	(( num++ ))
+	done
+	mv "/home/$USER/.icewm" "/home/$USER/.icewm-back-$num"
 fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
 
@@ -228,7 +215,13 @@ cd ~
 ### Download compositor config files
 echo -e "\e[38;5;227m- Setup compositor\e[38;5;46m\n"
 wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/compton.conf
-mv $HOME/.config/compton.conf $HOME/.config/compton.conf.back
+if [[ -e "/home/$USER/.config/compton.conf" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.config/compton.conf-back-$num" ]]; do
+	(( num++ ))
+	done
+	mv "/home/$USER/.config/compton.conf" "/home/$USER/.config/compton.conf-back-$num"
+fi
 mv /tmp/compton.conf $HOME/.config/compton.conf
 
 ### USER SESSION
