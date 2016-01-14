@@ -261,7 +261,7 @@ sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/un
 
 ### Roxterm configuration
 echo -e "\e[38;5;227m- Setup Roxterm\e[38;5;46m\n"
-sudo sed -i 's/hide_menubar=0/hide_menubar=1/g' $HOME/.config/roxterm.sourceforge.net/Profiles/Default
+sed -i 's/hide_menubar=0/hide_menubar=1/g' $HOME/.config/roxterm.sourceforge.net/Profiles/Default
 
 ### Resize winoptions by xrandr
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
