@@ -261,7 +261,14 @@ sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/un
 
 ### Roxterm configuration
 echo -e "\e[38;5;227m- Setup Roxterm\e[38;5;46m\n"
-sed -i 's/hide_menubar=0/hide_menubar=1/g' $HOME/.config/roxterm.sourceforge.net/Profiles/Default
+if [[ -e "/home/$USER/.config/roxterm.sourceforge.net" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.config/roxterm.sourceforge.net-back-$num" ]]; do
+	(( num++ ))
+	done
+	mv "/home/$USER/.config/roxterm.sourceforge.net" "/home/$USER/.config/roxterm.sourceforge.net-back-$num"
+fi
+svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/LegacyIce/roxterm.sourceforge.net
 
 ### Resize winoptions by xrandr
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
