@@ -21,15 +21,15 @@ cd ~
 echo -e "\e[38;5;227m- Test architecture\e[38;5;46m\n"
 
 if [ `arch` == "x86_64" ];then
-	echo "Architecture x86 64bit"
+	echo "Architecture x86 64bit\n"
 	architecture="amd64"
 	architecture_x="x86_64"
 elif [[ `arch` == i* ]];then
-	echo "Architecture x86 32bit"
+	echo "Architecture x86 32bit\n"
 	architecture="i386"
 	architecture_x="i386"
 else
-	echo "Unsupported architecture"
+	echo "Unsupported architecture\n"
 	exit 1
 fi
 
