@@ -7,7 +7,7 @@
 # (In alphabetical order)
 
 ### Set background
-echo -e "\e[40m\n\n"
+# echo -e "\e[40m\n\n"
 
 ### Velcome
 echo -e "\e[38;5;227m----------------------------------------------------------\e[38;5;46m"
