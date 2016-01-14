@@ -9,6 +9,11 @@
 ### Set background
 echo -e "\e[40m\n\n"
 
+### Velcome
+echo -e "\e[38;5;227m----------------------------------------------------------\e[38;5;46m"
+echo -e "\e[38;5;227m-- Installation LegacyIce by KERNEL ULTRAS               -\e[38;5;46m"
+echo -e "\e[38;5;227m----------------------------------------------------------\e[38;5;46m\n"
+
 ### Goto to home directory
 cd ~
 
@@ -28,6 +33,51 @@ else
 	exit 1
 fi
 
+### Install communication programs?
+echo -e "\e[0;93m- Install communication programs? - Mumble, Pidgin\e[1;97m\n"
+read -r -p "Install? [N/y] " response
+response=${response,,} # tolower
+if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
+  echo -e "NO\n";
+else
+  echo -e "YES\n";
+  install_comms="yes";
+fi
+
+### Install graphics programs?
+echo -e "\e[0;93m- Install graphics programs? - Blender, Gimp, Inkscape\e[1;97m\n"
+read -r -p "Install? [N/y] " response
+response=${response,,} # tolower
+if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
+  echo -e "NO\n";
+else
+  echo -e "YES\n";
+  install_graphs="yes";
+fi
+
+### Install network programs?
+echo -e "\e[0;93m- Install network programs? - FileZilla\e[1;97m\n"
+read -r -p "Install? [N/y] " response
+response=${response,,} # tolower
+if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
+  echo -e "NO\n";
+else
+  echo -e "YES\n";
+  install_nets="yes";
+fi
+
+
+### Install utils?
+echo -e "\e[0;93m- Install utils? - Galculator Medit Qpdfview\e[1;97m\n"
+read -r -p "Install? [N/y] " response
+response=${response,,} # tolower
+if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
+  echo -e "NO\n";
+else
+  echo -e "YES\n";
+  install_utils="yes";
+fi
+
 ### UPGRADE SYSTEM
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
 sudo apt-get --yes update
@@ -38,8 +88,10 @@ sudo apt-get --yes autoremove
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
 ### Graphics programs
-sudo apt-get --yes install blender gimp inkscape
-
+if [[ $install_utils == "yes" ]]; then
+	sudo apt-get --yes install blender gimp inkscape
+fi
+	
 ### Multimedia programs
 sudo apt-get --yes install pulseaudio pavucontrol pasystray
 # Install DeadBeef
@@ -48,13 +100,19 @@ sudo dpkg -i deadbeef-static_0.6.2-2_$architecture.deb
 rm deadbeef-static_0.6.2-2_$architecture.deb
 
 ### Communication programs
-sudo apt-get --yes install mumble pidgin
+if [[ $install_comms == "yes" ]]; then
+	sudo apt-get --yes install mumble pidgin
+fi
 
 ### Network programs
-sudo apt-get --yes install filezilla
+if [[ $install_nets == "yes" ]]; then
+	sudo apt-get --yes install filezilla
+fi
 
 ### Utils
-sudo apt-get --yes install galculator medit qpdfview
+if [[ $install_utils == "yes" ]]; then
+	sudo apt-get --yes install galculator medit qpdfview
+fi
 # Install Textadept
 wget -P /tmp http://foicica.com/textadept/download/textadept_LATEST.$architecture_x.tgz
 tar zxvf /tmp/textadept_LATEST.$architecture_x.tgz -C /tmp
@@ -268,7 +326,8 @@ if [[ -e "/home/$USER/.config/roxterm.sourceforge.net" ]]; then
 	done
 	mv "/home/$USER/.config/roxterm.sourceforge.net" "/home/$USER/.config/roxterm.sourceforge.net-back-$num"
 fi
-svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/LegacyIce/roxterm.sourceforge.net
+cd ~/.config
+svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/antiX-15/roxterm.sourceforge.net
 
 ### Resize winoptions by xrandr
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
