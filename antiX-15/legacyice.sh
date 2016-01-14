@@ -127,7 +127,7 @@ sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-
 
 ### Core tools
 sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
-hsetroot intltool key-mon libgtk2.0-dev libnotify-bin lightdm linuxdoc-tools mousepad \
+hsetroot intltool key-mon libgtk2.0-dev libnotify-bin lightdm linuxdoc-tools \
 subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### IceWM
