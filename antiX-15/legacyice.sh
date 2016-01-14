@@ -269,7 +269,7 @@ echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
 
 ### Create menu
 echo -e "\e[38;5;227m- Create menu\e[38;5;46m\n"
-icewm-menu-fdo>$HOME/.icewm/menu
+sudo icewm-menu-fdo>/usr/share/icewm/menu
 
 ### Update menu after install or uninstall programs
 echo -e "\e[38;5;227m- Setup autoupdate menu\e[38;5;46m\n"
