@@ -328,9 +328,11 @@ if [[ -e "/home/$USER/.config/roxterm.sourceforge.net" ]]; then
 fi
 cd ~/.config
 svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/antiX-15/roxterm.sourceforge.net
+cd ~
 
 ### Resize winoptions by xrandr
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
+chmod +x .icewm/winoptions.sh
 ./.icewm/winoptions.sh
 
 ### Create menu
