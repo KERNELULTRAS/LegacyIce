@@ -7,7 +7,7 @@
 # (In alphabetical order)
 
 ### Set background
-# echo -e "\e[40m\n\n"
+echo -e "\e[40m\n\n"
 
 ### Velcome
 echo -e "\e[38;5;227m----------------------------------------------------------\e[38;5;46m"
@@ -21,20 +21,20 @@ cd ~
 echo -e "\e[38;5;227m- Test architecture\e[38;5;46m\n"
 
 if [ `arch` == "x86_64" ];then
-	echo "Architecture x86 64bit\n"
+	echo -e "Architecture x86 64bit\n\n"
 	architecture="amd64"
 	architecture_x="x86_64"
 elif [[ `arch` == i* ]];then
-	echo "Architecture x86 32bit\n"
+	echo -e "Architecture x86 32bit\n\n"
 	architecture="i386"
 	architecture_x="i386"
 else
-	echo "Unsupported architecture\n"
+	echo -e "Unsupported architecture\n\n"
 	exit 1
 fi
 
 ### Install communication programs?
-echo -e "\e[0;93m- Install communication programs? - Mumble, Pidgin\e[1;97m\n"
+echo -e "\e[38;5;227m- Install communication programs? - Mumble, Pidgin\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -45,7 +45,7 @@ else
 fi
 
 ### Install graphics programs?
-echo -e "\e[0;93m- Install graphics programs? - Blender, Gimp, Inkscape\e[1;97m\n"
+echo -e "\e[38;5;227m- Install graphics programs? - Blender, Gimp, Inkscape\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -56,7 +56,7 @@ else
 fi
 
 ### Install network programs?
-echo -e "\e[0;93m- Install network programs? - FileZilla\e[1;97m\n"
+echo -e "\e[38;5;227m- Install network programs? - FileZilla\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -68,7 +68,7 @@ fi
 
 
 ### Install utils?
-echo -e "\e[0;93m- Install utils? - Galculator Medit Qpdfview\e[1;97m\n"
+echo -e "\e[38;5;227m- Install utils? - Galculator Medit Qpdfview\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
