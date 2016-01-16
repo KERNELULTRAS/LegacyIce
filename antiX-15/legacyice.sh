@@ -121,6 +121,14 @@ sudo cp -rf /tmp/textadept_8.5.$architecture_x/ /opt/textadept/
 sudo ln -s /opt/textadept/textadept /usr/bin/textadept
 sudo cp /opt/textadept/src/textadept.desktop /usr/share/applications
 sudo cp /opt/textadept/core/images/textadept.png /usr/share/icons
+if [[ -e "/home/$USER/.textadept" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.textadept-back-$num" ]]; do
+	(( num++ ))
+	done
+	mv "/home/$USER/.textadept" "/home/$USER/.textadept-back-$num"
+fi
+echo "ui.set_theme{not CURSES and 'dark' or 'custom_dark'}" >~/.textadept
 
 ### Languages
 sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
