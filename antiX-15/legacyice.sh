@@ -134,8 +134,8 @@ echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >~/.textadept
 sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
 
 ### Core tools
-sudo apt-get --yes install autopoint autoconf debfoster curl dh-autoreconf git g++ \
-hsetroot intltool key-mon libgtk2.0-dev libnotify-bin lightdm linuxdoc-tools \
+sudo apt-get --yes install autopoint autoconf bc debfoster curl dh-autoreconf git g++ \
+hsetroot intltool key-mon libgtk2.0-dev libnotify-bin lightdm linuxdoc-tools numlockx \
 subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### IceWM
