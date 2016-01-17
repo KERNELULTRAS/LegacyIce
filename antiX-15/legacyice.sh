@@ -305,6 +305,10 @@ sudo cp .icewm/themes/LegacyIce-Dark/default.jpg /usr/share/wallpaper
 sudo sed -i 's/background.*$/background=\/usr\/share\/wallpaper\/default.jpg/g' /etc/lightdm/lightdm-gtk-greeter.conf
 sudo sed -i 's/^theme-name=.*$/theme-name=MediterraneanDarkest/g' /etc/lightdm/lightdm-gtk-greeter.conf
 
+### Set LID sleep
+echo -e "\e[38;5;227m- Set LID sleep\e[38;5;46m\n"
+sudo sed -i 's/#LID_SLEEP=true/LID_SLEEP=true/g' /etc/default/acpi-support
+
 ### Echo LegacyIce textinfo
 echo -e "\e[38;5;227m- Setup .bashrc\e[38;5;46m\n"
 echo "
