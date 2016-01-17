@@ -308,22 +308,24 @@ sudo sed -i 's/^theme-name=.*$/theme-name=MediterraneanDarkest/g' /etc/lightdm/l
 ### Echo LegacyIce textinfo
 echo -e "\e[38;5;227m- Setup .bashrc\e[38;5;46m\n"
 echo "
-echo -e \"\e[38;5;9m\"
+echo -e \"\e[91m\"
 echo \"@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@\"
 echo \"@   @   @   @ @ @   @ @  @ @   @\"
 echo \"@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\\\\"
 echo \"@   @   @ @ @ @ @    @   @ @   @     /\\\\  /  \\\\  /\\\\\"
 echo \"@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\\\/    \\\\/  \\\\\"
-echo -e \"\e[38;5;33m---------------------------------------------------\"">>$HOME/.bashrc
+echo -e \"\e[94m---------------------------------------------------\"">>$HOME/.bashrc
 echo "date">>$HOME/.bashrc
 echo "
 echo \"---------------------------------------------------\"
-echo -e \"\e[37;5;239m\"">>$HOME/.bashrc
+echo -e \"\e[37m\"">>$HOME/.bashrc
 echo "df -h | grep -e /dev/ -e Filesystem">>$HOME/.bashrc
 
 ### Clutter off (Off hide mouse)
 echo -e "\e[38;5;227m- Clutter off\e[38;5;46m\n"
-sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
+if [[ -e "/etc/default/unclutter" ]]; then
+	sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
+fi
 
 ### Roxterm configuration
 echo -e "\e[38;5;227m- Setup Roxterm\e[38;5;46m\n"
