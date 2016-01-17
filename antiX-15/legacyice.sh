@@ -3,6 +3,7 @@
 # --------------------------------------
 # Script to convert antiX15 to LegacyIce
 # --------------------------------------
+
 # (Only GTK and QT application)
 # (In alphabetical order)
 
@@ -17,7 +18,9 @@ echo -e "\e[38;5;227m----------------------------------------------------------\
 ### Goto to home directory
 cd ~
 
+# --------------------------------------
 ### Test architecture
+# --------------------------------------
 echo -e "\e[38;5;227m- Test architecture\e[38;5;46m\n"
 
 if [ `arch` == "x86_64" ];then
@@ -32,6 +35,10 @@ else
 	echo -e "Unsupported architecture\n\n"
 	exit 1
 fi
+
+# --------------------------------------
+### INSTALL AND UNINSTALL PROGRAMS
+# --------------------------------------
 
 ### Install communication programs?
 echo -e "\e[38;5;227m- Install communication programs? - Mumble, Pidgin\e[38;5;46m\n"
@@ -78,13 +85,12 @@ else
   install_utils="yes";
 fi
 
-### UPGRADE SYSTEM
+### Upgrade system
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
 sudo apt-get --yes update
 sudo apt-get --yes upgrade
 sudo apt-get --yes autoremove
 
-### INSTALL PROGRAMS
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
 
 ### Graphics programs
@@ -135,13 +141,24 @@ sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-
 
 ### Core tools
 sudo apt-get --yes install autopoint autoconf bc debfoster curl dh-autoreconf git g++ \
-hsetroot intltool key-mon libgtk2.0-dev libnotify-bin lightdm linuxdoc-tools numlockx \
+hsetroot intltool key-mon libgtk2.0-dev libnotify-bin linuxdoc-tools numlockx \
 subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### IceWM
 sudo apt-get --yes install compton
+# Install patched IceWM
+echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
+cd /tmp
+git clone http://github.com/bbidulock/icewm.git
+cd icewm/
+./autogen.sh
+./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
+make V=0
+sudo make install
+rm -rf /tmp/icewm
+cd ~
 
-### REMOVE UNNECESSARY PACKAGES
+### Remove unnecessary packages
 echo -e "\e[38;5;227m- Remove unnecessary programs\e[38;5;46m\n"
 sudo apt-get --yes purge leafpad \
 desktop-defaults-fluxbox-antix \
@@ -184,15 +201,12 @@ wallpaper-antix \
 slim
 sudo apt-get --yes autoremove
 
-### Make directory for user specific programs
-# echo -e "\e[38;5;227m- Create directory Programs\e[38;5;46m\n"
-# mkdir Programs
+### Install LightDM
+sudo apt-get --yes install lightdm
 
-### Add bookmarks for Programs to Gnome3 (Nautilus) ...
-# echo -e "\e[38;5;227m- Create bookmarks for Programs\e[38;5;46m\n"
-# echo "file://$HOME/Programs" >> $HOME/.config/gtk-3.0/bookmarks
-
-### SET THEME
+# --------------------------------------
+### SET THEMES
+# --------------------------------------
 
 ### Set GTK2 theme
 echo -e "\e[38;5;227m- Setup GTK2 theme\e[38;5;46m\n"
@@ -251,7 +265,9 @@ git clone https://github.com/bedna-KU/GeanyTheme-Dark.git
 mv GeanyTheme-Dark $HOME/.config/geany
 cd ~
 
-### INSTALL ICEWM
+# --------------------------------------
+### SET CONFIGS
+# --------------------------------------
 
 ### Download IceWM config files
 echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
@@ -263,18 +279,6 @@ if [[ -e "/home/$USER/.icewm" ]]; then
 	mv "/home/$USER/.icewm" "/home/$USER/.icewm-back-$num"
 fi
 svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
-
-### Install patched IceWM
-echo -e "\e[38;5;227m- Install patched IceWM\e[38;5;46m\n"
-cd /tmp
-git clone http://github.com/bbidulock/icewm.git
-cd icewm/
-./autogen.sh
-./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
-make V=0
-sudo make install
-rm -rf /tmp/icewm
-cd ~
 
 ### COMPOSITOR
 
