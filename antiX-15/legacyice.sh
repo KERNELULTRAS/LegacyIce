@@ -73,7 +73,6 @@ else
   install_nets="yes";
 fi
 
-
 ### Install utils?
 echo -e "\e[38;5;227m- Install utils? - Galculator Medit Qpdfview\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
@@ -84,6 +83,18 @@ else
   echo -e "YES\n";
   install_utils="yes";
 fi
+
+### Install utils?
+echo -e "\e[38;5;227m- Install webserver? - Apache PHP MySQL\e[38;5;46m\n"
+read -r -p "Install? [N/y] " response
+response=${response,,} # tolower
+if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
+  echo -e "NO\n";
+else
+  echo -e "YES\n";
+  install_websrv="yes";
+fi
+
 
 ### Upgrade system
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
@@ -119,6 +130,12 @@ fi
 if [[ $install_utils == "yes" ]]; then
 	sudo apt-get --yes install galculator medit qpdfview
 fi
+
+### Utils
+if [[ $install_websrv == "yes" ]]; then
+	sudo apt-get --yes install mysql-server-core-5.5 mysql-server libaio1 mysql-client apache2-mpm-prefork libaprutil1 libapache2-mod-php5 php5-mysql php5-common libaprutil1-dbd-sqlite3 php5-readline mysql-client-5.5 libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php5-cli libmysqlclient18 apache2-data php5-json libapr1 apache2 mysql-server apache2-bin libdbd-mysql-perl libdbi-perl
+fi
+
 # Install Textadept
 wget -P /tmp http://foicica.com/textadept/download/textadept_LATEST.$architecture_x.tgz
 tar zxvf /tmp/textadept_LATEST.$architecture_x.tgz -C /tmp
