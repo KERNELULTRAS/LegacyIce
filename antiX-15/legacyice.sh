@@ -84,7 +84,7 @@ else
   install_utils="yes";
 fi
 
-### Install utils?
+### Install web server?
 echo -e "\e[38;5;227m- Install webserver? - Apache PHP MySQL\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
@@ -107,6 +107,11 @@ sudo apt-get --yes -o Dpkg::Options::="--force-confnew" upgrade
 sudo apt-get --yes autoremove
 
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
+
+### Core tools
+sudo apt-get --yes install autopoint autoconf bc debfoster curl dh-autoreconf git g++ \
+hsetroot intltool key-mon libgtk2.0-dev libnotify-bin linuxdoc-tools numlockx \
+subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### Graphics programs
 if [[ $install_utils == "yes" ]]; then
@@ -135,7 +140,7 @@ if [[ $install_utils == "yes" ]]; then
 	sudo apt-get --yes install galculator medit qpdfview
 fi
 
-### Utils
+### Web server
 if [[ $install_websrv == "yes" ]]; then
 	sudo apt-get --yes install mysql-server-core-5.5 mysql-server libaio1 mysql-client apache2-mpm-prefork libaprutil1 libapache2-mod-php5 php5-mysql php5-common libaprutil1-dbd-sqlite3 php5-readline mysql-client-5.5 libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php5-cli libmysqlclient18 apache2-data php5-json libapr1 apache2 mysql-server apache2-bin libdbd-mysql-perl libdbi-perl
 fi
@@ -159,11 +164,6 @@ echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >~/.textadept
 
 ### Languages
 sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
-
-### Core tools
-sudo apt-get --yes install autopoint autoconf bc debfoster curl dh-autoreconf git g++ \
-hsetroot intltool key-mon libgtk2.0-dev libnotify-bin linuxdoc-tools numlockx \
-subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### IceWM
 sudo apt-get --yes install compton
