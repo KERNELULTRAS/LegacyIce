@@ -353,7 +353,7 @@ ShowLogoutMenu=1 # 0/1
 ShowHelp=0 # 0/1
 
 #  Show logout submenu
-# ShowLogoutSubMenu=1 # 0/1
+# ShowLogoutSubMenu=0 # 0/1
 
 #  Show the about menu item
 # ShowAbout=1 # 0/1
@@ -561,7 +561,7 @@ IconPath="/usr/share/pixmaps:/usr/share/icons:/usr/share/icons/hicolor/64x64/app
 # TerminalCommand="x-terminal-emulator"
 
 #  Command to start logout
-LogoutCommand="killall -QUIT icewm"
+LogoutCommand="~/.icewm/contrib/shutdown.sh"
 
 #  Command to cancel logout
 # LogoutCancelCommand=""
