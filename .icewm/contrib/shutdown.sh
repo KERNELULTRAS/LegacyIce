@@ -32,10 +32,10 @@ case $action in
             *) exit 1 ;;
         esac
         ;;
-    Reboot*) cmd="~/.icewm/reboot" ;;
-    Power*) cmd="~/.icewm/shutdown" ;;
-    Suspend*) cmd="sudo pm-suspend" ;;
-    Hibernate*) cmd="sudo pm-hibernate" ;;
+    Reboot*) cmd="sudo reboot" ;;
+    Power*) cmd="sudo poweroff" ;;
+    Suspend*) cmd="dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Suspend" ;;
+    Hibernate*) cmd="dbus-send --system --print-reply --dest="org.freedesktop.UPower" /org/freedesktop/UPower org.freedesktop.UPower.Hibernate" ;;
     Restart*) cmd="killall -SIGHUP icewm" ;;
     *) exit 1 ;;
 esac
