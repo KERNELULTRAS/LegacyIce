@@ -95,11 +95,15 @@ else
   install_websrv="yes";
 fi
 
+### Edit debian sources list
+echo -e "\e[38;5;227m- Edit Debian sources list\e[38;5;46m\n"
+sudo sed -i 's/#deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/g' /etc/default/acpi-support
+sudo sed -i 's/#deb http:\/\/www.deb-multimedia.org jessie main non-free/deb http:\/\/www.deb-multimedia.org jessie main non-free/g' /etc/default/acpi-support
 
 ### Upgrade system
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
 sudo apt-get --yes update
-sudo apt-get --yes upgrade
+sudo apt-get --yes -o Dpkg::Options::="--force-confnew" upgrade
 sudo apt-get --yes autoremove
 
 echo -e "\e[38;5;227m- Install programs\e[38;5;46m\n"
@@ -314,11 +318,9 @@ mv /tmp/compton.conf $HOME/.config/compton.conf
 ### USER SESSION
 
 ### Switch LightDM to IceWM
-echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/user_xsession.py
-python /tmp/user_xsession.py --user-id 1000 set icewm-session
-
-[ -z "${PATH##*/sbin*}" ] && PATH=$PATH:/sbin:/usr/sbin
+#echo -e "\e[38;5;227m- Switch LightDM to IceWM\e[38;5;46m\n"
+#wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/user_xsession.py
+#python /tmp/user_xsession.py --user-id 1000 set icewm-session
 
 ### Set LightDM wallpaper and GTK theme
 echo -e "\e[38;5;227m- Set LightDM wallpaper and GTK theme\e[38;5;46m\n"
@@ -328,7 +330,9 @@ sudo sed -i 's/^theme-name=.*$/theme-name=MediterraneanDarkest/g' /etc/lightdm/l
 
 ### Set LID sleep
 echo -e "\e[38;5;227m- Set LID sleep\e[38;5;46m\n"
-sudo sed -i 's/#LID_SLEEP=true/LID_SLEEP=true/g' /etc/default/acpi-support
+if [[ -e "/etc/default/acpi-support" ]]; then
+	sudo sed -i 's/#LID_SLEEP=false/LID_SLEEP=true/g' /etc/default/acpi-support
+fi
 
 ### Echo LegacyIce textinfo
 echo -e "\e[38;5;227m- Setup .bashrc\e[38;5;46m\n"
@@ -345,6 +349,7 @@ echo "
 echo \"---------------------------------------------------\"
 echo -e \"\e[37m\"">>$HOME/.bashrc
 echo "df -h | grep -e /dev/ -e Filesystem">>$HOME/.bashrc
+echo "[ -n \"${PATH##*/sbin*}\" ] && PATH=$PATH:/sbin:/usr/sbin">>$HOME/.bashrc
 
 ### Clutter off (Off hide mouse)
 echo -e "\e[38;5;227m- Clutter off\e[38;5;46m\n"
