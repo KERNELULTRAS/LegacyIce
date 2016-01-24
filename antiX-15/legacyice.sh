@@ -345,6 +345,7 @@ echo "
 echo \"---------------------------------------------------\"
 echo -e \"\e[37m\"">>$HOME/.bashrc
 echo "df -h | grep -e /dev/ -e Filesystem">>$HOME/.bashrc
+echo "[ -n \"${PATH##*/sbin*}\" ] && PATH=$PATH:/sbin:/usr/sbin">>$HOME/.bashrc
 
 ### Clutter off (Off hide mouse)
 echo -e "\e[38;5;227m- Clutter off\e[38;5;46m\n"
