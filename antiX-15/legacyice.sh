@@ -97,8 +97,8 @@ fi
 
 ### Edit debian sources list
 echo -e "\e[38;5;227m- Edit Debian sources list\e[38;5;46m\n"
-sudo sed -i 's/#deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/g' /etc/default/acpi-support
-sudo sed -i 's/#deb http:\/\/www.deb-multimedia.org jessie main non-free/deb http:\/\/www.deb-multimedia.org jessie main non-free/g' /etc/default/acpi-support
+sudo sed -i 's/#deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/g' /etc/apt/sources.list.d/debian.list
+sudo sed -i 's/#deb http:\/\/www.deb-multimedia.org jessie main non-free/deb http:\/\/www.deb-multimedia.org jessie main non-free/g' /etc/apt/sources.list.d/debian.list
 
 ### Upgrade system
 echo -e "\e[38;5;227m- Upgrade system\e[38;5;46m\n"
