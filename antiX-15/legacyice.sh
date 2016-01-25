@@ -160,7 +160,6 @@ if [[ -e "/home/$USER/.textadept/init.lua" ]]; then
 	done
 	mv "/home/$USER/.textadept/init.lua" "/home/$USER/.textadept/init.lua-back-$num"
 fi
-
 if [[ -e "/home/$USER/.textadept" ]]; then
   echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
 else
@@ -375,6 +374,78 @@ fi
 cd ~/.config
 svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/antiX-15/roxterm.sourceforge.net
 cd ~
+
+if [[ -e "/home/$USER/.config/key-mon/config" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.config/key-mon/config-back-$num" ]]; do
+	(( num++ ))
+	done
+	mv "/home/$USER/.config/key-mon/config" "/home/$USER/.config/key-mon/config-back-$num"
+fi
+if [[ -e "/home/$USER/.config/key-mon" ]]; then
+	echo "[ui]
+	visible_click_timeout = 0.2
+	follow-mouse = 0
+	key_timeout = 0.5
+	scale = 1.2
+	sticky_mode = 0
+	theme = oblivion
+	visible-click = 0
+	opacity = 1.0
+	backgroundless = 1
+	mouse_timeout = 0.2
+	no_press_fadeout = 0.0
+	decorated = 0
+	only_combo = 0
+	
+	[buttons]
+	ctrl = 1
+	alt = 1
+	mouse = 1
+	shift = 1
+	old-keys = 0
+	
+	[devices]
+	emulate_middle = 0
+	swap_buttons = 0
+	
+	[position]
+	x = -1
+	y = -1
+	" >$HOME/.config/key-mon/config
+else
+  mkdir $HOME/.config/key-mon
+	echo "[ui]
+	visible_click_timeout = 0.2
+	follow-mouse = 0
+	key_timeout = 0.5
+	scale = 1.2
+	sticky_mode = 0
+	theme = oblivion
+	visible-click = 0
+	opacity = 1.0
+	backgroundless = 1
+	mouse_timeout = 0.2
+	no_press_fadeout = 0.0
+	decorated = 0
+	only_combo = 0
+	
+	[buttons]
+	ctrl = 1
+	alt = 1
+	mouse = 1
+	shift = 1
+	old-keys = 0
+	
+	[devices]
+	emulate_middle = 0
+	swap_buttons = 0
+	
+	[position]
+	x = -1
+	y = -1
+	" >$HOME/.config/key-mon/config
+fi
 
 ### Resize winoptions by xrandr
 echo -e "\e[38;5;227m- Setup Winoptions\e[38;5;46m\n"
