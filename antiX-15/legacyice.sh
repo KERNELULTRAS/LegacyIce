@@ -160,7 +160,13 @@ if [[ -e "/home/$USER/.textadept/init.lua" ]]; then
 	done
 	mv "/home/$USER/.textadept/init.lua" "/home/$USER/.textadept/init.lua-back-$num"
 fi
-echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >~/.textadept
+
+if [[ -e "/home/$USER/.textadept" ]]; then
+  echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
+else
+  mkdir $HOME/.textadept
+  echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
+fi
 
 ### Languages
 sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
