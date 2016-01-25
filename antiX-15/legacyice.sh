@@ -156,15 +156,15 @@ sudo cp /opt/textadept/core/images/textadept.png /usr/share/icons
 if [[ -e "/home/$USER/.textadept/init.lua" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.textadept/init.lua-back-$num" ]]; do
-	(( num++ ))
+		(( num++ ))
 	done
 	mv "/home/$USER/.textadept/init.lua" "/home/$USER/.textadept/init.lua-back-$num"
 fi
 if [[ -e "/home/$USER/.textadept" ]]; then
-  echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
+	echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
 else
-  mkdir $HOME/.textadept
-  echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
+	mkdir $HOME/.textadept
+ 	echo "ui.set_theme(not CURSES and 'dark' or 'custom_dark')" >$HOME/.textadept/init.lua
 fi
 
 ### Languages
@@ -279,7 +279,7 @@ echo -e "\e[38;5;227m- Setup Geany theme\e[38;5;46m\n"
 if [[ -e "/home/$USER/.config/geany" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.config/geany-back-$num" ]]; do
-	(( num++ ))
+		(( num++ ))
 	done
 	mv "/home/$USER/.config/geany" "/home/$USER/.config/geany-back-$num"
 fi
@@ -300,7 +300,7 @@ echo -e "\e[38;5;227m- Download IceWM config files\e[38;5;46m\n"
 if [[ -e "/home/$USER/.icewm" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.icewm-back-$num" ]]; do
-	(( num++ ))
+		(( num++ ))
 	done
 	mv "/home/$USER/.icewm" "/home/$USER/.icewm-back-$num"
 fi
@@ -314,7 +314,7 @@ wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/mast
 if [[ -e "/home/$USER/.config/compton.conf" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.config/compton.conf-back-$num" ]]; do
-	(( num++ ))
+		(( num++ ))
 	done
 	mv "/home/$USER/.config/compton.conf" "/home/$USER/.config/compton.conf-back-$num"
 fi
@@ -367,7 +367,7 @@ echo -e "\e[38;5;227m- Setup Roxterm\e[38;5;46m\n"
 if [[ -e "/home/$USER/.config/roxterm.sourceforge.net" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.config/roxterm.sourceforge.net-back-$num" ]]; do
-	(( num++ ))
+		(( num++ ))
 	done
 	mv "/home/$USER/.config/roxterm.sourceforge.net" "/home/$USER/.config/roxterm.sourceforge.net-back-$num"
 fi
@@ -375,10 +375,12 @@ cd ~/.config
 svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/antiX-15/roxterm.sourceforge.net
 cd ~
 
+### Key-Mon configuration
+echo -e "\e[38;5;227m- Setup Key-Mon\e[38;5;46m\n"
 if [[ -e "/home/$USER/.config/key-mon/config" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.config/key-mon/config-back-$num" ]]; do
-	(( num++ ))
+		(( num++ ))
 	done
 	mv "/home/$USER/.config/key-mon/config" "/home/$USER/.config/key-mon/config-back-$num"
 fi
@@ -414,7 +416,7 @@ if [[ -e "/home/$USER/.config/key-mon" ]]; then
 	y = -1
 	" >$HOME/.config/key-mon/config
 else
-  mkdir $HOME/.config/key-mon
+	mkdir $HOME/.config/key-mon
 	echo "[ui]
 	visible_click_timeout = 0.2
 	follow-mouse = 0
