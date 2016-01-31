@@ -43,7 +43,7 @@ roxterm.Roxterm.ignoreNoFocusHinto: 1 # Autofocus terminal
 
 Mousepad.geometry: 800×1172+0+0	# Dimensions
 gedit.Gedit.geometry: 1350x1180+0+0	# Resize Gedit
-textadept.Textadept.geometry: 800×1172+0+0	# Dimensions
+textadept.Textadept.startMaximized: 1 # Start mazimized
 
 Nautilus.geometry: 350x1127+1250+0	# Dimensions
 Thunar.geometry: 800×1172	# Dimensions
