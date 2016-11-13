@@ -1,3 +1,4 @@
+// For all option grp run command cat /usr/share/X11/xkb/rules/base.lst
 setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)"	# keyboard switcher
 export XDG_CURRENT_DESKTOP=gnome																								# Unify QT5 with Gnome theme
 hsetroot -extend /home/mario/.icewm/themes/LegacyIce-Dark/default.jpg		# Set Wallpaper

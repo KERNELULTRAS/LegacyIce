@@ -114,16 +114,16 @@ hsetroot intltool key-mon libgtk2.0-dev libnotify-bin linuxdoc-tools numlockx \
 subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
 ### Graphics programs
-if [[ $install_utils == "yes" ]]; then
+if [[ $install_graphs == "yes" ]]; then
 	sudo apt-get --yes install blender gimp inkscape
 fi
 	
 ### Multimedia programs
 sudo apt-get --yes install pulseaudio pavucontrol pasystray
 # Install DeadBeef
-curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_$architecture.deb >deadbeef-static_0.6.2-2_$architecture.deb
-sudo dpkg -i deadbeef-static_0.6.2-2_$architecture.deb
-rm deadbeef-static_0.6.2-2_$architecture.deb
+#curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_$architecture.deb >deadbeef-static_0.6.2-2_$architecture.deb
+#sudo dpkg -i deadbeef-static_0.6.2-2_$architecture.deb
+#rm deadbeef-static_0.6.2-2_$architecture.deb
 
 ### Communication programs
 if [[ $install_comms == "yes" ]]; then
@@ -137,7 +137,7 @@ fi
 
 ### Utils
 if [[ $install_utils == "yes" ]]; then
-	sudo apt-get --yes install galculator medit qpdfview
+	sudo apt-get --yes install galculator
 fi
 
 ### Web server
@@ -168,7 +168,7 @@ else
 fi
 
 ### Languages
-sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
+### sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
 
 ### IceWM
 sudo apt-get --yes install compton
@@ -204,25 +204,9 @@ herbstluftwm \
 gftp-gtk \
 mousepad \
 rox-filer \
-antix-goodies \
-add-key-antix \
-add-start-antix \
-desktop-defaults-base-antix \
-desktop-defaults-core-antix \
-desktop-defaults-full-antix \
-desktop-defaults-icewm-antix \
 desktop-session-antix \
-droopy-antix \
-connectshares-antix \
-group-management-antix \
-icewmcc-antix \
 menu-icewm-antix \
 menu-manager-antix \
-mountbox-antix \
-mouse-cc-antix \
-set-screen-blank-antix \
-system-antix \
-user-management-antix \
 wallpaper-antix \
 slim
 sudo apt-get --yes autoremove
