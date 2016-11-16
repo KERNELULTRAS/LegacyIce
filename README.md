@@ -7,7 +7,7 @@ Goal of the project is to return the traditional desktop
 
 ### Based on
 * IceWM
-* antiX-15
+* antiX-16
 * Now based on GTK+ 2 (3)
 
 ### Aim
