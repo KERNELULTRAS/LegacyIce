@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --------------------------------------
-# Script to convert antiX15 to LegacyIce
+# Script to convert antiX16 to LegacyIce
 # --------------------------------------
 
 # (Only GTK and QT application)
