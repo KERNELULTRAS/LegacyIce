@@ -41,7 +41,7 @@ fi
 # --------------------------------------
 
 ### Install communication programs?
-echo -e "\e[93m- Install communication programs? - Mumble, Pidgin\e[38;5;46m\n"
+echo -e "\e[93m- Install communication programs? - Mumble, Pidgin, HexChat\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -127,7 +127,7 @@ sudo apt-get --yes install pulseaudio pavucontrol pasystray
 
 ### Communication programs
 if [[ $install_comms == "yes" ]]; then
-	sudo apt-get --yes install mumble pidgin
+	sudo apt-get --yes install mumble pidgin hexchat
 fi
 
 ### Network programs
