@@ -142,7 +142,7 @@ fi
 
 ### Web server
 if [[ $install_websrv == "yes" ]]; then
-	sudo apt-get --yes install mysql-server-core-5.5 mysql-server libaio1 mysql-client apache2-mpm-prefork libaprutil1 libapache2-mod-php5 php5-mysql php5-common libaprutil1-dbd-sqlite3 php5-readline mysql-client-5.5 libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php5-cli libmysqlclient18 apache2-data php5-json libapr1 apache2 mysql-server apache2-bin libdbd-mysql-perl libdbi-perl
+	sudo apt-get --yes install mysql-server libaio1 mysql-client libaprutil1 libapache2-mod-php php7.0-mysql php7.0-common libaprutil1-dbd-sqlite3 php7.0-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php7.0-cli apache2-data php7.0-json apache2 libapr1 mysql-server apache2-bin php-mbstring
 	### Set apache root to HomeDirectory/www
 	echo -e "\e[93m- Set Apache path to HomeDirectory/www\n"
 	### Exist www directory?
