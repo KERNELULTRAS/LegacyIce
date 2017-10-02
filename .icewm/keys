@@ -4,15 +4,15 @@
 # XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
 
 # Programs
-key "Ctrl+Alt+b"		iceweasel
+key "Ctrl+Alt+b"		firefox
 key "Ctrl+Alt+e"		textadept
 key "Ctrl+Alt+p"		geany
 key "Ctrl+Alt+f"		spacefm
 key "Ctrl+Alt+g"		spacefm Games
 key "Ctrl+Alt+s"		gksudo synaptic
-key "Ctrl+Alt+t"		roxterm
+key "Ctrl+Alt+t"		lxterminal
 key "Ctrl+Alt+m"		key-mon
-key "Ctrl+Alt+v"		gnome-mplayer
+key "Ctrl+Alt+v"		gnome-mpv
 key "Ctrl+Alt+c"		galculator
 
 # Screenshot - desktop
