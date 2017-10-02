@@ -142,7 +142,7 @@ fi
 
 ### Web server
 if [[ $install_websrv == "yes" ]]; then
-	sudo apt-get --yes install mysql-server libaio1 mysql-client libaprutil1 libapache2-mod-php php7.0-mysql php7.0-common libaprutil1-dbd-sqlite3 php7.0-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap mysql-common php7.0-cli apache2-data php7.0-json apache2 libapr1 mysql-server apache2-bin php-mbstring
+	sudo apt-get --yes install mariadb-common mariadb-server mariadb-client libaio1 libaprutil1 libapache2-mod-php php7.0-mysql php7.0-common libaprutil1-dbd-sqlite3 php7.0-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap php7.0-cli apache2-data php7.0-json apache2 libapr1 apache2-bin php-mbstring php-gd
 	### Set apache root to HomeDirectory/www
 	echo -e "\e[93m- Set Apache path to HomeDirectory/www\n"
 	### Exist www directory?
