@@ -7,7 +7,7 @@ Goal of the project is to return the traditional desktop
 
 ### Based on
 * IceWM
-* antiX-16
+* antiX-17
 * Now based on GTK+ 2 (3)
 
 ### Aim
@@ -44,11 +44,11 @@ Goal of the project is to return the traditional desktop
 
 ### Install
 
-(Needed antiX-15 installed)
-antix download from here https://sourceforge.net/projects/antix-linux/files/Final/antiX-16/
-Select **antiX-16_x64-full.iso** or **antiX-16_386-full.iso**
+(Needed antiX-17 installed)
+antix download from here https://sourceforge.net/projects/antix-linux/files/Testing/antiX-17/
+Select **antiX-17.b3_x64-full.iso** or **antiX-17.b3_386-full.iso**
 
-    wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-16/legacyice.sh
+    wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-17/legacyice.sh
     chmod +x legacyice.sh
     ./legacyice.sh
 
