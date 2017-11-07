@@ -74,7 +74,7 @@ else
 fi
 
 ### Install utils?
-echo -e "\e[93m- Install utils? - Galculator Medit Qpdfview\e[38;5;46m\n"
+echo -e "\e[93m- Install utils? - Galculator\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -96,9 +96,9 @@ else
 fi
 
 ### Edit debian sources list
-echo -e "\e[93m- Edit Debian sources list\e[38;5;46m\n"
-sudo sed -i 's/#deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/g' /etc/apt/sources.list.d/debian.list
-sudo sed -i 's/#deb http:\/\/www.deb-multimedia.org jessie main non-free/deb http:\/\/www.deb-multimedia.org jessie main non-free/g' /etc/apt/sources.list.d/debian.list
+# echo -e "\e[93m- Edit Debian sources list\e[38;5;46m\n"
+# sudo sed -i 's/#deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/deb-src http:\/\/ftp.us.debian.org\/debian\/ jessie main contrib non-free/g' /etc/apt/sources.list.d/debian.list
+# sudo sed -i 's/#deb http:\/\/www.deb-multimedia.org jessie main non-free/deb http:\/\/www.deb-multimedia.org jessie main non-free/g' /etc/apt/sources.list.d/debian.list
 
 ### Upgrade system
 echo -e "\e[93m- Upgrade system\e[38;5;46m\n"
@@ -186,21 +186,21 @@ else
 fi
 
 ### Languages
-### sudo apt-get --yes install iceweasel-l10n-cs iceweasel-l10n-sk libreoffice-l10n-cs libreoffice-l10n-sk
+# sudo apt-get --yes install libreoffice-l10n-cs libreoffice-l10n-sk
 
 ### IceWM
 sudo apt-get --yes install compton
 # Install patched IceWM
-echo -e "\e[93m- Install patched IceWM\e[38;5;46m\n"
-cd /tmp
-git clone http://github.com/bbidulock/icewm.git
-cd icewm/
-./autogen.sh
-./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
-make V=0
-sudo make install
-rm -rf /tmp/icewm
-cd ~
+# echo -e "\e[93m- Install patched IceWM\e[38;5;46m\n"
+# cd /tmp
+# git clone http://github.com/bbidulock/icewm.git
+# cd icewm/
+# ./autogen.sh
+# ./configure --prefix=/usr --sysconfdir=/etc --enable-shaped-decorations --enable-gradients --enable-guievents --with-icesound=ALSA,OSS --disable-menus-gnome2
+# make V=0
+# sudo make install
+# rm -rf /tmp/icewm
+# cd ~
 
 ### Remove unnecessary packages
 echo -e "\e[93m- Remove unnecessary programs\e[38;5;46m\n"
@@ -401,17 +401,17 @@ if [[ -e "/etc/default/unclutter" ]]; then
 fi
 
 ### Roxterm configuration
-echo -e "\e[93m- Setup Roxterm\e[38;5;46m\n"
-if [[ -e "/home/$USER/.config/roxterm.sourceforge.net" ]]; then
-	num=1
-	while [[ -e "/home/$USER/.config/roxterm.sourceforge.net-back-$num" ]]; do
-		(( num++ ))
-	done
-	mv "/home/$USER/.config/roxterm.sourceforge.net" "/home/$USER/.config/roxterm.sourceforge.net-back-$num"
-fi
-cd ~/.config
-svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/antiX-15/roxterm.sourceforge.net
-cd ~
+# echo -e "\e[93m- Setup Roxterm\e[38;5;46m\n"
+# if [[ -e "/home/$USER/.config/roxterm.sourceforge.net" ]]; then
+# 	num=1
+# 	while [[ -e "/home/$USER/.config/roxterm.sourceforge.net-back-$num" ]]; do
+# 		(( num++ ))
+# 	done
+# 	mv "/home/$USER/.config/roxterm.sourceforge.net" "/home/$USER/.config/roxterm.sourceforge.net-back-$num"
+# fi
+# cd ~/.config
+# svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/antiX-15/roxterm.sourceforge.net
+# cd ~
 
 ### Key-Mon configuration
 echo -e "\e[93m- Setup Key-Mon\e[38;5;46m\n"
