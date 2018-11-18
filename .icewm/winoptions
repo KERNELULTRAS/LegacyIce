@@ -1,3 +1,4 @@
+
 # Tools
 # xprop | grep -i wm_class
 # wmctrl -lpGx | grep -i 'Firefox'
@@ -43,10 +44,10 @@ roxterm.Roxterm.ignoreNoFocusHinto: 1 # Autofocus terminal
 
 Mousepad.geometry: 800×1172+0+0	# Dimensions
 gedit.Gedit.geometry: 1350x1180+0+0	# Resize Gedit
-textadept.Textadept.startMaximized: 1 # Start mazimized
+textadept.Textadept.geometry: 800×1172+0+0	# Dimensions
 
-Nautilus.geometry: 350x1127+1250+0	# Dimensions
-Thunar.geometry: 800×1172	# Dimensions
+nautilus.Nautilus.geometry: 350x1127+1250+0	# Dimensions
+thunar.Thunar.geometry: 800×1172	# Dimensions
 spacefm.Spacefm.geometry: 790x1172	# Dimensions
 
 # Blender.Blender.startMaximized: 1	#
@@ -54,7 +55,7 @@ Blender.Blender.geometry: 1600x1172	# Blender maximized
 
 gimp-2.8.Gimp-2.8.geometry: 1600x1172	# Gimp maximized
 
-# screen.Screen.ignoreQuickSwitch: 1	# Dont show in quick list
+screen.Screen.ignoreQuickSwitch: 1	# Dont show in quick list
 
 # First workspace
 
@@ -63,6 +64,7 @@ geany.Geany.workspace: 0	# Run on first workspace
 
 # Second workspace
 
-# gnome-terminal.Gnome-terminal.workspace: 1	# Run on second workspace
-
 # Third workspace
+
+# Fourth workspace
+
