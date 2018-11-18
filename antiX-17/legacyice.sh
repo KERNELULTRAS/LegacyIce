@@ -119,7 +119,7 @@ if [[ $install_graphs == "yes" ]]; then
 fi
 	
 ### Multimedia programs
-sudo apt-get --yes install pulseaudio pavucontrol pasystray
+# sudo apt-get --yes install pulseaudio pavucontrol pasystray
 # Install DeadBeef
 #curl -L  http://downloads.sourceforge.net/project/deadbeef/debian/0.6.2/deadbeef-static_0.6.2-2_$architecture.deb >deadbeef-static_0.6.2-2_$architecture.deb
 #sudo dpkg -i deadbeef-static_0.6.2-2_$architecture.deb
