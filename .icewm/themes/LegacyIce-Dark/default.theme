@@ -41,8 +41,8 @@ ShapesProtectClientWindow=0 # 0 / 1
 #	Menu
 # ---------------------------------------------------------------------------
 ColorNormalMenu="#303030"
-ColorActiveMenuItem="#252525"
-ColorNormalMenuItemText="#a4a4a4"
+ColorActiveMenuItem="#111111"
+ColorNormalMenuItemText="#A4A4A4"
 ColorActiveMenuItemText="#F5F5F5"
 ColorDisabledMenuItemText="#E0B000"
 
@@ -73,8 +73,8 @@ ColorListBoxSelectionText="#F5F5F5"
 # ---------------------------------------------------------------------------
 ColorQuickSwitch="#252525"
 ColorQuickSwitchText="#A4A4A4"
-ColorQuickSwitchActive="#111111"
-
+ColorQuickSwitchActive=""
+# Active background for "Quick switch" is in ColorActiveMenuItem="#111111"
 # ---------------------------------------------------------------------------
 # Clock
 # ---------------------------------------------------------------------------
@@ -188,5 +188,4 @@ MinimizedWindowFontNameXft="sans:size=10:medium"
 DesktopBackgroundColor = #000000
 # DesktopBackgroundCenter = 1
 DesktopBackgroundScaled = 1
-DesktopBackgroundImage = 'default.jpg'
-
+DesktopBackgroundImage="default.jpg"

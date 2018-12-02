@@ -81,7 +81,7 @@ gnome-terminal.Gnome-terminal.dBorder: 0	# Hide border on terminal
 
 roxterm.Roxterm.dTitleBar: 0      # Hide title bar on terminal
 roxterm.Roxterm.dBorder: 0        # Hide border on terminal
-roxterm.Roxterm.ignoreNoFocusHinto: 1 # Autofocus terminal
+roxterm.Roxterm.ignoreNoFocusHint: 1 # Autofocus terminal
 
 Mousepad.geometry: `x_m 800`×`y_m 1172`+0+0	# Dimensions
 gedit.Gedit.geometry: `x_m 1350`x`y_m 1180`+0+0	# Resize Gedit
