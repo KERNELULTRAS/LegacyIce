@@ -378,21 +378,26 @@ if [[ -e "/home/$USER/.bashrc" ]]; then
 fi
 
 ### Echo LegacyIce textinfo
-echo -e "\e[93m- Setup .bashrc\e[38;5;46m\n"
-echo "
-echo -e \"\e[91m\"
-echo \"@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@\"
-echo \"@   @   @   @ @ @   @ @  @ @   @\"
-echo \"@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\\\\"
-echo \"@   @   @ @ @ @ @    @   @ @   @     /\\\\  /  \\\\  /\\\\\"
-echo \"@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\\\/    \\\\/  \\\\\"
-echo -e \"\e[94m---------------------------------------------------\"">>$HOME/.bashrc
-echo "date">>$HOME/.bashrc
-echo "
-echo \"---------------------------------------------------\"
-echo -e \"\e[37m\"">>$HOME/.bashrc
-echo "df -h | grep -e /dev/ -e Filesystem">>$HOME/.bashrc
-echo "[ -n \"${PATH##*/sbin*}\" ] && PATH=$PATH:/sbin:/usr/sbin">>$HOME/.bashrc
+if grep -q "@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@" .bashrc
+then
+    echo -e "\e[93m- Skip .bashrc\e[38;5;46m\n"
+else
+	echo -e "\e[93m- Setup .bashrc\e[38;5;46m\n"
+	echo "
+	echo -e \"\e[91m\"
+	echo \"@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@\"
+	echo \"@   @   @   @ @ @   @ @  @ @   @\"
+	echo \"@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\\\\"
+	echo \"@   @   @ @ @ @ @    @   @ @   @     /\\\\  /  \\\\  /\\\\\"
+	echo \"@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\\\/    \\\\/  \\\\\"
+	echo -e \"\e[94m---------------------------------------------------\"">>$HOME/.bashrc
+	echo "date">>$HOME/.bashrc
+	echo "
+	echo \"---------------------------------------------------\"
+	echo -e \"\e[37m\"">>$HOME/.bashrc
+	echo "df -h | grep -e /dev/ -e Filesystem">>$HOME/.bashrc
+	echo "[ -n \"${PATH##*/sbin*}\" ] && PATH=$PATH:/sbin:/usr/sbin">>$HOME/.bashrc
+fi
 
 ### Clutter off (Off hide mouse)
 echo -e "\e[93m- Clutter off\e[38;5;46m\n"
