@@ -301,7 +301,7 @@ style "gnome-color-chooser-scrollbar"
   bg[SELECTED] = "#8C0000"
   GtkScrollbar ::slider-width = 9
 }
-widget_class "*Scrollbar" style "gnome-color-chooser-scrollbar"' >$HOME/.gtkrc-2.0
+widget_class "*Scrollbar" style "gnome-color-chooser-scrollbar"' >$HOME/.gtkrc-2.0.mine
 
 ### Geany theme
 echo -e "\e[93m- Setup Geany theme\e[38;5;46m\n"
@@ -397,7 +397,8 @@ echo "[ -n \"${PATH##*/sbin*}\" ] && PATH=$PATH:/sbin:/usr/sbin">>$HOME/.bashrc
 ### Clutter off (Off hide mouse)
 echo -e "\e[93m- Clutter off\e[38;5;46m\n"
 if [[ -e "/etc/default/unclutter" ]]; then
-	sudo sed -i 's/START_UNCLUTTER="true"/START_UNCLUTTER="false"/g' /etc/default/unclutter
+	sudo sed -i 's/START_UNCLUTTER=true/START_UNCLUTTER=false/g' /etc/default/unclutter
+	pkill unclutterf
 fi
 
 ### Roxterm configuration
