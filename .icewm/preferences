@@ -314,7 +314,7 @@ CPUStatusShowRamUsage=1 # 0/1
 # TaskBarWorkspacesLeft=1 # 0/1
 
 #  Show a mini desktop preview on each workspace button
-# PagerShowPreview=0 # 0/1
+PagerShowPreview=0 # 0/1
 
 #  Draw window icons inside large enough preview windows on pager (if PagerShowPreview=1)
 # PagerShowWindowIcons=0 # 0/1
