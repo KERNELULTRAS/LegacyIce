@@ -117,7 +117,7 @@ subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-no
 if [[ $install_graphs == "yes" ]]; then
 	sudo apt-get --yes install blender gimp inkscape
 fi
-	
+
 ### Multimedia programs
 sudo apt-get --yes install pulseaudio pavucontrol pasystray
 # Install DeadBeef
@@ -142,7 +142,7 @@ fi
 
 ### Web server
 if [[ $install_websrv == "yes" ]]; then
-	sudo apt-get --yes install mariadb-common mariadb-server mariadb-client libaio1 libaprutil1 libapache2-mod-php php7.0-mysql php7.0-common libaprutil1-dbd-sqlite3 php7.0-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap php7.0-cli apache2-data php7.0-json apache2 libapr1 apache2-bin php-mbstring php-gd
+	sudo apt-get --yes install mariadb-common mariadb-server mariadb-client libaio1 libaprutil1 libapache2-mod-php php-mysql php-common libaprutil1-dbd-sqlite3 php-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap php-cli apache2-data php-json apache2 libapr1 apache2-bin php-mbstring php-gd
 	### Set apache root to HomeDirectory/www
 	echo -e "\e[93m- Set Apache path to HomeDirectory/www\n"
 	### Exist www directory?
@@ -443,18 +443,18 @@ if [[ -e "/home/$USER/.config/key-mon" ]]; then
 	no_press_fadeout = 0.0
 	decorated = 0
 	only_combo = 0
-	
+
 	[buttons]
 	ctrl = 1
 	alt = 1
 	mouse = 1
 	shift = 1
 	old-keys = 0
-	
+
 	[devices]
 	emulate_middle = 0
 	swap_buttons = 0
-	
+
 	[position]
 	x = -1
 	y = -1
@@ -475,18 +475,18 @@ else
 	no_press_fadeout = 0.0
 	decorated = 0
 	only_combo = 0
-	
+
 	[buttons]
 	ctrl = 1
 	alt = 1
 	mouse = 1
 	shift = 1
 	old-keys = 0
-	
+
 	[devices]
 	emulate_middle = 0
 	swap_buttons = 0
-	
+
 	[position]
 	x = -1
 	y = -1
