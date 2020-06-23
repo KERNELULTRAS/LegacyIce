@@ -1,0 +1,16 @@
+# Title icon program
+
+prog Iceweasel iceweasel iceweasel
+prog Filezila filezilla filezilla
+prog Pidgin pidgin-menu pidgin
+prog Mumble mumble mumble
+prog HexChat hexchat hexchat
+prog DeadBeef deadbeef /opt/deadbeef/bin/deadbeef
+prog Geany geany geany
+prog Medit medit medit
+prog Roxterm roxterm roxterm
+prog Inkscape inkscape inkscape
+prog Gimp gimp gimp
+prog Blender blender blender
+prog Nvida-Settings nvidia-settings nvidia-settings
+prog Calculator galculator galculator 

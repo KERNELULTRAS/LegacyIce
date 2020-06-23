@@ -1,0 +1,163 @@
+    menu "Accessories" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "Archive Manager" /usr/share/icons/hicolor/16x16/apps/file-roller.png file-roller
+      prog "CherryTree" /usr/share/icons/hicolor/scalable/apps/cherrytree.svg cherrytree
+      prog "ClipIt" /usr/share/icons/hicolor/scalable/apps/clipit-trayicon.svg clipit
+      prog "compton" /usr/share/icons/hicolor/scalable/apps/compton.svg compton
+      prog "Conky Toggle" /usr/share/icons/Adwaita/16x16/apps/utilities-system-monitor.png conkytoggle.sh
+      prog "Firejail Configuration Wizard" /usr/share/pixmaps/firejail-ui.png firejail-ui
+      prog "Galculator" /usr/share/icons/hicolor/scalable/apps/galculator.svg galculator
+      prog "Midnight Commander Editor" /usr/share/icons/hicolor/64x64/apps/MidnightCommander.png x-terminal-emulator -e mcedit
+      prog "PCManFM-Qt File Manager" /usr/share/icons/Adwaita/16x16/apps/system-file-manager.png pcmanfm-qt
+      prog "Rxvt Color Unicode Terminal" - urxvt
+      prog "Searchmonkey" /usr/share/icons/hicolor/16x16/apps/searchmonkey.png searchmonkey
+      prog "SpaceFM File Search" /usr/share/icons/hicolor/48x48/apps/spacefm-find.png spacefm --find-files
+      prog "SpeedCrunch" /usr/share/pixmaps/speedcrunch.png speedcrunch
+      prog "Xfburn" - xfburn
+    }
+    menu "Development" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "Geany" /usr/share/icons/hicolor/16x16/apps/geany.png geany
+      prog "Icon Browser" /usr/share/icons/hicolor/16x16/apps/yad.png yad-icon-browser
+      prog "Qt Creator (Community)" /home/mario/.local/share/icons/hicolor/16x16/apps/QtProject-qtcreator.png /home/mario/Qt/Tools/QtCreator/bin/qtcreator
+      prog "Qt Creator (Opensource)" /home/mario/.local/share/icons/hicolor/16x16/apps/QtProject-qtcreator.png /home/mario/Qt/Tools/QtCreator/bin/qtcreator
+      prog "Qt Maintenance Tool" /home/mario/.local/share/icons/QtIcon.png /home/mario/Qt/MaintenanceTool
+    }
+    menu "Education" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "LibreOffice Math" /usr/share/icons/hicolor/16x16/apps/libreoffice-math.png libreoffice --math
+    }
+    menu "Games" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "DOSBox Emulator" /usr/share/icons/hicolor/16x16/apps/dosbox.png dosbox
+      prog "Gweled" /usr/share/icons/hicolor/16x16/apps/gweled.png gweled
+      prog "Mahjongg" /usr/share/icons/hicolor/16x16/apps/gnome-mahjongg.png gnome-mahjongg
+    }
+    menu "Graphics" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "Art of Illusion" /home/mario/.local/share/icons/hicolor/32x32/apps/aoi.png /home/mario/bin/ArtOfIllusion/aoi.sh
+      prog "Blender" /usr/share/icons/hicolor/16x16/apps/blender.png blender
+      prog "GNU Image Manipulation Program" /usr/share/icons/hicolor/16x16/apps/gimp.png gimp-2.10
+      prog "Gtkam Digital Camera Browser" /usr/share/pixmaps/gtkam-camera.png gtkam
+      prog "Inkscape" /usr/share/icons/hicolor/16x16/apps/inkscape.png inkscape
+      prog "KeyMon" /usr/share/pixmaps/key-mon.xpm key-mon
+      prog "LibreOffice Draw" /usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png libreoffice --draw
+      prog "LXImage" /usr/share/icons/hicolor/48x48/apps/lximage-qt.png lximage-qt
+      prog "Mirage" /usr/share/pixmaps/mirage.png mirage
+      prog "mtPaint graphic editor" /usr/share/pixmaps/mtpaint.png mtpaint
+      prog "PhotoFlare" /usr/share/icons/hicolor/16x16/apps/photoflare.png photoflare
+      prog "Screenshot" /usr/share/icons/Adwaita/16x16/devices/camera-photo.png lximage-qt --screenshot
+      prog "Simple Scan" /usr/share/icons/Adwaita/16x16/devices/scanner.png simple-scan
+    }
+    menu "Internet" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "Ceni" /usr/share/icons/hicolor/16x16/apps/ceni.png rxvt -T "Ceni" -e su-to-root -c /usr/sbin/Ceni
+      prog "Claws Mail" /usr/share/icons/hicolor/48x48/apps/claws-mail.png claws-mail
+      prog "Connectshares" /usr/share/pixmaps/connectshares.png connectshares
+      prog "Connectshares Configuration" /usr/share/pixmaps/connectshares-config.png connectshares-config
+      prog "Connman UI Setup" /usr/share/icons/Adwaita/16x16/categories/preferences-system-network.png cmst
+      prog "Dillo" /usr/share/pixmaps/dillo.png dillo
+      prog "Disconnectshares" /usr/share/pixmaps/disconnectshares.png disconnectshares
+      prog "Droopy" /usr/share/pixmaps/droopy.png droopy.sh
+      prog "FileZilla" /usr/share/icons/hicolor/16x16/apps/filezilla.png filezilla
+      prog "Firefox ESR" /usr/share/icons/hicolor/16x16/apps/firefox-esr.png /usr/lib/firefox-esr/firefox-esr
+      prog "GNOME PPP" /usr/share/icons/hicolor/48x48/apps/gnome-ppp.png gnome-ppp
+      prog "GPRS-EDGE-UMTS-Panel" - umts-panel
+      prog "HexChat" /usr/share/icons/hicolor/scalable/apps/hexchat.svg hexchat --existing
+      prog "Links 2" /usr/share/pixmaps/links2.xpm xlinks2
+      prog "Modem Manager GUI" /usr/share/icons/hicolor/scalable/apps/modem-manager-gui.svg modem-manager-gui
+      prog "Mumble" /usr/share/icons/hicolor/scalable/apps/mumble.svg mumble
+      prog "Quassel IRC" /usr/share/icons/hicolor/16x16/apps/quassel.png quassel
+      prog "Search antiX Forums" - /usr/local/bin/antix
+      prog "Search Bar" - search-bar
+      prog "Search Bar Icon" - search-bar-icon
+      prog "Search Dictionary " - /usr/local/bin/dict-search
+      prog "Search Duck Duck Go" - /usr/local/bin/ddg
+      prog "Search Gentoo Forums" - /usr/local/bin/gf
+      prog "Search Google" - /usr/local/bin/gg
+      prog "Search IMDb" - /usr/local/bin/imdb
+      prog "Search MX Forums" - /usr/local/bin/mx
+      prog "Search Start Page" - /usr/local/bin/stp
+      prog "Search Wikipedia" - /usr/local/bin/wiki
+      prog "Transmission" /usr/share/icons/hicolor/scalable/apps/transmission.svg transmission-gtk
+      prog "wpa_gui" /usr/share/icons/hicolor/scalable/apps/wpa_gui.svg /usr/sbin/wpa_gui
+    }
+    menu "Multimedia" /usr/share/icons/Adwaita/16x16/categories/applications-multimedia.png {
+      prog "Alsamixer Equalizer" /usr/share/pixmaps/alsamixer-equalizer.png x-terminal-emulator -e alsamixer -D equalizer
+      prog "Asunder CD Ripper" /usr/share/icons/hicolor/128x128/apps/asunder.png asunder
+      prog "Celluloid" /usr/share/icons/hicolor/scalable/apps/io.github.celluloid_player.Celluloid.svg celluloid
+      prog "GUVCView" - guvcview
+      prog "MPS-YouTube" - x-terminal-emulator -e mpsyt
+      prog "MPV Media Player" /usr/share/icons/hicolor/16x16/apps/mpv.png mpv --player-operation-mode=pseudo-gui --
+      prog "Poor Man's Radio Player" - x-terminal-emulator -e pmrp
+      prog "PulseAudio System Tray" /usr/share/icons/hicolor/scalable/apps/pasystray.svg pasystray
+      prog "PulseAudio Volume Control" /usr/share/icons/Adwaita/16x16/apps/multimedia-volume-control.png pavucontrol
+      prog "PulseAudio Volume Meter (Capture)" /usr/share/icons/Adwaita/16x16/devices/audio-input-microphone.png pavumeter --record
+      prog "PulseAudio Volume Meter (Playback)" /usr/share/icons/Adwaita/16x16/devices/audio-input-microphone.png pavumeter
+      prog "SMTube" /usr/share/icons/hicolor/16x16/apps/smtube.png smtube
+      prog "Sound Card Chooser" /usr/share/pixmaps/soundcard.png alsa-set-default-card
+      prog "Streamtuner2" /usr/share/pixmaps/streamtuner2.png streamtuner2
+      prog "WinFF" /usr/share/icons/hicolor/16x16/apps/winff.png winff
+      prog "XMMS" /usr/share/icons/xmms.png xmms
+    }
+    menu "Office" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "LibreOffice" /usr/share/icons/hicolor/16x16/apps/libreoffice-startcenter.png libreoffice
+      prog "LibreOffice Calc" /usr/share/icons/hicolor/16x16/apps/libreoffice-calc.png libreoffice --calc
+      prog "LibreOffice Draw" /usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png libreoffice --draw
+      prog "LibreOffice Impress" /usr/share/icons/hicolor/16x16/apps/libreoffice-impress.png libreoffice --impress
+      prog "LibreOffice Math" /usr/share/icons/hicolor/16x16/apps/libreoffice-math.png libreoffice --math
+      prog "LibreOffice Writer" /usr/share/icons/hicolor/16x16/apps/libreoffice-writer.png libreoffice --writer
+      prog "PDF Studio 10" - /bin/sh "/home/mario/pdfstudio10/pdfstudio10"
+      prog "qpdfview" /usr/share/icons/hicolor/scalable/apps/qpdfview.svg qpdfview --unique
+    }
+    menu "System" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "antiX FAQ" /usr/share/icons/Adwaita/16x16/apps/help-browser.png dillo /usr/share/antiX/FAQ/index.html
+      prog "App Select" - /usr/local/bin/app-select
+      prog "Boot Repair" /usr/share/pixmaps/bootrepair.png su-to-root -X -c bootrepair
+      prog "Codecs Installer" /usr/share/pixmaps/codecs.png su-to-root -X -c codecs
+      prog "Control Centre" - antixcc.sh
+      prog "DWAgent" /usr/share/dwagent/images/logo.png "/usr/share/dwagent/native/dwagent"
+      prog "Firetools" /usr/share/pixmaps/firetools.png firetools
+      prog "GDebi Package Installer" - gksudo gdebi-gtk
+      prog "GParted" /usr/share/icons/hicolor/16x16/apps/gparted.png gksu gparted
+      prog "Grsync" /usr/share/pixmaps/grsync.png /usr/bin/grsync -i
+      prog "Htop" /usr/share/pixmaps/htop.png x-terminal-emulator -e htop
+      prog "luckyBackup" /usr/share/pixmaps/luckybackup.png /usr/bin/luckybackup
+      prog "luckyBackup as Super User" /usr/share/pixmaps/luckybackup.png su-to-root -X -c /usr/bin/luckybackup
+      prog "Midnight Commander" /usr/share/icons/hicolor/64x64/apps/MidnightCommander.png x-terminal-emulator -e mc
+      prog "Modem Manager GUI" /usr/share/icons/hicolor/scalable/apps/modem-manager-gui.svg modem-manager-gui
+      prog "Network Assistant" /usr/share/pixmaps/network-assistant.png gksu network-assistant
+      prog "Package Installer" /usr/share/pixmaps/packageinstaller.png su-to-root -X -c packageinstaller
+      prog "PC Information" - inxi-gui
+      prog "QTerminal" /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png qterminal
+      prog "QTerminal drop down" /usr/share/icons/Adwaita/16x16/apps/utilities-terminal.png qterminal --drop
+      prog "Reactivate HP LaserJet 1018/1020 after reloading paper" /usr/share/icons/Adwaita/16x16/devices/printer.png /usr/share/foo2zjs/hplj10xx_gui.tcl
+      prog "Repo Manager" /usr/share/icons/hicolor/48x48/apps/repo-manager.png su-to-root -X -c repo-manager
+      prog "Root Terminal" /usr/share/pixmaps/gksu-root-terminal.png gksu /usr/bin/x-terminal-emulator
+      prog "ROXTerm" /usr/share/icons/hicolor/scalable/apps/roxterm.svg roxterm
+      prog "SpaceFM" /usr/share/icons/hicolor/48x48/apps/spacefm.png spacefm
+      prog "Synaptic Package Manager" /usr/share/pixmaps/synaptic.png su-to-root -X -c synaptic
+      prog "Task Manager" /usr/share/icons/Adwaita/16x16/apps/utilities-system-monitor.png lxtask
+    }
+    menu "DesktopSettings" /usr/share/icons/Adwaita/16x16/places/folder.png {
+      prog "Adblock" /usr/share/pixmaps/advert-block.png su-to-root -X -c block-advert.sh
+      prog "Add Key" /usr/share/icons/Adwaita/16x16/apps/preferences-desktop-keyboard-shortcuts.png add-key
+      prog "Add Menu Item" /usr/share/pixmaps/add-menu-item.png add-desktop
+      prog "Add Start" - add-start
+      prog "ADSL/PPPOE Configuration" /usr/share/pixmaps/pppoeconf.xpm x-terminal-emulator -e /usr/sbin/pppoeconf
+      prog "Alternatives Configurator" /usr/share/icons/hicolor/scalable/apps/galternatives.svg /usr/bin/galternatives
+      prog "ARandR" - arandr
+      prog "Bluetooth Manager" /usr/share/icons/hicolor/16x16/apps/blueman.png blueman-manager
+      prog "Configure Automount" - automount-config
+      prog "Customize Look and Feel" /usr/share/icons/Adwaita/16x16/apps/preferences-desktop-theme.png lxappearance
+      prog "Desktop" /usr/share/icons/Adwaita/16x16/places/user-desktop.png pcmanfm-qt --desktop-pref=general
+      prog "Disk Manager" /usr/share/icons/hicolor/16x16/apps/disk-manager.png su-to-root -X -c /usr/sbin/disk-manager
+      prog "Firewall Configuration" /usr/share/icons/hicolor/48x48/apps/gufw.png gufw
+      prog "Keyboard Layouts" - gksu fskbsetting
+      prog "Lxkeymap" /usr/share/icons/Adwaita/16x16/devices/input-keyboard.png lxkeymap
+      prog "Print Settings" /usr/share/icons/Adwaita/16x16/devices/printer.png system-config-printer
+      prog "PulseAudio Preferences" /usr/share/icons/Adwaita/16x16/categories/preferences-desktop.png paprefs
+      prog "Qt5 Settings" - qt5ct
+      prog "Screenlight" /usr/share/pixmaps/screenlight.png screenlight-menu.sh
+      prog "slim login" - gksu slim-login
+      prog "slim wallpaper" - gksu antixccslim.sh
+      prog "Windows Wireless Drivers" /usr/share/icons/hicolor/48x48/apps/ndisgtk.png su-to-root -X -c /usr/sbin/ndisgtk
+    }
+    menu "Window Managers" - {
+      restart "Restart" -
+    }
+    prog "Refresh Menu" - xde-menugen -format icewm -desktop ICEWM -launch -o/home/mario/.config/icewm/menu

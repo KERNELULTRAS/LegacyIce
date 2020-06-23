@@ -1,0 +1,34 @@
+# For all option grp run command cat /usr/share/X11/xkb/rules/base.lst
+# setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)"	# keyboard switcher - shifts
+setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll "us, sk(qwerty)"	# keyboard switcher
+export XDG_CURRENT_DESKTOP=gnome							# Unify QT5 with Gnome theme
+
+pulseaudio -D
+pasystray &
+
+
+# hsetroot -extend /home/mario/.icewm/themes/LegacyIce-Dark/default.jpg			# Set Wallpaper
+# numlockx on &																		# Numlock led on
+# /usr/lib/notification-daemon/notification-daemon &					# Start notify daemon
+# spacefm --desktop &									# Ikons on desktop
+# compton &										# Compositor manager
+# pidgin &										# Start Pidgin
+quassel &										# Start HexChat
+fbxkb &											# Keyboard flag
+# nautilus $HOME/Games &								# Start Nautilus in directory Games
+qterminal &										# Start terminal
+# geany &										# Start Geany
+firefox &										# Start firefox
+until pids=$(wmctrl -lx | grep -i qterminal)						# Wait for terminal start
+do
+	echo 1 >> /dev/null
+done
+wmctrl -x -r "qterminal.qterminal" -t 1						# Move terminal to wokspace 2 (First = 0)
+# wmctrl -r Terminal -g "800,1142"							# Resize Terminal
+# wmctrl -r Terminal -e "0,801,25,800,1142"						# Resize Terminal
+# wmctrl -x -r "nautilus.Nautilus" -e "0,800,0,800,1145"	# Resize File manager
+#pulseaudio -D
+#pasystray &										# Sound applet
+wicd-gtk -t &										# Network applet
+# nm-applet
+#./.icewm/contrib/process_killer.sh &

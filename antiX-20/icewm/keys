@@ -1,0 +1,37 @@
+# A list of all valid keyboard symbols can be found in
+# /usr/include/X11/keysym.h, keysymdefs.h,XF86keysym.h, ...
+# You'll have to omit XK_ prefixs and to replace XF86XK_ prefixes by
+# XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
+
+# Programs
+key "Ctrl+Alt+b"		firefox
+key "Ctrl+Alt+e"		micro
+key "Ctrl+Alt+p"		qterminal code
+key "Ctrl+Alt+f"		pcmanfm-qt
+key "Ctrl+Alt+g"		pcmanfm-qt Games
+key "Ctrl+Alt+s"		gksudo synaptic
+key "Ctrl+Alt+t"		qterminal
+key "Ctrl+Alt+m"		key-mon
+key "Ctrl+Alt+v"		mpv
+key "Ctrl+Alt+c"		galculator
+
+# Screenshot - desktop
+key "Print"				scrot 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
+# Screenshot - focused window
+key "Alt+Print"			scrot -u -b 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
+# Screenshot - timeout 5s
+key "Alt+Ctrl+Print"	scrot -d 5 'screenshot.jpg' -e "pacat -p .icewm/winoptions"
+
+# Get system info on OSD
+key "Pause"				/home/mario/.icewm/contrib/system_stat.sh
+
+# Run shutdown menu
+key "Alt+Ctrl+Del"		/home/mario/.config/icewm/contrib/shutdown.sh
+
+# Change volume
+key "Alt+Ctrl+Up"				/home/mario/.icewm/contrib/volume_up.sh
+key "Alt+Ctrl+Down"				/home/mario/.icewm/contrib/volume_down.sh
+# key "Alt+Ctrl+Up"				pactl set-sink-volume 0 -- "+10%"
+# key "Alt+Ctrl+Down"			pactl set-sink-volume 0 -- "-10%"
+# key "Ctrl+Alt+KP_Divide"		aumix -v -5
+# key "Ctrl+Alt+KP_Multiply"	aumix -v +5
