@@ -7,8 +7,8 @@ Goal of the project is to return the traditional desktop
 
 ### Based on
 * IceWM
-* antiX-17
-* Now based on QT - GTK+ 2 (3)
+* antiX-19
+* Now based on QT - GTK
 
 #### Script to convert antiX to LegacyIce
 * Without systemd
