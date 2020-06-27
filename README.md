@@ -40,7 +40,7 @@ Goal of the project is to return the traditional desktop
 antix download from here https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/
 Select **antiX-19.2_x64-full.iso** or **antiX-19.2_386-full.iso**
 
-    wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-19/legacyice.sh
+    wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-20/legacyice.sh
     chmod +x legacyice.sh
     ./legacyice.sh
 
