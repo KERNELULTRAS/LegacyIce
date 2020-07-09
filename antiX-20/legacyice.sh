@@ -137,7 +137,7 @@ echo -e "\e[93m- Install programs\e[38;5;46m\n"
 ### Core tools
 sudo apt-get --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom git g++ \
 hsetroot intltool imagemagick key-mon libgdk-pixbuf2.0-dev libgnome-menu-3-dev libgtk2.0-dev libice-dev libsm-dev \
-libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools lximage-qt\
+libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools lximage-qt \
 m4 numlockx pavumeter pavucontrol paprefs pcmanfm-qt qterminal \
 subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
 
