@@ -286,6 +286,9 @@ sudo sh -c "icewm-menu-fdo > /usr/share/icewm/menu"
 echo -e "\e[93m- Setup user name\e[38;5;46m\n"
 find ~/.icewm -type f -print0 | xargs -0 sed -i "s/mario/$USER/g"
 
+# Set background
+hsetroot -extend .icewm/themes/LegacyIce-Dark/default.jpg
+
 ### END OF SCRIPT
 echo -e "\n"
 echo -e "\e[93m##################################################\e[38;5;46m\n"
