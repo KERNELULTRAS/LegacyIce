@@ -41,7 +41,7 @@ fi
 # --------------------------------------
 
 ### Install communication programs?
-echo -e "\e[93m- Install communication programs? - Mumble, Quassel\e[38;5;46m\n"
+echo -e "\e[93m- Install communication programs? - Mumble, HexChat\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -52,7 +52,7 @@ else
 fi
 
 ### Install graphics programs?
-echo -e "\e[93m- Install graphics programs? - Blender, Gimp, Inkscape, Photoflare\e[38;5;46m\n"
+echo -e "\e[93m- Install graphics programs? - Blender, Gimp, Inkscape, Tumbler\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
@@ -74,7 +74,7 @@ else
 fi
 
 ### Install utils?
-echo -e "\e[93m- Install utils? - SpeedCrunch Micro\e[38;5;46m\n"
+echo -e "\e[93m- Install utils? - Galculator Micro\e[38;5;46m\n"
 read -r -p "Install? [N/y] " response
 response=${response,,} # tolower
 if [[ $response =~ ^(no|n) ]] || [ -z $response ]; then
