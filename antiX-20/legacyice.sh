@@ -102,7 +102,7 @@ fi
 
 ### Remove unnecessary packages
 echo -e "\e[93m- Remove unnecessary programs\e[38;5;46m\n"
-sudo apt-get --yes purge leafpad \
+sudo apt --yes purge leafpad \
 desktop-defaults-fluxbox-antix \
 desktop-defaults-hlwm-antix \
 desktop-defaults-jwm-antix \
@@ -110,7 +110,6 @@ desktop-defaults-rox-antix \
 desktop-defaults-spacefm-antix \
 fluxbox-themes-antix \
 icewm-themes-antix \
-menu-fluxbox-antix \
 menu-jwm-antix \
 menu-fluxbox-antix \
 screenshot-antix \
@@ -128,45 +127,45 @@ sudo apt-get --yes autoremove
 
 ### Upgrade system
 echo -e "\e[93m- Upgrade system\e[38;5;46m\n"
-sudo apt-get --yes update
-sudo apt-get --yes -o Dpkg::Options::="--force-confnew" upgrade
-sudo apt-get --yes autoremove
+sudo apt --yes update
+sudo apt --yes -o Dpkg::Options::="--force-confnew" upgrade
+sudo apt --yes autoremove
 
 echo -e "\e[93m- Install programs\e[38;5;46m\n"
 
 ### Core tools
-sudo apt-get --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom git g++ \
+sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom git g++ \
 hsetroot intltool imagemagick key-mon libgdk-pixbuf2.0-dev libgnome-menu-3-dev libgtk2.0-dev libice-dev libsm-dev \
-libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools lximage-qt \
-m4 numlockx pavumeter pavucontrol paprefs pcmanfm-qt qterminal \
-subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-notifyd xosd-bin
+libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools \
+m4 numlockx pavumeter pavucontrol paprefs thunar \
+subversion synaptic telnet wget whois wmctrl software-properties-common xfce4-terminal xosd-bin
 
 ### Graphics programs
 if [[ $install_graphs == "yes" ]]; then
-	sudo apt-get --yes install blender gimp inkscape photoflare
+	sudo apt --yes install blender gimp inkscape tumbler tumbler-plugins-extra
 fi
 
 ### Multimedia programs
-sudo apt-get --yes install pulseaudio pavucontrol pasystray
+sudo apt --yes install pulseaudio pavucontrol pasystray
 
 ### Communication programs
 if [[ $install_comms == "yes" ]]; then
-	sudo apt-get --yes install mumble quassel
+	sudo apt --yes install mumble hexchat
 fi
 
 ### Network programs
 if [[ $install_nets == "yes" ]]; then
-	sudo apt-get --yes install filezilla
+	sudo apt --yes install filezilla
 fi
 
 ### Utils
 if [[ $install_utils == "yes" ]]; then
-	sudo apt-get --yes install speedcrunch micro
+	sudo apt --yes install galculator micro
 fi
 
 ### Web server
 if [[ $install_websrv == "yes" ]]; then
-	sudo apt-get --yes install mariadb-common mariadb-server mariadb-client libaio1 libaprutil1 libapache2-mod-php php-mysql php-common libaprutil1-dbd-sqlite3 php-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap php-cli apache2-data php-json apache2 libapr1 apache2-bin php-mbstring php-gd
+	sudo apt --yes install mariadb-common mariadb-server mariadb-client libaio1 libaprutil1 libapache2-mod-php php-mysql php-common libaprutil1-dbd-sqlite3 php-readline libhtml-template-perl libterm-readkey-perl libaprutil1-ldap php-cli apache2-data php-json apache2 libapr1 apache2-bin php-mbstring php-gd
 	### Set apache root to HomeDirectory/www
 	echo -e "\e[93m- Set Apache path to HomeDirectory/www\n"
 	### Exist www directory?
@@ -191,7 +190,7 @@ fi
 # sudo apt-get --yes install libreoffice-l10n-cs libreoffice-l10n-sk
 
 ### Desktop
-sudo apt-get --yes install compton
+# sudo apt-get --yes install compton
 
 ### Install LightDM
 sudo apt-get --yes install lightdm
@@ -221,16 +220,16 @@ svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
 ### COMPOSITOR
 
 ### Download compositor config files
-echo -e "\e[93m- Setup compositor\e[38;5;46m\n"
-wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/compton.conf
-if [[ -e "/home/$USER/.config/compton.conf" ]]; then
-	num=1
-	while [[ -e "/home/$USER/.config/compton.conf-back-$num" ]]; do
-		(( num++ ))
-	done
-	mv "/home/$USER/.config/compton.conf" "/home/$USER/.config/compton.conf-back-$num"
-fi
-mv /tmp/compton.conf $HOME/.config/compton.conf
+# echo -e "\e[93m- Setup compositor\e[38;5;46m\n"
+# wget -P /tmp https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-15/compton.conf
+# if [[ -e "/home/$USER/.config/compton.conf" ]]; then
+# 	num=1
+# 	while [[ -e "/home/$USER/.config/compton.conf-back-$num" ]]; do
+# 		(( num++ ))
+# 	done
+# 	mv "/home/$USER/.config/compton.conf" "/home/$USER/.config/compton.conf-back-$num"
+# fi
+# mv /tmp/compton.conf $HOME/.config/compton.conf
 
 ### Backup .bashrc
 if [[ -e "/home/$USER/.bashrc" ]]; then
