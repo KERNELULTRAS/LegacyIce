@@ -73,14 +73,30 @@ echo -e "\e[93m- Install programs\e[38;5;46m\n"
 sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom git g++ \
 hsetroot intltool imagemagick key-mon libgdk-pixbuf2.0-dev libgnome-menu-3-dev libgtk2.0-dev libice-dev libsm-dev \
 libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools \
-m4 numlockx pavumeter pavucontrol paprefs restic software-properties-common thunar \
+m4 micro numlockx pavumeter pavucontrol paprefs restic software-properties-common thunar \
 subversion synaptic telnet wget whois wmctrl xfce4-terminal xosd-bin
 
+### Murrine-themes
+
+sudo apt --yes install murrine-themes
+
 ### Install LightDM
-sudo apt-get --yes install lightdm
+sudo apt --yes install lightdm
 
 ### Install Python utils
 sudo apt install python3-pip
+
+### Install xde-menu
+git clone https://github.com/bbidulock/xde-menu.git
+cd xde-menu
+./autogen.sh
+./configure
+make
+sudo make DESTDIR="$pkgdir" install
+rm -rf xde-menu
+
+### Set autoupdate menu after install package
+echo 'DPkg::Post-Invoke {"xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu";};' | sudo tee -a /etc/apt/apt.conf.d/99-update-menus
 
 # --------------------------------------
 ### SET THEMES
