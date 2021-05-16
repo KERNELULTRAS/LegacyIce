@@ -1,5 +1,5 @@
 ## LegacyIce-antiX
-Goal of the project is to return the traditional desktop
+Goal of the project is to return the traditional desktop systemd free
 
 ![IceWM desktop](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/screenshots/antix-main-qt.jpg)
 
@@ -8,20 +8,31 @@ Goal of the project is to return the traditional desktop
 ### Based on
 * IceWM
 * antiX-19
-* Now based on QT - GTK
+* Now based on GTK/Xfce
 
 #### Script to convert antiX to LegacyIce
-* Without systemd
-* Remove JWM, FluxBox
-* LightDM instead of Slim
+* Remove
+    * JWM, FluxBox, herbstluftwm
+
+* Replace
+    * gftp-gtk with filezilla
+    * Slim with LightDM
+
+
 * Aplication menu generated with xde-menu
-* Dynamic menu created after install or uninstall packages
+
+
+
 * Nice dark theme for WM
+
 * Unification QT theme with GTK
+
 * Set panel (IceWM panel)
+
 * Set applets
+
 * Custom shutdown dialog window - YAD
-* Set effect (transparency etc.) Compositor - Compton
+
 * Custom start script
 * Custom shutdown, reboot script
 * Keyboard shortcuts for programs
