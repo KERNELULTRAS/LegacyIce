@@ -13,26 +13,38 @@ Goal of the project is to return the traditional desktop systemd free
 #### Script to convert antiX to LegacyIce
 * Remove
     * JWM, FluxBox, herbstluftwm
+    * leafpad
+    * desktop-defaults-fluxbox-antix
+    * desktop-defaults-hlwm-antix
+    * desktop-defaults-jwm-antix
+    * desktop-defaults-rox-antix
+    * desktop-defaults-spacefm-antix
+    * fluxbox-themes-antix
+    * icewm-themes-antix
+    * screenshot-antix
+    * fluxbox
+    * jwm
+    * herbstluftwm
+    * mousepad
+    * desktop-session-antix
+    * menu-icewm-antix
+    * menu-manager-antix
+    * wallpaper-antix
+    * dillo
 
 * Replace
-    * gftp-gtk with filezilla
-    * Slim with LightDM
+    * connman -> network-manager
+    * gftp-gtk -> filezilla
+    * Slim -> LightDM
+    * rox-filer -> thunar
+    * file-roller -> xarchiver
+    * menu-icewm-antix -> xde-menu
 
-
-* Aplication menu generated with xde-menu
-
-
-
-* Nice dark theme for WM
-
+* Own dark theme for WM
 * Unification QT theme with GTK
-
 * Set panel (IceWM panel)
-
 * Set applets
-
 * Custom shutdown dialog window - YAD
-
 * Custom start script
 * Custom shutdown, reboot script
 * Keyboard shortcuts for programs
@@ -49,7 +61,7 @@ Goal of the project is to return the traditional desktop systemd free
 
 (Needed antiX-19 installed)
 antix download from here https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/
-Select **antiX-19.2_x64-full.iso** or **antiX-19.2_386-full.iso**
+Select **antiX-19.3_x64-full.iso** or **antiX-19.3_386-full.iso**
 
     wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-20/legacyice.sh
     chmod +x legacyice.sh
@@ -73,4 +85,3 @@ Network Manager without systemd dependency
 
 ### Licence
 [GNU GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
-
