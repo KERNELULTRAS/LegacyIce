@@ -78,10 +78,7 @@ Ctrl+Alt same as WinKey
 
 "Win+F"		File manager
 
-"Win+G"   Games directory open
-
 "Win+S"		Synaptic
 
 "Win+T"		Terminal
 
-"Win+V"   Video player
