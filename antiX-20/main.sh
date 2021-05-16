@@ -73,7 +73,7 @@ echo -e "\e[93m- Install programs\e[38;5;46m\n"
 sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom filezilla git g++ \
 hsetroot intltool imagemagick key-mon libgdk-pixbuf2.0-dev libgnome-menu-3-dev libgtk2.0-dev libice-dev libsm-dev \
 libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools \
-m4 micro numlockx pavumeter pavucontrol paprefs restic software-properties-common thunar tumbler-plugins-extra \
+m4 micro numlockx pasystray pavumeter pavucontrol paprefs pulseaudio restic software-properties-common thunar tumbler-plugins-extra \
 subversion synaptic telnet wget whois wmctrl xfce4-terminal xosd-bin
 
 ### NetworkManager
