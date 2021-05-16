@@ -78,10 +78,6 @@ Ctrl+Alt je rovnaké ako WinKey (super key)
 
 "Win+F"		Správca súborov
 
-"Win+G"   Otvorenie priečinku Games
-
 "Win+S"		Synaptic
 
 "Win+T"		Terminál
-
-"Win+V"   Video prehrávač
