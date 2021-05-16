@@ -103,6 +103,7 @@ rm -rf xde-menu
 
 ### Set autoupdate menu after install/uninstall package
 echo 'DPkg::Post-Invoke {"xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu";};' | sudo tee -a /etc/apt/apt.conf.d/99-update-menus
+sudo xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu
 
 # --------------------------------------
 ### SET THEMES
