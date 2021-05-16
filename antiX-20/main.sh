@@ -46,8 +46,6 @@ desktop-defaults-rox-antix \
 desktop-defaults-spacefm-antix \
 fluxbox-themes-antix \
 icewm-themes-antix \
-menu-jwm-antix \
-menu-fluxbox-antix \
 screenshot-antix \
 fluxbox \
 jwm \
@@ -73,11 +71,18 @@ echo -e "\e[93m- Install programs\e[38;5;46m\n"
 sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom git g++ \
 hsetroot intltool imagemagick key-mon libgdk-pixbuf2.0-dev libgnome-menu-3-dev libgtk2.0-dev libice-dev libsm-dev \
 libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools \
-m4 micro numlockx pavumeter pavucontrol paprefs restic software-properties-common thunar \
+m4 micro numlockx pavumeter pavucontrol paprefs restic software-properties-common thunar tumbler-plugins-extra \
 subversion synaptic telnet wget whois wmctrl xfce4-terminal xosd-bin
 
-### Murrine-themes
+### NetworkManager
+echo -e "\e[93m- Set NetworkManager\e[38;5;46m\n"
+sudo apt --yes install network-manager network-manager-gnome
+if [[ -e "/etc/NetworkManager/NetworkManager.conf" ]]; then
+	sudo sed -i 's/managed=False/managed=True/g' /etc/NetworkManager/NetworkManager.conf
+	sudo service network-manager restart
+fi
 
+### Murrine-themes
 sudo apt --yes install murrine-themes
 
 ### Install LightDM
@@ -87,6 +92,7 @@ sudo apt --yes install lightdm
 sudo apt install python3-pip
 
 ### Install xde-menu
+echo -e "\e[93m- Create menu\e[38;5;46m\n"
 git clone https://github.com/bbidulock/xde-menu.git
 cd xde-menu
 ./autogen.sh
@@ -95,7 +101,7 @@ make
 sudo make DESTDIR="$pkgdir" install
 rm -rf xde-menu
 
-### Set autoupdate menu after install package
+### Set autoupdate menu after install/uninstall package
 echo 'DPkg::Post-Invoke {"xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu";};' | sudo tee -a /etc/apt/apt.conf.d/99-update-menus
 
 # --------------------------------------
@@ -162,12 +168,7 @@ chmod +x .icewm/winoptions.sh
 
 ### Create menu
 echo -e "\e[93m- Create menu\e[38;5;46m\n"
-sudo sh -c "icewm-menu-fdo > /usr/share/icewm/menu"
 
-### Update menu after install or uninstall programs
-#echo -e "\e[93m- Setup autoupdate menu\e[38;5;46m\n"
-#sudo sh -c "echo 'DPkg::Post-Invoke {\"icewm-menu-fdo>/usr/share/icewm/menu\";};' >/etc/apt/apt.conf.d/99-update-menus"
-# xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output ~/.config/icewm/menu
 ### Rename ice_user_name to active user
 echo -e "\e[93m- Setup user name\e[38;5;46m\n"
 find ~/.icewm -type f -print0 | xargs -0 sed -i "s/mario/$USER/g"
