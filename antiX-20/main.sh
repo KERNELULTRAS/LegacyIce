@@ -56,7 +56,9 @@ rox-filer \
 desktop-session-antix \
 menu-icewm-antix \
 menu-manager-antix \
-wallpaper-antix
+wallpaper-antix \
+dillo
+
 sudo apt-get --yes autoremove
 
 ### Upgrade system
@@ -68,7 +70,7 @@ sudo apt --yes autoremove
 echo -e "\e[93m- Install programs\e[38;5;46m\n"
 
 ### Core tools
-sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom git g++ \
+sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom filezilla git g++ \
 hsetroot intltool imagemagick key-mon libgdk-pixbuf2.0-dev libgnome-menu-3-dev libgtk2.0-dev libice-dev libsm-dev \
 libtool libwnck-dev libx11-dev libxext-dev linuxdoc-tools \
 m4 micro numlockx pavumeter pavucontrol paprefs restic software-properties-common thunar tumbler-plugins-extra \
