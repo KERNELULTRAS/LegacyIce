@@ -7,12 +7,10 @@
 key "Ctrl+Alt+b"	firefox
 key "Ctrl+Alt+e"	xfce4-terminal -e micro
 key "Ctrl+Alt+p"	geany
-key "Ctrl+Alt+f"	pcmanfm
-key "Ctrl+Alt+g"	pcmanfm Games
+key "Ctrl+Alt+f"	thunar
 key "Ctrl+Alt+s"	gksudo synaptic
 key "Ctrl+Alt+t"	xfce4-terminal
 key "Ctrl+Alt+m"	key-mon
-key "Ctrl+Alt+v"	mpv
 key "Ctrl+Alt+c"	galculator
 
 # Wingrid
