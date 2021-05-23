@@ -89,6 +89,7 @@ sudo apt --yes install murrine-themes
 
 ### Install LightDM
 sudo apt --yes install lightdm
+sudo apt purge slim
 
 ### Install Python utils
 sudo apt install python3-pip
