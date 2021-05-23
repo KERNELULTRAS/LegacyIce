@@ -28,7 +28,7 @@ alebo: prog Iceweasel /usr/share/icons/hicolor/48x48/apps/iceweasel.png /usr/bin
 
 Zakomentuj v súbore ~/.icewm/startup
 
-wicd-gtk -t # Network applet
+nm-applet # Network applet
 
 #### Ukazateľ stavu batérie
 Nájdi v súbore ~/.icewm/preferences
