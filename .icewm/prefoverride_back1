@@ -1,0 +1,4 @@
+MailBoxPath="imap://kdesi%40kdesi.sk:heligoN72@kdesi.sk"
+MailCommand="Iceweasel http://webmail.kdesi.sk"
+TaskBarShowMailboxStatus=1
+

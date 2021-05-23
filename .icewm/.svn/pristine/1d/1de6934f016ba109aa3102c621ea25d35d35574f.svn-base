@@ -1,0 +1,260 @@
+ThemeDescription="1 in 1 original XP theme"
+ThemeAuthor="Adisk"
+
+MenuMouseTracking=1 
+#RolloverButtonsSupported=1
+#Look=pixmap
+Look=metal
+BorderSizeX=3
+BorderSizeY=4
+DlgBorderSizeX=3
+DlgBorderSizeY=3
+TitleBarHeight=26
+TitleBarHorzOffset=4
+TitleButtonsLeft="s"
+TitleButtonsRight="xmir"
+MenuMaximalWidth=188
+TaskBarDoubleHeight=0
+
+#DesktopTransparencyColor="rgb:00/00/00"
+SupportSemitransparency=1
+
+TaskBarClockLeds=0
+
+ColorDialog="rgb:EC/E9/D8"
+ColorNormalBorder="rgb:75/8C/DD"
+ColorActiveBorder="rgb:16/6A/EE"
+
+ColorActiveTitleBar="rgb:00/58/F3"
+ColorNormalTitleBar="rgb:00/00/00"
+
+ColorNormalTitleBarText="rgb:D8/E4/F8"
+ColorNormalTitleBarShadow="rgb:7D/9B/E3"
+ColorActiveTitleBarText="rgb:FF/FF/FF"
+ColorActiveTitleBarShadow="rgb:0A/18/83"
+
+ColorNormalMenu="rgb:FF/FF/FF"
+ColorNormalMenuItemText="rgb:00/00/00"
+ColorNormalMenuItemShadow="rgb:FF/FF/FF"
+ColorActiveMenuItem="rgb:31/6A/C5"
+ColorActiveMenuItemText="rgb:FF/FF/FF"
+ColorActiveMenuItemShadow="rgb:20/24/74"
+ColorDisabledMenuItemText="rgb:AC/A8/99"
+ColorDisabledMenuItemShadow="rgb:AF/AF/AF"
+
+ColorMoveSizeStatus="rgb:FF/FF/FF"
+ColorMoveSizeStatusText="rgb:00/00/00"
+
+ColorDefaultTaskBar="rgb:25/5f/dc"
+ColorNormalTaskBarApp="rgb:39/80/f4"
+ColorNormalTaskBarAppText="rgb:Ff/Ff/Ff"
+ColorActiveTaskBarApp="rgb:1a/50/b8"
+ColorActiveTaskBarAppText="rgb:ff/ff/ff"
+ColorMinimizedTaskBarApp="rgb:39/80/F4"
+ColorMinimizedTaskBarAppText="rgb:FF/FF/FF"
+ColorInvisibleTaskBarApp="rgb:FF/FF/FF"
+ColorInvisibleTaskBarAppText="rgb:FF/FF/FF"
+ColorListBox="rgb:FF/FF/FF"
+
+
+# Background of regular buttons
+ColorNormalButton="rgb:F3/F3/FE"
+
+# Textcolor of regular buttons
+ColorNormalButtonText="rgb:FF/FF/FF"
+
+# Background of pressed buttons
+ColorActiveButton="rgb:1A/50/B8"
+
+# Textcolor of pressed buttons
+ColorActiveButtonText="rgb:FF/FF/FF"
+
+# Background of titlebar buttons
+ColorNormalTitleButton="rgb:80/A5/E7"
+
+# Textcolor of titlebar buttons
+ColorNormalTitleButtonText="rgb:FF/FF/FF"
+
+# Background of toolbar buttons, ColorNormalButton is used if empty
+ColorToolButton="rgb:24/5D/DB"
+
+# Textcolor of toolbar buttons, ColorNormalButtonText is used if empty
+ColorToolButtonText="rgb:E0/D0/60"
+
+# Background of workspace buttons, ColorNormalButton is used if empty
+ColorNormalWorkspaceButton="rgb:23/5C/DB"
+
+# Textcolor of workspace buttons, ColorNormalButtonText is used if empty
+ColorNormalWorkspaceButtonText="rgb:FF/FF/FF"
+
+# Background of the active workspace button, ColorActiveButton is used if empty
+ColorActiveWorkspaceButton="rgb:40/40/90"
+
+# Textcolor of the active workspace button, ColorActiveButtonText is used if empty
+ColorActiveWorkspaceButtonText="rgb:F0/F0/F0"
+
+# Background for mini icons of regular windows
+# ColorNormalMinimizedWindow="rgb:C0/C0/C0"
+
+# Textcolor for mini icons of regular windows
+# ColorNormalMinimizedWindowText="rgb:00/00/00"
+
+# Background for mini icons of active windows
+# ColorActiveMinimizedWindow="rgb:E0/E0/E0"
+
+# Textcolor for mini icons of active windows
+# ColorActiveMinimizedWindowText="rgb:00/00/00"
+
+# Background of the quick switch window
+ColorQuickSwitch="rgb:EC/E9/D8"
+
+# Textcolor in the quick switch window
+ColorQuickSwitchText="rgb:00/00/00"
+
+# Rectangle arround the active icon in the quick switch window
+ColorQuickSwitchActive="rgb:00/00/00"
+
+# Scrollbar background (sliding area)
+ColorScrollBar="rgb:F9/F8/F4"
+
+# Background of the slider button in scrollbars
+ColorScrollBarSlider="rgb:C8/D8/FB"
+
+# Background of the arrow buttons in scrollbars
+ColorScrollBarButton="rgb:C8/D8/FB"
+
+# Background of the arrow buttons in scrollbars (obsolete)
+ColorScrollBarArrow="rgb:C8/D8/FB"
+
+# Color of active arrows on scrollbar buttons
+ColorScrollBarButtonArrow="rgb:4D/61/85"
+
+# Color of inactive arrows on scrollbar buttons
+# ColorScrollBarInactiveArrow="rgb:80/80/80"
+
+# Background of listboxes
+ColorListBox="rgb:FF/FF/FF"
+
+# Textcolor in listboxes
+ColorListBoxText="rgb:00/00/00"
+
+# Background of selected listbox items
+ColorListBoxSelection="rgb:31/6A/C5"
+
+# Textcolor of selected listbox items
+ColorListBoxSelectionText="rgb:FF/FF/FF"
+
+# Background of tooltips
+ColorToolTip="rgb:FF/FF/E1"
+
+# Textcolor of tooltips
+ColorToolTipText="rgb:00/00/00"
+
+# Background of labels, leave empty to force transparency
+ColorLabel="rgb:EC/E9/D8"
+
+# Textcolor of labels
+ColorLabelText="rgb:00/00/00"
+
+# Background of text entry fields (e.g. the addressbar)
+ColorInput="rgb:FF/FF/FF"
+
+# Textcolor of text entry fields (e.g. the addressbar)
+ColorInputText="rgb:00/00/00"
+
+# Background of selected text in an entry field
+ColorInputSelection="rgb:31/6A/C5"
+
+# Selected text in an entry field
+ColorInputSelectionText="rgb:FF/FF/FF"
+
+# Background of non-LCD clock, leave empty to force transparency
+ColorClock="rgb:0F/8C/E8"
+
+# Background of non-LCD monitor
+ColorClockText="rgb:FF/FF/FF"
+
+# Background of APM monitor, leave empty to force transparency
+# ColorApm="rgb:00/00/00"
+
+# Textcolor of APM monitor
+# ColorApmText="rgb:00/FF/00"
+
+# User load on the CPU monitor
+ColorCPUStatusUser="rgb:00/FF/00"
+
+# System load on the CPU monitor
+ColorCPUStatusSystem="rgb:FF/00/00"
+
+# Nice load on the CPU monitor
+ColorCPUStatusNice="rgb:00/00/FF"
+
+# Idle (non) load on the CPU monitor, leave empty to force transparency
+ColorCPUStatusIdle="rgb:00/80/00"
+
+# Outgoing load on the network monitor
+ColorNetSend="rgb:FF/FF/00"
+
+# Incoming load on the network monitor
+ColorNetReceive="rgb:00/DD/00"
+
+# Idle (non) load on the network monitor, leave empty to force transparency
+ColorNetIdle="rgb:00/40/00"
+
+# Desktop background color
+DesktopBackgroundColor="rgb:00/00/00"
+
+# Desktop background image
+DesktopBackgroundImage="backgr.jpg"
+DesktopBackgroundCenter=1
+DesktopBackgroundScaled=1
+
+# Color to announce for semi-transparent windows
+DesktopTransparencyColor="rgb:00/00/00"
+
+# Image to announce for semi-transparent windows
+# DesktopTransparencyImage=""
+
+# Enable XFreeType extension (buggy, may result in font-loading errors)
+XFreeType=1 # 0 / 1
+
+# Use double buffering when redrawing the display
+DoubleBuffer=1 # 0 / 1
+
+
+TitleFontName="-*-arial-bold-r-*-*-13-*-*-*-*-*-iso10646-*"
+MenuFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+NormalTaskBarFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ActiveTaskBarFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ClockFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ToolTipFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+QuickSwitchFontName="-*-arial-medium-r-*-*-14-*-*-*-*-*-iso10646-*"
+NormalButtonFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ActiveButtonFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+NormalTaskBarFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+StatusFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ActiveTaskBarFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ToolButtonFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+MinimizedWindowFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+ListBoxFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+LabelFontName="-*-arial-medium-r-*-*-11-*-*-*-*-*-iso10646-*"
+InputFontName="-*-arial-medium-r-*-*-16-*-*-*-*-*-iso10646-*"
+
+
+#FxFontName="-*-arial-medium-r-*-*-14-*-*-*-*-*-iso10646-*"
+
+# Font Specification
+TitleFontNameXft	   		= 	  "Lucida:size=10:bold"
+MenuFontNameXft	         =    "Lucida:size=9:bold"
+MinimizedWindowFontNameXft =    "sans-serif:size=8"
+ActiveButtonFontNameXft    =    "Lucida:size=8:bold"
+NormalButtonFontNameXft    =    "lusidatypewriter:size=8"
+QuickSwitchFontNameXft     =    "sans-serif:size=8"
+ListBoxFontNameXft         =    "sans-serif:size=8"
+StatusFontNameXft          =    "sans-serif:size=8"
+ToolTipFontNameXft         =    "sans-serif:size=8"
+ActiveTaskBarFontNameXft   =    "Lucida:size=8:bold"
+NormalTaskBarFontNameXft   =    "Lucida:size=8"
+ClockFontNameXft           =    "sans-serif:size=11:bold"
+ApmFontNameXft             =    "sans-serif:size=14:bold"
+
