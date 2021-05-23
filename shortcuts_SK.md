@@ -1,83 +1,74 @@
 ## Klávesové skratky (podobné ako v MS Windows)
 
-Ctrl+Alt je rovnaké ako WinKey (super key)
+Ctrl+Alt je rovnaké ako WinKey (Super klávesa)
 
-### Práca s oknami
+### Okná
+Prepínanie aplikácií: Alt+Tab
 
-**Prepínanie aplikácií**: Alt+Tab
+Maximalizovanie okna a späť: Alt+F10
 
-**Maximalizovanie okna a späť**: Alt+F10
+Minimalizovanie okna: Alt+F9
 
-**Minimalizovanie okna**: Alt+F9
+Zavretie okna: Alt+F4
 
-**Zavretie okna**: Alt+F4
+Prsun okien: Win+KP_1 - Win+KP_9 (KP = NumPad)
 
-**Usporiadanie okien vertikálne**: Win+F2
+Na celú obrazovku: F11
 
-**Usporiadanie okiens horizontálne**: Win+F3
+Na polovicu vľavo: Win+F9
 
-**Prsun okien**: Win+KP_1 - Win+KP_9 (KP = NumPad) 
+Na polovicu vpravo: Win+F10
 
-**Okno do fullscreenu**: F11
+Na polovicu hore: Win+F11
 
-### Pracovné plochy
+Na polovicu dole: Win+F12
 
-**Presuntie sa na plochu vpravo**: Win+ArrowRight
+###  Plochy
+Presuntie sa na plochu vpravo: Win+ArrowRight
 
-**Presuntie sa na plochu vľavo**: Win+ArrowLeft
+Presuntie sa na plochu vľavo: Win+ArrowLeft
 
-### Zobraz plochu a späť
+Presunutie aplikácie na plochu vpravo: Win+Shift+ArrowRight
 
-**Zobraz desktop**: Win+D
+Presunutie aplikácie na plochu vľavo: Win+Shift+ArrowLeft
 
-### Skry panel a späť
+Zobrazí plochu a späť: Win+D
 
-**Skry panel**: Win+H
+Skryť panel a späť: Win+H
 
 ### Menu
-
-**Otvor menu**: Win
+Otvor menu: Win
 
 ### Zvuk
+Zvuk hlasnejšie: Win+AroowUp
 
-**Pridať hlasitosť**: Win+AroowUp
-
-**Ubrať hlasitosť**: Win+AroowDown
+Zvuk tichšie: Win+AroowDown
 
 ### Snímka obrazovky
+Snímka obrazovky: Print
 
-**Snímka obrazovky**: Print
+Snímka aktuálneho okna: Alt+Print
 
-**Snímka obrazovky zameraného okna**: Alt+Print
+Ssímka s 5sekundovým oneskorením: Win+Print
 
-**Snímka obrazovky s oneskorením 5sekúnd**: Win+Print
+### Applikácie
+Pehladač webu:          Win+B
 
-### Odhlásenie, reštart, vypnutie a rečtart IceWM
+Textový editor:         Win+E
 
-**Vypínacie menu**: Ctrl+Alt+Del
+Programátorský editor: 	Win+P
 
-### Spusti príkaz
+Správca súborov:        Win+F
 
-**Otvorenie dialógu na spustenie príkazu**: Alt+F2
+Synaptic:               Win+S
 
-### Systémové informácie
+Terminál:               Win+T
 
-**Zobrazí systémové informácie**: Pause
+### Špeciálne
+Vypínacie menu: Ctrl+Alt+Del
 
-### Jazyk
+Dialóg pre spustenie aplikácie: Alt+F2
 
-**Prepínanie jazyka klávesnice**: ľavý alt+shift
+Zobrazí systémové informácie: Pause
 
-### Aplikácie
-
-"Win+B"		Webový prehliadač
-
-"Win+E"		Editor
-
-"Win+P"		Editor kódu
-
-"Win+F"		Správca súborov
-
-"Win+S"		Synaptic
-
-"Win+T"		Terminál
+Prepínanie jazyka klávesnice: left_alt+shift

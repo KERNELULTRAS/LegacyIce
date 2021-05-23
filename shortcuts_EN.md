@@ -1,84 +1,74 @@
-## Shortcuts (similiar to MS Windows)
+## Shortcuts (similar as in MS Windows)
 
-Ctrl+Alt same as WinKey
+Ctrl+Alt same as WinKey (Super key)
 
 ### Windows
+Switching applications: Alt+Tab
 
-**Switching applications**: Alt+Tab
+Maximize window and vice versa: Alt+F10
 
-**Maximize window and vice versa**: Alt+F10
+Minimize window to taskbar: Alt+F9
 
-**Minimize window to taskbar**: Alt+F9
+Close window: Alt+F4
 
-**Close window**: Alt+F4
+Move window: Win+KP_1 - Win+KP_9 (KP = NumPad)
 
-**Arange windows verticaly**: Win+F2
+Window into fullscreen: F11
 
-**Arange windows horizontaly**: Win+F3
+Half window left Win+F11
 
-**Move window**: Win+KP_1 - Win+KP_9 (KP = NumPad)
+Half window right Win+F12
 
-**Window into fullscreen**: F11
+Half window top Win+F9
+
+Half window bottom Win+F10
 
 ### Workspaces
+Workspaces move to right: Win+ArrowRight
 
-**Workspaces move to right**: Win+ArrowRight
+Workspaces move to left: Win+ArrowLeft
 
-**Workspaces move to left**: Win+ArrowLeft
+Move application to right workspace: Win+Shift+ArrowRight
 
-### Show desktop and vice versa
+Move application to left workspace: Win+Shift+ArrowLeft
 
-**Show desktop**: Win+D
+Show desktop and vice versa: Win+D
 
-### Hide panel and vice versa
-
-**Hide panel**: Win+H
+Hide panel: Win+H
 
 ### Menu
+Open menu: Win
 
-**Open menu**: Win
+###  Sound
+Volume up: Win+AroowUp
 
-### Sound
-
-**Volume up**: Win+AroowUp
-
-**Volume down**: Win+AroowDown
+Volume down: Win+AroowDown
 
 ### Screenshot
+Screenshot desktop: Print
 
-**Screenshot desktop**: Print
+Screenshot focused window: Alt+Print
 
-**Screenshot focused window**: Alt+Print
-
-**Screenshot desktop with timeout 5s**: Win+Print
-
-### Logout, reboot, shutdown, restart IceWM
-
-**Shutdown menu**: Ctrl+Alt+Del
-
-### Run Command
-
-**Open dialog for run command**: Alt+F2
-
-### System info
-
-**View system informations**: Pause
-
-### Language
-
-**Switch languages**: left alt+shift
+Screenshot desktop with timeout 5s: Win+Print
 
 ### Applications
+Web browser    Win+B
 
-"Win+B"		Web browser
+Editor         Win+E
 
-"Win+E"		Editor
+Code editor    Win+P
 
-"Win+P"		Code editor
+File manager   Win+F
 
-"Win+F"		File manager
+Synaptic       Win+S
 
-"Win+S"		Synaptic
+Terminal       Win+T
 
-"Win+T"		Terminal
+### Special
+Shutdown menu: Ctrl+Alt+Del
 
+Open dialog for run command: Alt+F2
+
+View system informations: Pause
+
+Switch languages: left_alt+shift
