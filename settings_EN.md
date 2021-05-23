@@ -28,7 +28,7 @@ or: prog Iceweasel /usr/share/icons/hicolor/48x48/apps/iceweasel.png /usr/bin/ic
 
 Comment in file ~/.icewm/startup
 
-wicd-gtk -t & # Network applet
+nm-applet & # Network applet
 
 #### Battery status
 Find in file ~/.icewm/preferences
@@ -40,7 +40,7 @@ Uncomment it and change to
 TaskBarShowAPMStatus=1
 
 #### Email applet (e.g. name@domain.com)
-Change in file ~/.icewm/preferences
+Create file ~/.icewm/prefoverride
 
 * MailBoxPath="imap://name%40domain.com:password@domain.com"
 * MailCommand="Iceweasel http://webmail.domain.com"
