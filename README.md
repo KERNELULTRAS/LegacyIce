@@ -8,7 +8,7 @@ Goal of the project is to return the traditional desktop systemd free
 ### Based on
 * IceWM
 * antiX-19
-* Now based on GTK/Xfce
+* Now based on GTK/Xfce applications
 
 #### Script to convert antiX to LegacyIce
 Major changes
