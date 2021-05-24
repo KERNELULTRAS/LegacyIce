@@ -13,12 +13,11 @@ Goal of the project is to return the traditional desktop systemd free
 #### Script to convert antiX to LegacyIce
 Major changes
 
-Use only IceWM
-Own IceWM theme LegacyIce-Dark
-Ovn script for shutdown, restart ... (Ctrl+Alt+Delete)
-
-Instead fucking shit Connman uses NetworkManager
-Instead Slim use LightDM
+* Use only IceWM
+* Own IceWM theme LegacyIce-Dark
+* Ovn script for shutdown, restart ... (Ctrl+Alt+Delete)
+* Instead fucking shit Connman uses NetworkManager
+* Instead Slim use LightDM
 
 ### Install
 
