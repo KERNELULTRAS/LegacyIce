@@ -1,4 +1,4 @@
-## LegacyIce-antiX
+## LegacyIce
 Goal of the project is to return the traditional desktop systemd free
 
 ![IceWM desktop](https://github.com/KERNELULTRAS/LegacyIce-antiX/blob/master/screenshots/antix-main-qt.jpg)
