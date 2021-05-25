@@ -4,7 +4,7 @@
 # Script to convert antiX16 to LegacyIce
 # --------------------------------------
 
-# (Only GTK and QT application)
+# (Only GTK and Xfce application)
 # (In alphabetical order)
 
 ### Set background
@@ -12,7 +12,7 @@ echo -e "\e[40m\n\n"
 
 ### Velcome
 echo -e "\e[93m----------------------------------------------------------\e[38;5;46m"
-echo -e "\e[93m-- Installation LegacyIce by KERNEL ULTRAS               -\e[38;5;46m"
+echo -e "\e[93m  Installation LegacyIce by KERNEL ULTRAS                 \e[38;5;46m"
 echo -e "\e[93m----------------------------------------------------------\e[38;5;46m\n"
 
 ### Goto to home directory
@@ -21,7 +21,7 @@ cd ~
 # --------------------------------------
 ### Test architecture
 # --------------------------------------
-echo -e "\e[93m- Test architecture\e[38;5;46m\n"
+echo -e "\e[93m Test architecture\e[38;5;46m\n"
 
 if [ `arch` == "x86_64" ];then
 	echo -e "Architecture x86 64bit\n\n"
@@ -37,7 +37,7 @@ else
 fi
 
 ### Remove unnecessary packages
-echo -e "\e[93m- Remove unnecessary programs\e[38;5;46m\n"
+echo -e "\e[93m Remove unnecessary programs\e[38;5;46m\n"
 sudo apt --yes purge leafpad \
 desktop-defaults-fluxbox-antix \
 desktop-defaults-hlwm-antix \
@@ -62,12 +62,12 @@ dillo
 sudo apt-get --yes autoremove
 
 ### Upgrade system
-echo -e "\e[93m- Upgrade system\e[38;5;46m\n"
+echo -e "\e[93m Upgrade system\e[38;5;46m\n"
 sudo apt --yes update
 sudo apt --yes -o Dpkg::Options::="--force-confnew" upgrade
 sudo apt --yes autoremove
 
-echo -e "\e[93m- Install programs\e[38;5;46m\n"
+echo -e "\e[93m Install programs\e[38;5;46m\n"
 
 ### Core tools
 sudo apt --yes install autopoint autoconf automake autogen bc curl debfoster earlyoom filezilla git g++ \
@@ -77,7 +77,7 @@ m4 maim micro numlockx pasystray pavumeter pavucontrol paprefs pulseaudio restic
 subversion synaptic telnet wget whois wmctrl xclip xfce4-terminal xosd-bin
 
 ### NetworkManager
-echo -e "\e[93m- Set NetworkManager\e[38;5;46m\n"
+echo -e "\e[93m Set NetworkManager\e[38;5;46m\n"
 sudo apt --yes install network-manager network-manager-gnome
 if [[ -e "/etc/NetworkManager/NetworkManager.conf" ]]; then
 	sudo sed -i 's/managed=False/managed=True/g' /etc/NetworkManager/NetworkManager.conf
@@ -95,7 +95,7 @@ sudo apt purge slim
 sudo apt install python3-pip
 
 ### Install xde-menu
-echo -e "\e[93m- Create menu\e[38;5;46m\n"
+echo -e "\e[93m Create menu\e[38;5;46m\n"
 git clone https://github.com/bbidulock/xde-menu.git
 cd xde-menu
 ./autogen.sh
@@ -116,7 +116,7 @@ sudo xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus
 ### SET CONFIGS
 # --------------------------------------
 
-### Download IceWM config files
+### Backup IceWM config files
 echo -e "\e[93m- Download IceWM config files\e[38;5;46m\n"
 if [[ -e "/home/$USER/.icewm" ]]; then
 	num=1
@@ -125,9 +125,12 @@ if [[ -e "/home/$USER/.icewm" ]]; then
 	done
 	mv "/home/$USER/.icewm" "/home/$USER/.icewm-back-$num"
 fi
-svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
+# Download .icewm config
+#svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
+cp -r antiX-20/config/.icewm ~/.icewm
 
 ### Backup .bashrc
+echo -e "\e[93m- Download BASH config file\e[38;5;46m\n"
 if [[ -e "/home/$USER/.bashrc" ]]; then
 	num=1
 	while [[ -e "/home/$USER/.bashrc.conf-back-$num" ]]; do
@@ -135,28 +138,9 @@ if [[ -e "/home/$USER/.bashrc" ]]; then
 	done
 	cp "/home/$USER/.bashrc" "/home/$USER/.bashrc.conf-back-$num"
 fi
-
-### Echo LegacyIce textinfo
-echo -e "\e[93m- Add TEXT to .bashrc\e[38;5;46m\n"
-if grep -q "@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@" .bashrc
-then
-    echo -e "\e[93m- Skip .bashrc\e[38;5;46m\n"
-else
-	echo -e "\e[93m- Setup .bashrc\e[38;5;46m\n"
-	echo "
-	echo -e \"\e[91m\"
-	echo \"@   @@@ @@@ @@@ @@@ @ @  @ @@@ @@@\"
-	echo \"@   @   @   @ @ @   @ @  @ @   @\"
-	echo \"@   @@@ @ @ @@@ @   @@@  @ @   @@@        /\\\\\"
-	echo \"@   @   @ @ @ @ @    @   @ @   @     /\\\\  /  \\\\  /\\\\\"
-	echo \"@@@ @@@ @@@ @ @ @@@  @   @ @@@ @@@  /  \\\\/    \\\\/  \\\\\"
-	echo -e \"\e[94m---------------------------------------------------\"">>$HOME/.bashrc
-	echo "date">>$HOME/.bashrc
-	echo "
-	echo \"---------------------------------------------------\"
-	echo -e \"\e[37m\"">>$HOME/.bashrc
-	echo "[ -n \"${PATH##*/sbin*}\" ] && PATH=$PATH:/sbin:/usr/sbin">>$HOME/.bashrc
-fi
+# Download .bashrc
+# wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/antiX-20/.bashrc
+cp antiX-20/configs/.bashrc ~/bashrc
 
 ### Clutter off (Off hide mouse)
 echo -e "\e[93m- Clutter off\e[38;5;46m\n"
