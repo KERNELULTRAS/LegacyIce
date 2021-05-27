@@ -15,6 +15,8 @@ echo -e "\e[93m----------------------------------------------------------\e[38;5
 echo -e "\e[93m Installation LegacyIce by KERNEL ULTRAS                  \e[38;5;46m"
 echo -e "\e[93m----------------------------------------------------------\e[38;5;46m\n"
 
+ORIG_PWD=$PWD
+
 # --------------------------------------
 ### Test architecture
 # --------------------------------------
@@ -83,9 +85,19 @@ sudo apt --yes install lightdm
 sudo apt install python3-pip
 
 ### Install xde-menu
+# echo -e "\e[93m Create menu\e[38;5;46m\n"
+# git clone https://github.com/bbidulock/xde-menu.git
+# cd xde-menu
+# ./autogen.sh
+# ./configure
+# make
+# sudo make DESTDIR="$pkgdir" install
+# rm -rf xde-menu
+
 echo -e "\e[93m Create menu\e[38;5;46m\n"
-git clone https://github.com/bbidulock/xde-menu.git
-cd xde-menu
+wget https://github.com/bbidulock/xde-menu/archive/refs/tags/0.12.zip
+unzip 0.12.zip
+cd xde-menu-0.12
 ./autogen.sh
 ./configure
 make
@@ -95,6 +107,8 @@ rm -rf xde-menu
 ### Set autoupdate menu after install/uninstall package
 echo 'DPkg::Post-Invoke {"xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu";};' | sudo tee -a /etc/apt/apt.conf.d/99-update-menus
 sudo xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu
+
+cd $ORIG_PWD
 
 #=======================================================================================
 ### SET CONFIGS
