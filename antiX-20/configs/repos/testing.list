@@ -1,0 +1,8 @@
+# Debian Testing.
+deb http://ftp.sk.debian.org/debian/ testing main contrib non-free
+#deb-src http://ftp.sk.debian.org/debian/ testing main contrib non-free
+#deb http://security.debian.org testing-security main contrib non-free
+
+# Multimedia Testing
+# Use to install libdvdcss2 and codecs.
+deb http://www.deb-multimedia.org testing main non-free

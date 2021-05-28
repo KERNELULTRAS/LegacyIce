@@ -1,0 +1,2 @@
+# Debian Eperimental.
+deb http://ftp.sk.debian.org/debian/ experimental main contrib non-free

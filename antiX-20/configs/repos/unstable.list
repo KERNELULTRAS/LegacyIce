@@ -1,0 +1,2 @@
+# Debian Unstable.
+deb http://ftp.sk.debian.org/debian/ unstable main contrib non-free

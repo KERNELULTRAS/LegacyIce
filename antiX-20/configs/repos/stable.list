@@ -1,0 +1,8 @@
+# Debian Stable. Default for antiX-19.
+deb http://ftp.sk.debian.org/debian/ buster main contrib non-free
+deb http://security.debian.org/ buster/updates main contrib non-free
+#deb-src http://ftp.sk.debian.org/debian/ buster main contrib non-free
+
+# Multimedia Stable.
+# Use to install libdvdcss2 and codecs.
+deb http://www.deb-multimedia.org buster main non-free
