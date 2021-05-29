@@ -222,7 +222,9 @@ if [[ -e "/etc/NetworkManager/NetworkManager.conf" ]]; then
 	sudo service network-manager restart
 fi
 
-
+### Copy Icewm config to /etc/
+sudo mkdir /etc/icewm/
+sudo cp -r .icewm/* /etc/icewm/
 
 ### END OF SCRIPT
 echo -e "\n"
