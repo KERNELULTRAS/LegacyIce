@@ -85,7 +85,7 @@ sudo apt --yes install murrine-themes
 sudo apt --yes install lightdm
 
 ### Install Python utils
-sudo apt install python3-pip
+sudo apt --yes install python3-pip
 
 ### Install xde-menu
 # echo -e "\e[93m Create menu\e[38;5;46m\n"

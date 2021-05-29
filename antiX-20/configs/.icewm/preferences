@@ -140,7 +140,7 @@ MenuMouseTracking=1 # 0/1
 # Win95Keys=1 # 0/1
 
 #  Treat Super/Win modifier as Ctrl+Alt
-# ModSuperIsCtrlAlt=1 # 0/1
+ModSuperIsCtrlAlt=1 # 0/1
 
 #  Support mouse wheel
 # UseMouseWheel=0 # 0/1
