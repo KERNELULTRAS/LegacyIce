@@ -36,7 +36,7 @@ else
 fi
 
 ### Change source list
-sudo sed -i 's/deb http://tux.rainside.sk/mxlinux/antix/buster buster main nonfree nosystemd/deb http://tux.rainside.sk/mxlinux/antix/buster buster main nonfree nosystemd dev/g' /etc/apt/sources.list.d/antix.list
+sudo sed -i 's/deb http:\/\/tux.rainside.sk\/mxlinux\/antix\/buster buster main nonfree nosystemd/deb http:\/\/tux.rainside.sk\/mxlinux\/antix\/buster buster main nonfree nosystemd dev/g' /etc/apt/sources.list.d/antix.list
 
 ### Remove unnecessary packages
 echo -e "\e[93m- Remove unnecessary programs\e[38;5;46m\n"
