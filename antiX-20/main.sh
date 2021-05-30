@@ -17,9 +17,9 @@ echo -e "\e[93m----------------------------------------------------------\e[38;5
 
 ORIG_PWD=$PWD
 
-# --------------------------------------
+#--------------------------------------
 ### Test architecture
-# --------------------------------------
+#--------------------------------------
 echo -e "\e[93m- Test architecture\e[38;5;46m\n"
 
 if [ `arch` == "x86_64" ];then
@@ -88,14 +88,14 @@ sudo apt --yes install lightdm
 sudo apt --yes install python3-pip
 
 ### Install xde-menu
-# echo -e "\e[93m Create menu\e[38;5;46m\n"
-# git clone https://github.com/bbidulock/xde-menu.git
-# cd xde-menu
-# ./autogen.sh
-# ./configure
-# make
-# sudo make DESTDIR="$pkgdir" install
-# rm -rf xde-menu
+echo -e "\e[93m Create menu\e[38;5;46m\n"
+git clone https://github.com/bbidulock/xde-menu.git
+cd xde-menu
+./autogen.sh
+./configure
+make
+sudo make DESTDIR="$pkgdir" install
+rm -rf xde-menu
 
 echo -e "\e[93m Create menu\e[38;5;46m\n"
 wget https://github.com/bbidulock/xde-menu/archive/refs/tags/0.12.zip
@@ -163,6 +163,8 @@ fi
 # wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/antiX-20/.bashrc
 echo -e "\e[93m Copy GTK-2 config file\e[38;5;46m\n"
 cp antiX-20/configs/.gtkrc-2.0 ~/.gtkrc-2.0
+echo -e "\e[93m Copy GTK-2 config file to /etc/skel/.gtkrc-2.0\e[38;5;46m\n"
+sudo cp antiX-20/configs/.gtkrc-2.0 /etc/skel/.gtkrc-2.0
 #***************************************************************************************
 
 ########################################################################################
@@ -177,8 +179,10 @@ if [[ -e "/home/$USER/.config/gtk-3.0" ]]; then
 	mv "/home/$USER/.config/gtk-3.0" "/home/$USER/.config/gtk-3.0-back-$num"
 fi
 # wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce/master/antiX-20/.bashrc
-echo -e "\e[93m Copy GTH-3 config file\e[38;5;46m\n"
+echo -e "\e[93m Copy GTK-3 config file\e[38;5;46m\n"
 cp -r antiX-20/configs/gtk-3.0 ~/.config/gtk-3.0
+echo -e "\e[93m Copy GTK-. config file to /etc/skel/.config/gtk-3.0\e[38;5;46m\n"
+sudo cp -r antiX-20/configs/gtk-3.0 /etc/skel/.config/gtk-3.0
 #***************************************************************************************
 
 ########################################################################################
@@ -211,7 +215,7 @@ echo -e "\e[93m Create menu\e[38;5;46m\n"
 echo -e "\e[93m Setup user name\e[38;5;46m\n"
 find ~/.icewm -type f -print0 | xargs -0 sed -i "s/mario/$USER/g"
 
-# Set background
+Set background
 hsetroot -extend ~/.icewm/themes/LegacyIce-Dark/default.jpg
 
 ### NetworkManager
