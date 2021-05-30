@@ -107,11 +107,12 @@ make
 sudo make DESTDIR="$pkgdir" install
 rm -rf xde-menu
 
-### Set autoupdate menu after install/uninstall package
-echo 'DPkg::Post-Invoke {"xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu";};' | sudo tee -a /etc/apt/apt.conf.d/99-update-menus
-sudo xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu
-
 cd $ORIG_PWD
+
+### Set autoupdate menu after install/uninstall package
+#echo 'DPkg::Post-Invoke {"xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu";};' | sudo tee -a /etc/apt/apt.conf.d/99-update-menus
+sudo cp antiX-20/configs/99update-menus /etc/apt/apt.conf.d/99update-menus
+sudo xde-menu --menugen --wmname=icewm --format=icewm --root-menu /etc/xdg/menus/lxde-applications.menu --nolaunch --output /usr/share/icewm/menu
 
 #=======================================================================================
 ### SET CONFIGS
@@ -182,7 +183,7 @@ fi
 echo -e "\e[93m Copy GTK-3 config file\e[38;5;46m\n"
 cp -r antiX-20/configs/gtk-3.0 ~/.config/gtk-3.0
 echo -e "\e[93m Copy GTK-. config file to /etc/skel/.config/gtk-3.0\e[38;5;46m\n"
-sudo cp -r antiX-20/configs/gtk-3.0 /etc/skel/.config/gtk-3.0
+sudo cp -r antiX-20/configs/gtk-3.0/* /etc/skel/.config/gtk-3.0
 #***************************************************************************************
 
 ########################################################################################
@@ -215,7 +216,7 @@ echo -e "\e[93m Create menu\e[38;5;46m\n"
 echo -e "\e[93m Setup user name\e[38;5;46m\n"
 find ~/.icewm -type f -print0 | xargs -0 sed -i "s/mario/$USER/g"
 
-Set background
+#Set background
 hsetroot -extend ~/.icewm/themes/LegacyIce-Dark/default.jpg
 
 ### NetworkManager
@@ -230,6 +231,9 @@ fi
 sudo mkdir /etc/icewm/
 sudo cp -r .icewm/* /etc/icewm/
 sudo cp -r .icewm/* /etc/skel/.icewm/
+# Remove menu from skelet
+sudo rm /etc/skel/.icewm/menu*
+
 
 ### END OF SCRIPT
 echo -e "\n"
