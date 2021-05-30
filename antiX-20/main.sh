@@ -229,6 +229,7 @@ fi
 ### Copy Icewm config to /etc/
 sudo mkdir /etc/icewm/
 sudo cp -r .icewm/* /etc/icewm/
+sudo cp -r .icewm/* /etc/skel/.icewm/
 
 ### END OF SCRIPT
 echo -e "\n"
