@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="FileZilla"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="FreetuxTV"/>
+      <value type="string" value="lbry"/>
+      <value type="string" value="mumble"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="notify-send"/>
+      <value type="string" value="pasystray"/>
+      <value type="string" value="Ring"/>
+      <value type="string" value="Transmission"/>
+    </property>
+  </property>
+</channel>
