@@ -202,6 +202,26 @@ echo -e "\e[93m Copy Compton config file\e[38;5;46m\n"
 cp -r antiX-20/configs/compton.conf ~/.config/compton.conf
 #***************************************************************************************
 
+########################################################################################
+### Copy Xfce4 config files
+########################################################################################
+echo -e "\e[93m Backup Xfce4 config files\e[38;5;46m\n"
+if [[ -e "/home/$USER/.config/xfce4" ]]; then
+	num=1
+	while [[ -e "/home/$USER/.config/xfce4-back-$num" ]]; do
+		(( num++ ))
+	done
+	mv "/home/$USER/.config/xfce4" "/home/$USER/.config/xfce4-back-$num"
+fi
+# svn checkout https://github.com/KERNELULTRAS/LegacyIce-antiX.git/trunk/.icewm
+echo -e "\e[93m Copy Xfce4 config files\e[38;5;46m\n"
+mkdir -p ~/.config/xfce4
+cp -r antiX-20/configs/xfce4/* ~/.config/xfce4
+echo -e "\e[93m Copy Xfce4 config file to /etc/skel/.config/xfce4\e[38;5;46m\n"
+sudo mkdir -p /etc/skel/.config/xfce4
+sudo cp -r antiX-20/configs/xfce4/* /etc/skel/.config/xfce4
+#***************************************************************************************
+
 ### Clutter off (Off hide mouse)
 echo -e "\e[93m Clutter off\e[38;5;46m\n"
 if [[ -e "/etc/default/unclutter" ]]; then
