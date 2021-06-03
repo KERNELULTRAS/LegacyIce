@@ -21,7 +21,7 @@ ColorNormalTitleButton="#252525"
 ColorNormalBorder="#252525"
 
 ColorActiveBorder="#0077FF"
-ColorActiveTitleBar="#002233"
+ColorActiveTitleBar="#002277"
 ColorActiveTitleBarText="#F5F5F5"
 
 TitleBarHeight=20 # 0-128
@@ -41,7 +41,7 @@ ShapesProtectClientWindow=0 # 0 / 1
 #	Menu
 # ---------------------------------------------------------------------------
 ColorNormalMenu="#303030"
-ColorActiveMenuItem="003355"
+ColorActiveMenuItem="0033AA"
 ColorNormalMenuItemText="#a4a4a4"
 ColorActiveMenuItemText="#F5F5F5"
 ColorDisabledMenuItemText="#E0B000"
@@ -73,7 +73,7 @@ ColorListBoxSelectionText="#F5F5F5"
 # ---------------------------------------------------------------------------
 ColorQuickSwitch="#252525"
 ColorQuickSwitchText="#A4A4A4"
-ColorQuickSwitchActive="#111111"
+ColorQuickSwitchActive="#0033AA"
 
 # ---------------------------------------------------------------------------
 # Clock
@@ -112,7 +112,7 @@ ColorInputSelectionText="#ffffff"
 # Workspaces
 ColorNormalWorkspaceButton="#252525"
 ColorNormalWorkspaceButtonText="#A4A4A4"
-ColorActiveWorkspaceButton="#003355"
+ColorActiveWorkspaceButton="#0033AA"
 ColorActiveWorkspaceButtonText="#D0D0D0"
 
 # Taskbar
@@ -121,7 +121,7 @@ ColorNormalTaskBarApp="#252525"
 ColorNormalTaskBarAppText="#A4A4A4"
 ColorMinimizedTaskBarApp="#252525"
 ColorMinimizedTaskBarAppText="#A4A4A4"
-ColorActiveTaskBarApp="#003355"
+ColorActiveTaskBarApp="#0033AA"
 ColorActiveTaskBarAppText="#C0C0C0"
 
 # ---------------------------------------------------------------------------

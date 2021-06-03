@@ -4,20 +4,20 @@
 # XF86. Valid modifiers are Alt, Ctrl, Shift, Meta, Super and Hyper.
 
 # Programs
-key "Ctrl+Alt+b"	firefox
-key "Ctrl+Alt+e"	xfce4-terminal -e micro
-key "Ctrl+Alt+p"	geany
-key "Ctrl+Alt+f"	thunar
-key "Ctrl+Alt+s"	gksudo synaptic
-key "Ctrl+Alt+t"	xfce4-terminal
-key "Ctrl+Alt+m"	key-mon
-key "Ctrl+Alt+c"	galculator
+key "Ctrl+Alt+b"	    firefox
+key "Ctrl+Alt+e"	    xfce4-terminal -e micro
+key "Ctrl+Alt+p"	    geany
+key "Ctrl+Alt+f"	    thunar
+key "Ctrl+Alt+s"	    gksudo synaptic
+key "Ctrl+Alt+t"	    xfce4-terminal
+key "Ctrl+Alt+m"        key-mon
+key "Ctrl+Alt+c"        galculator
 
 # Wingrid
-key "Ctrl+Alt+F11" wingrid-left.sh
-key "Ctrl+Alt+F12" wingrid-right.sh
-key "Ctrl+Alt+F9" wingrid-top.sh
-key "Ctrl+Alt+F10" wingrid-bottom.sh
+key "Ctrl+Alt+F11"      wingrid-left.sh
+key "Ctrl+Alt+F12"      wingrid-right.sh
+key "Ctrl+Alt+F9"       wingrid-top.sh
+key "Ctrl+Alt+F10"      wingrid-bottom.sh
 
 # Active eindow always on top and back
 key "Ctrl+Alt+Home" wmctrl -r:ACTIVE: -b toggle,above
@@ -36,6 +36,8 @@ key "Pause"				$HOME/.icewm/contrib/system_stat.sh
 key "Alt+Ctrl+Del"		$HOME/.icewm/contrib/shutdown.sh
 
 # Change volume
-key "Alt+Ctrl+Up"				$HOME/.icewm/contrib/volume_up.sh
-key "Alt+Ctrl+Down"				$HOME/.icewm/contrib/volume_down.sh
+key "Alt+Ctrl+Up"		$HOME/.icewm/contrib/volume_up.sh
+key "Alt+Ctrl+Down"		$HOME/.icewm/contrib/volume_down.sh
 
+#key "Ctrl+Alt+Shift+j"  $HOME/.icewm/contrib/jumping_start_stop.sh
+key "Ctrl+Alt+j"        $HOME/.icewm/contrib/jumping.sh

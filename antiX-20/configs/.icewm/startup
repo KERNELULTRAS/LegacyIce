@@ -1,5 +1,5 @@
-#bash .screenlayout/default.sh
-
+bash .screenlayout/default.sh
+	
 # For all option grp run command cat /usr/share/X11/xkb/rules/base.lst
 # setxkbmap -option grp:switch,grp:shifts_toggle,grp_led:scroll "us, sk(qwerty)"	# keyboard switcher - shifts
 setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:scroll "us, sk(qwerty)"	# keyboard switcher

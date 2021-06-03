@@ -25,5 +25,7 @@ MiscUseShiftArrowsToScroll=FALSE
 MiscSlimTabs=FALSE
 MiscNewTabAdjacent=FALSE
 TitleMode=TERMINAL_TITLE_REPLACE
-BackgroundMode=TERMINAL_BACKGROUND_IMAGE
+BackgroundImageShading=0.000000
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+BackgroundDarkness=0.860000
 
