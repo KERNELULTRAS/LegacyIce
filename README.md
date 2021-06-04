@@ -19,15 +19,20 @@ Major changes
 * Instead fucking shit Connman uses NetworkManager
 * Instead Slim use LightDM
 
-### Install
+### Make your own LegacyIce
 
 (Needed antiX-19 installed)
 antix download from here https://sourceforge.net/projects/antix-linux/files/Final/antiX-19/
-Select **antiX-19.3_x64-full.iso** or **antiX-19.3_386-full.iso**
+Select **antiX-19.4_x64-full.iso** or **antiX-19.4_386-full.iso**
 
-    wget https://raw.githubusercontent.com/KERNELULTRAS/LegacyIce-antiX/master/antiX-20/legacyice.sh
-    chmod +x legacyice.sh
-    ./legacyice.sh
+    git clone https://github.com/KERNELULTRAS/LegacyIce.git
+    cd LegacyIce
+    bash antiX-20/main.sh
+    
+    While the script is running, you will be asked to select Desktop manager. Select LightDM
+    
+    After script ending reboot system with command:
+    sudo reboot
 
 ### Shortcuts
 
