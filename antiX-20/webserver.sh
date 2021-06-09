@@ -4,9 +4,6 @@
 # Script to convert antiX16 to LegacyIce
 # --------------------------------------
 
-# (Only GTK and QT application)
-# (In alphabetical order)
-
 ### Set background
 echo -e "\e[40m\n\n"
 
